@@ -1,0 +1,2168 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>                                                                 
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"> 
+<meta name="author" content="Leandro Daldegam">
+<meta http-equiv="Reply-to" content="ldaldegam@hotmail.com">  
+<meta name="description" content="MuSite v2.x.x - Changelog">
+<meta name="keywords" content="MuSite daldegam">
+<meta name="creation-date" content="16/1/2010">
+<title>MuSite v2.5.x - Changelog</title>
+<style>
+body 
+{
+    background: #F3F3F3;
+}
+h1 
+{
+    font-size: 16px;
+    font-family: sans-serif;
+}
+fieldset
+{
+    background: #E6E6E6;
+}
+legend
+{
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+fieldset p
+{
+    font-size: 12px;
+    font-family: sans-serif;  
+    margin: 2px;
+}
+fieldset span#php
+{
+    font-size: 12px;
+    font-family: sans-serif;  
+    color: red;
+}
+fieldset span#location
+{
+    font-size: 12px;
+    font-family: sans-serif;  
+    color: green;
+}
+fieldset pre#phpMultipleLines
+{
+    font-size: 12px;
+    font-family: sans-serif;  
+    color: red;
+    border: 1px solid #777;
+    padding: 5px;
+}
+hr
+{
+    color: white;
+    margin: 10px 0px 10px 0px;
+}
+</style> 
+<script type="text/javascript">
+function showOrHidden(element)
+{
+    if(document.getElementById(element).style.display == 'none')
+    {                                                               
+        document.getElementById(element).style.display = 'block';
+    }
+    else
+    {
+        document.getElementById(element).style.display = 'none';
+    }
+}
+</script>             
+</head>
+<body> 
+    <div id="main">
+               
+        <h1>MuSite v2.5.x - Detalhes</h1>
+        <fieldset>
+            <legend>Breve descrição do site</legend>
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('description');" />              
+            <div id="description" style="display: none;">                                                                    
+            <p><pre>Sistema de templates
+Settings.php (Praticamente todo o site é regulado por essa página)
+
+ - Inicio
+  -- Ultimas 10 noticias
+  -- Ultimas 10 tópico do forum
+  -- Vencedores do castle siege
+  -- Tops Resets
+  -- Tops Resets Semanal
+  -- Tops Resets Mensal
+  -- Tops Master Resets
+  -- Tops Pk
+  -- Tops Level
+  -- Tops Guilds (com fotos)
+  -- Tops Screenshots
+
+ - Noticias: 
+  -- Listar todas as noticias
+  -- Mostrar uma noticia especifica (Com opção do player comentar)
+
+ - Coluna Lateral:
+  -- Logar-se / Logout (MD5 on/off)
+  --- Recuperar senha via email [SMTP compativel com Gmail / Yahoo mail / Outros] (MD5 on/off)
+  -- Servidores
+   --- Mostrar servidores onlines
+   --- Gerar barra de porcentage
+   --- Mostrar total onlines 
+  -- Configurações
+   --- Versão
+   --- Experiência
+   --- Drops
+   --- BugBless
+  -- Informações gerais
+   --- Total de contas
+   --- Total de chars
+   --- Recorde Online
+   --- Vip 1
+   --- Vip 2
+   --- Vip 3
+   --- Vip 4
+   --- Vip 5
+   --- Personagens banidos
+   --- Contas banidas
+  -- Enquetes (Ajax)
+  -- Equipe (Ajax)
+   --- Mostrar membros com ctlcode >= 8
+   --- Mostrar status do membro (on / off)
+
+Painel do usuário: 
+ - Gerenciar minha conta
+  -- Minha conta
+  -- Alterar Dados
+  -- Limpar Bau
+  -- Bau Duplo
+  -- Bau virtual (Video: <a href="http://www.youtube.com/watch?v=-Ct9UxNDHGQ&fmt=22">http://www.youtube.com/watch?v=-Ct9UxNDHGQ&fmt=22</a>)
+  -- Log de Compras
+  -- Alterar Personal ID
+  -- Screenshots
+  -- Golden Archer
+  -- Leilões
+  -- Transferir Cash 1 / Cash 2
+  -- Desconectar conta
+ - Gerenciar Personagens
+  -- Resetar Personagem
+  -- Master Reset
+  -- Transferir Resets
+  -- Limpar PK
+  -- Distribuir Pontos
+  -- Mover Personagem
+  -- Mudar Nick
+  -- Mudar Classe
+  -- Redistribuir Pontos
+  -- Limpar Inventário
+  -- Gerenciar foto
+ - Shop
+  -- Comprar Vip
+  -- Confirmar Pagamento
+ - Suporte
+  -- Abrir Denuncias
+  -- Abrir Pedidos
+  -- Ver Pedidos
+  -- Enviar SMS para os ADMs
+
+Painel do game master: 
+ - AdminCenter
+ - Gerenciar contas
+  -- Banir / Desbanir conta
+ - Gerenciar personagens
+  -- Banir / Desbanir personagem
+ - Suporte 
+  -- Denuncias
+  -- Tickets Abertos
+  -- Tickets Encerrados  
+
+Painel do administrador: 
+ - AdminCenter
+ - ldManager (Editor MuOnline)
+ - Gerenciar banco de dados
+  -- Criar Backup
+ - Ferramentas para o jogo
+  -- Enviar mensagem global para todos online
+  -- Enviar mensagem para determinados logins online
+  -- Desconectar contas onlines
+  -- Ver Chat em tempo real
+ - Gerenciar contas
+  -- Editar contas
+  -- Deletar conta
+  -- Banir / Desbanir conta
+  -- Liberar / Travar conta para transferir Cash 1 / Cash 2
+ - Gerenciar personagens
+  -- Editar personagem
+  -- Deletar personagem
+  -- Banir / Desbanir personagem
+ - Gerenciar vips
+  -- Adicionar vip
+  -- Remover vip
+  -- Transformar plano do vip  
+ - Gerenciar noticias 
+  -- Adicionar noticia
+  -- Remover noticia
+  -- Alterar noticia  
+ - Gerenciar enquetes 
+  -- Adicionar enquete
+  -- Remover enquete
+  -- Alterar enquete  
+ - Gerenciar Cash
+  -- Adicionar Cash
+  -- Remover Cash  
+ - Gerenciar Depósitos
+  -- Depósitos em andamento 
+  -- Depósitos concluidos
+  -- Depósitos falsos  
+ - Suporte 
+  -- Denuncias
+  -- Tickets Abertos
+  -- Tickets Encerrados  
+ - Outros
+  -- Verificar atualização
+  -- Golden Archer
+ - Gerenciar leilões
+  -- Adicionar leilão
+  -- Modificar leilão
+  -- Remover leilão
+  -- Encerrar leilão
+
+Cadastro: 
+ - Suporta bancos de dados (Me_MuOnline / MuOnline)
+ - Funções Ajax
+ - Codigo de segurança (captcha)
+ - Termos de uso
+
+Downloads: 
+ - Link Cliente pelo settings.php
+ - Link Patch pelo settings.php
+
+Ranking: 
+ - Busca de personagem / guild por nome
+ - Ranking por resets [Top 10] [Top 50] [Top 100] [Top 200]
+ - Ranking por resets semanal [Top 10] [Top 50] [Top 100] [Top 200]
+ - Ranking por resets mensal [Top 10] [Top 50] [Top 100] [Top 200]
+ - Ranking por master resets [Top 10] [Top 50] [Top 100] [Top 200]
+ - Ranking por level [Top 10] [Top 50] [Top 100] [Top 200]
+ - Ranking por pk (mortes) [Top 10] [Top 50] [Top 100] [Top 200]
+ - Ranking por guilds [Top 10] [Top 50] [Top 100] [Top 200]
+ - Ranking por gens [Top 10] [Top 50] [Top 100] [Top 200]
+
+Vips: 
+ - Vantagens de ser um player Vip
+ - O que é SGolds e como comprar SGolds
+ - Como Comprar Vip
+ - Clique aqui para comprar o Vip
+ - Dados para depósito
+
+Fale Conosco:
+ 1ª - Suporte Via Telefone
+ 2ª - Suporte Ticket
+ 3ª - Mensagens no Celular do ADM
+</pre></p></div>
+        </fieldset>
+        <fieldset>
+            <legend>Foto dos templates</legend>   
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('photos');" />              
+            <div id="photos" style="display: none;">
+            <p>Foto do template SunOnline</p>
+            <p><img src="http://www.daldegamserver.com/previews/musite20sun.JPG" /></p>
+            <p>Foto do template Refresh</p>
+            <p><img src="http://www.daldegamserver.com/previews/musite20refresh.JPG" /></p>
+            <p>Foto do template Ja_sanidine</p>
+            <p><img src="http://www.daldegamserver.com/previews/musite20jasanidinefree.JPG" /></p>
+            <p>Foto do template DarkStyle</p>
+            <p><img src="http://www.daldegamserver.com/previews/musite20darkstyle.JPG" /></p>
+            </div>                                                                                                     
+        </fieldset>
+    
+        <h1>MuSite v2.5.x - Changelog</h1>                                                                                      
+        <fieldset>                                                                                                                 
+            <legend>20/05/2013 - v2.5.4</legend>
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u20052013254');" />
+            <div id="u20052013254" style="display: none;">
+            <p>Colocado na procedure de callback no alterar nick o nome do personagem antes da alteração de nick. <span id="location">ldpaneluser.class.php</span></p>
+            <hr /> 
+            
+            <p>Execute a query abaixo no query analyzer usando o banco de dados que o site foi instalado.</p>   
+            <p><pre id="phpMultipleLines">SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+ALTER PROCEDURE webPanelAction_ChargeNick
+	@AccountID varchar(10),
+	@NewCharacter varchar(10),
+	@Character varchar(10)
+AS
+BEGIN
+	-- SET NOCOUNT ON added to prevent extra result sets from
+	-- interfering with SELECT statements.
+	SET NOCOUNT ON;
+
+END
+GO</pre></p>   
+            <hr /> 
+            
+            <p>Alterada a versão para 2.5.4. <span id="Span4">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0x553D1E14</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0x553D1E14</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset>                                                                                         
+        <fieldset>                                                                                                                 
+            <legend>07/03/2013 - v2.5.3</legend>
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u07032013253');" />
+            <div id="u07032013253" style="display: none;">
+            <p>Fixado bug de limpar inventário para Season 6.2. <span id="location">ldpaneluser.class.php</span></p>
+            <hr /> 
+            
+            <p>Adicionado callbacks nas funções do painel de controle do site (Alterar Classe, Alterar Nick, Limpar Inventário, Limpar PK, Limpar Bau, Distribuir Pontos, Bau Duplo, Master Reset, Modificar Dados, Mover Personagem, Redistribuir Pontos, Resetar). <span id="location">ldpaneluser.class.php</span></p>
+            <p>Execute a query do arquivo citado abaixo no query analyzer usando o banco de dados que o site foi instalado.</p>   
+            <p><span id="location">modules/SQL_SCRIPTS/All Querys/webPanelActions_AllProcedures.sql</span></p>   
+            <hr /> 
+            
+            <p>Alterada a versão para 2.5.3. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0xCB598BB7</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0xCB598BB7</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset>
+        <fieldset>                                                                                                                 
+            <legend>20/03/2012 - v2.5.2</legend>
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u20032012252');" />
+            <div id="u20032012252" style="display: none;">
+            <p>Fixado erro no upload das screens que acontecia em algumas hospedagens. <span id="location">dlimage.class.php</span></p>
+            <hr /> 
+            
+            <p>Adicionada proteção contra flood na confirmação de pagamento do site. <span id="location">ldpaneluser.class.php, ldpaneluser.lang.php</span></p>
+            <p>Adicione no <span id="location">ldpaneluser.lang.php</span> a linha:</p>
+            <p><pre id="phpMultipleLines">DEFINE("LDPU_CONFIRM_DEPOSIT_ERROR_LIMIT_CONFIRM_OPEN", "Você pode possuir somente %d confirmações em andamento.");</pre></p>
+            <p>Adicione no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">/*
+    @Configurações Painel do Usuário.
+    @Modulo: Confirmar pagamento
+*/                                                                                                                                                                
+$PANELUSER_MODULE['CONFIRM_PAYMENT']['MAX_OPEN'] = 1; //Máximo de pagamentos que um player pode possuir em aberto.</pre></p>
+            <hr /> 
+            
+            <p>Alterada a versão para 2.5.2. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0xBC5EBB21</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0xBC5EBB21</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset>
+        <fieldset>                                                                                                                 
+            <legend>16/03/2012 - v2.5.1</legend>
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u16032012251');" />
+            <div id="u16032012251" style="display: none;">
+            <p>Fixado bonus de itens para versões Season 6.2+. <span id="location">ldregister.class.php</span></p>
+            <hr /> 
+            
+            <p>Adicionada proteção contra Brute Force no login do site. <span id="location">ldajax.class.php, ldajax.lang.php</span></p>
+            <p>Adicione no <span id="location">ldajax.lang.php</span> a linha:</p>
+            <p><pre id="phpMultipleLines">DEFINE("LOGIN_ERROR_LOCK", "Login bloqueado por 5 minutos.");</pre></p>
+            <p>Execute a query do arquivo citado abaixo no query analyzer usando o banco de dados que o site foi instalado.</p>   
+            <p><span id="location">modules/SQL_SCRIPTS/All Querys/webPasswordBruteForceLock.sql</span></p>   
+            <hr /> 
+            
+            <p>Alterada a versão para 2.5.1. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0x2557EA9B</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0x2557EA9B</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset>  
+        <fieldset>                                                                                                                 
+            <legend>10/03/2012 - v2.5.0</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u10032012250');" />
+            <div id="u10032012250" style="display: none;">
+            <p>Adicionado os novos mapas acima da season 4. <span id="location">settings.php</span></p>
+            <p>Adicione no <span id="location">settings.php</span> as linhas <strong>EM NEGRITO</strong>:</p>
+            <p><pre id="phpMultipleLines">$PANELUSER_MODULE['MOVE_CHARACTER']['MAPS'] = array(/*Numero do mapa, Nome do mapa, Coordenada X, Coordenada Y*/    
+                                                    array(0,"Lorencia",147,127),
+                                                    array(1,"Dungeon",107,247),
+                                                    array(2,"Davias",197,46),
+                                                    array(3,"Noria",174,111),
+                                                    array(4,"Losttower",204,77),
+                                                    array(6,"Stadium",62,115),
+                                                    array(7,"Atlans",24,17),
+                                                    array(8,"Tarkan",194,67),
+                                                    array(10,"Icarus",125,125),
+                                                    array(24,"Kalima 1",125,125),
+                                                    array(25,"Kalima 2",125,125),
+                                                    array(26,"Kalima 3",125,125),
+                                                    array(27,"Kalima 4",125,125),
+                                                    array(28,"Kalima 5",125,125),
+                                                    array(29,"Kalima 6",125,125),
+                                                    array(30,"Valey of Loren",93,214),
+                                                    array(31,"Land of Trial",93,214),
+                                                    array(33,"Aida",84,13),
+                                                    array(34,"CryWolf",228,41),
+                                                    array(37,"KantruLand",20,218),
+                                                    array(38,"KantruRuin",71,105),
+                                                    array(41,"Barracks",28,76),
+                                                    array(42,"Refuge",97,185),
+                                                    array(51,"Elbeland",51,216)<strong>,
+                                                    array(56, "Swamp of Peace", 135, 105),
+                                                    array(63, "Vulcanus", 120, 129),
+                                                    array(80, "Karutan", 124, 123),
+                                                    array(79, "LorenMarket", 126, 142),
+                                                    array(80, "Karutan", 124, 123)</strong>
+                                                );</pre></p>
+            <hr /> 
+            <p>Adicionado novo sistema para recuperar senha quando se usa MD5 nas senhas, agora precisa confirmar via e-mail. <span id="location">index.php, ldrecovery.class.php, ldrecovery.lang.php</span></p>
+            <p>Adicione no <span id="location">ldrecovery.lang.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">DEFINE("RECOVERY_SEND_SUCCESS_MD5", "Sua senha foi enviada para o e-mail de cadastro da sua conta juntamente com um link para ativação da senha!&lt;br/&gt;Obs.: Se voc&ecirc; usa e-mail no Hotmail, verifique a pasta: Lixo Eletr&ocirc;nico.&lt;br/&gt;Obrigado.");
+DEFINE("RECOVERY_EMAIL_BODY_MD5", "Atenção!&lt;br /&gt;Esse e-mail é uma mensagem automatica gerada pelo ".TITLE_SITE."!&lt;br /&gt;&lt;br /&gt;Seu Login de acesso é: %s&lt;br /&gt;&lt;br /&gt;Sua Senha de acesso é: %s&lt;br /&gt;&lt;br /&gt;Sua resposta secreta é: %s&lt;br /&gt;Ip do usuário que solicitou a senha: %s&lt;br /&gt;&lt;br /&gt;Para confirmar a sua nova senha, clique no link abaixo: &lt;a href=\"%s\"&gt;%s&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;Tenha um bom jogo!&lt;br /&gt;Equipe ".TITLE_SITE.".&lt;br /&gt;");
+DEFINE("RECOVERY_EMAIL_ERROR_LINK_MD5", "Erro no link acessado, o link parece estar faltando informações!");
+DEFINE("RECOVERY_EMAIL_CHECK_SUCCESS_MD5", "Sua nova senha foi gravada com sucesso!");</pre></p>
+            <p>Execute a query do arquivo citado abaixo no query analyzer usando o banco de dados que o site foi instalado.</p>   
+            <p><span id="location">modules/SQL_SCRIPTS/All Querys/webRecoveryPassword.sql</span></p>   
+            <hr /> 
+            
+            <p>Sistema adaptado para funcionar com a Season 6.3. <span id="location">ldpaneluser.class.php, ldpaneladmin.class.php, ldVault.class.php, ldInventory.class.php</span></p>
+            <p>Altere no <span id="location">settings.php</span> as linhas EM NEGRITO:</p>
+            <p><pre id="phpMultipleLines">/*
+    @Na linha abaixo, coloque:
+    0 para Season 1 ou Abaixo - Sem DL 
+    1 para Season 1 ou Abaixo 
+    2 para Season 2 
+    3 para Season 3 Episodio 
+    4 para Season 3 Episodio 2, Até Season 5 
+    <strong>5 para Season 6
+    6 para Season 6.2 ou acima</strong>
+*/
+define('VESION_MUSERVER', 6); //Veja como preencher na descrição acima.</pre></p>
+            <hr /> 
+            
+            <p>Alterada a versão para 2.5.0. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0x5250DA0D</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0x5250DA0D</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset>      
+        <fieldset>                                                                                                                 
+            <legend>29/11/2011 - v2.4.5</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u29112011245');" />
+            <div id="u29112011245" style="display: none;">
+            <p>Fixado botão de lance no sistema de leilões para funcionar com o JS_SANIDINE_FREE. <span id="location">ldpaneluser.class.php</span></p>
+            <hr /> 
+            <p>Fixado o problema do MasterSkillTree ao trocar de classe / mudar de nick. <span id="location">ldpaneluser.class.php</span></p>
+            <p>Adicione no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">/*
+    @Qual o desenvolvedor do seu servidor?
+    @Coloque:
+    0 para desenvolvedores não listados aqui.
+    1 para X-Team (Eduardo / phpnuke)
+*/
+define('MUSERVER_TEAM', 0);</pre></p>
+            <hr /> 
+            
+            <p>Alterada a versão para 2.4.5. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0x23F844B5</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0x23F844B5</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset> 
+        <fieldset>                                                                                                                 
+            <legend>01/11/2011 - v2.4.4</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u01112011244');" />              
+            <div id="u01112011244" style="display: none;">
+            <p>Fixado querys da tabela de leilões. <span id="location">webAuctions.sql, webSite_COMPLETE.sql, webSite_COMPLETE[MuOnline].sql</span></p>
+            <p>Execute a query abaixo no query analyzer no banco de dados do site.</p>   
+            <p><pre id="phpMultipleLines">ALTER TABLE [dbo].[webAuctions] DROP COLUMN [photo]
+ALTER TABLE [dbo].[webAuctions] ADD [winner] VARCHAR(10) 
+ALTER TABLE [dbo].[webAuctions] ADD [winnerText] TEXT</pre></p>
+            <hr /> 
+            
+            <p>Alterada a versão para 2.4.4. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0x54FF7423</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0x54FF7423</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset>     
+        <fieldset>                                                                                                                 
+            <legend>30/10/2011 - v2.4.3</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u30102011243');" />              
+            <div id="u30102011243" style="display: none;">
+            <p>Fixado opção de banco de dados ao cadastrar leilão. <span id="location">ldpaneladmin.class.php</span></p>
+            <hr /> 
+            
+            <p>Alterada a versão para 2.4.3. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0xCA9BE180</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0xCA9BE180</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset>
+        <fieldset>                                                                                                                 
+            <legend>29/10/2011 - v2.4.2</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u29102011242');" />              
+            <div id="u29102011242" style="display: none;">
+            <p>Fixado erro no upar foto do leilão. <span id="location">ldpaneladmin.class.php</span></p>
+            <hr /> 
+            
+            <p>Alterada a versão para 2.4.2. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0xBD9CD116</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0xBD9CD116</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset>
+        <fieldset>                                                                                                                 
+            <legend>25/10/2011 - v2.4.1</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u25102011241');" />              
+            <div id="u25102011241" style="display: none;">
+            <p>Fixado erro na checagem de guild no renomear personagem. <span id="location">ldpaneluser.class.php</span></p>
+            <hr /> 
+            
+            <p>Fixado erro na cadastro que dizia estar logado sem estar. <span id="location">ldregister.class.php</span></p>
+            <hr /> 
+            
+            <p>Alterada a versão para 2.4.1. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0x249580AC</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0x249580AC</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset>     
+        <fieldset>                                                                                                                 
+            <legend>21/09/2011 - v2.4.0</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u01092011240');" />              
+            <div id="u01092011240" style="display: none;">
+            <p>Template JA_SANIDINE_FREE adaptado para sistema de includes. <span id="location">*.tpl.php</span></p>
+            <hr /> 
+            <p>Template DARKSTYLE adaptado para sistema de includes. <span id="location">*.tpl.php</span></p>
+            <hr />
+            <p>Template REFRESH adaptado para sistema de includes. <span id="location">*.tpl.php</span></p>
+            <hr /> 
+            <p>Corrigido erro no painel de usuário para free não mostrar data de vencimento. <span id="location">ldpaneluser.class.php</span></p>
+            <hr />
+            <p>Corrigido erro de não mostrar o tooltip no template DARKSTYLE. <span id="location">header.tpl.php</span></p>
+            <hr />
+            <p>Removida a opção colocada em 17/11/2009, com a função de renomear arquivos .zip e .rar na raiz do site. <span id="location">ldsecurity.class.php</span></p>
+            <hr />
+            
+            <p>Adicionada uma nova moeda de pontos no site. <span id="location">ldpaneluser.class.php, ldpaneluser.tpl.php, ldgeneral.class.php, paneladmin[ADD_CASH].tpl.php, paneladmin[REMOVE_CASH].tpl.php, ldpaneladmin.class.php</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> a linhas:</p>
+            <p><pre id="phpMultipleLines">define('POINTS_NAME', 'Pontos'); //Nome da moeda de ponto</pre></p>
+            
+            <p>Alterar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">$TABLES_CONFIGS['WEBCASH'] = array("database" => DATABASE, //webSite || MuOnline
+                                   "table" => "webCash", //webCash || MEMB_INFO
+                                   "columnUsername" => "username", //username || memb___id
+                                   "columnAmount" => "amount", //amount || gold
+                                   "columnAmount2" => "amount2"); //points
+                                  
+                                  <strong>PARA:</strong>
+                                  
+$TABLES_CONFIGS['WEBCASH'] = array("database" => DATABASE, //webSite || MuOnline
+                                   "table" => "webCash", //webCash || MEMB_INFO
+                                   "columnUsername" => "username", //username || memb___id
+                                   "columnAmount" => "amount", //amount || gold
+                                   "columnAmount2" => "amount2"<strong>, //amount2 || gold2
+                                   "columnPoints" => "points"); //points</strong>  </pre></p>
+            <p>Execute a query abaixo no query analyzer no banco de dados do site.</p>   
+            <p><pre id="phpMultipleLines">ALTER TABLE [dbo].[webCash] ADD [points] INT DEFAULT 0 NOT NULL</pre></p>
+            <hr /> 
+            
+            <p>Adicionado coletor de pontos (Configuração inicial para coletar Joias Life). <span id="location">ldpaneluser.class.php, menuPanelUser.tpl.php, paneluser[COLLECTOR_POINTS].tpl.php, ldpaneluser.lang.php</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> a linhas:</p>
+            <p><pre id="phpMultipleLines">$PANELUSER_PREMISSIONS['COLLECTOR_POINTS'] = array(/*Ligar*/ 1, /*Free*/ 1, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Coletor de pontos</pre></p>
+            <p><pre id="phpMultipleLines">/*
+    @Configurações Painel do Usuário.
+    @Modulo: Coletor de pontos
+*/                                                                                                                                                                
+$PANELUSER_MODULE['COLLECTOR_POINTS']['REQUIRE'] = array("idCategorie" => 14, "idItem" => 16, "premiumInPoints" => 2); //Categoria do item, Id do item, e pontos em troca de cada item.</pre></p>
+            <hr />
+            
+            <p>Adicionado sistema de leilões. <span id="location">ldpaneluser.class.php, menuPanelUser.tpl.php, paneluser[AUCTIONS].tpl.php, ldpaneluser.lang.php, dlimage.class.php, ldpaneladmin.class.php, paneladmin[ADD_AUCTION].tpl.php, paneladmin[ADD_AUCTION].tpl.php, paneladmin[EDIT_AUCTION].tpl.php, paneladmin[DELETE_AUCTION].tpl.php, paneladmin[CLOSE_AUCTION].tpl.php, menuPanelAdmin.tpl.php, ldpaneladmin.lang.php, ldpaneluser.lang.php</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> a linhas:</p>
+            <p><pre id="phpMultipleLines">$PANELUSER_PREMISSIONS['AUCTIONS'] = array(/*Ligar*/ 1, /*Free*/ 1, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Leilões</pre></p>
+            <p>Execute a query do arquivo citado abaixo no query analyzer usando o banco de dados que o site foi instalado.</p>   
+            <p><span id="location">modules/SQL_SCRIPTS/All Querys/webAuctions.sql</span></p>   
+            <p><span id="location">modules/SQL_SCRIPTS/All Querys/webAuctionsBids.sql</span></p>   
+            <hr />
+            
+            <p>Adicionado sistema de ativação de cadastro via email. <span id="location">ldregister.class.php, ldregister.lang.php, ldgeneral.class.php, ldpaneluser.class.php, ldpaneluser.lang.php</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> a linhas:</p>
+            <p><pre id="phpMultipleLines">$REGISTER_SETTINGS['EMAIL_ACTIVE'] = true; //Ativação por email [TENHA CERTEZA QUE SEU SERVIDOR DE SMTP ESTA FUNCIONANDO PARA ATIVAR ESTA OPÇÃO! TESTE O CADASTRO APÓS A ATIVAÇÃO!].</pre></p>
+            <p>Execute a query abaixo no query analyzer no banco de dados do jogo.</p>   
+            <p><pre id="phpMultipleLines">ALTER TABLE [dbo].[MEMB_INFO] ADD [hashActivate] VARCHAR(32) NULL</pre></p>
+            <hr />
+            
+            <p>Alterada a versão para 2.4.0. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0x5392B03A</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0x5392B03A</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset>  
+        <fieldset>                                                                                                                 
+            <legend>24/08/2011 - v2.3.0</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u24082011230');" />              
+            <div id="u24082011230" style="display: none;">
+            <p>Nova opção de gerenciar o golden archer no painel admin. <span id="location">ldpaneladmin.class.php, ldpaneladmin[*].tpl.php</span></p>
+            <hr />
+            
+            <p>Fixado loop demorado na conversão da data dos vips para int. <span id="location">convertVipStampToInteger.txt</span></p>
+            <hr />
+            
+            <p>Fixado erro no sistema de licenças que não estava fazendo cache. <span id="location">ldsecurity.class.php</span></p>
+            <hr />
+            
+            <p>Implantado ldManager - Novo editor de MuOnline. <span id="location">ldpaneladmin[*].php, /ldManager/*.*</span></p>
+            <p>Execute a query do arquivo citado abaixo no query analyzer usando o banco de dados que o site foi instalado.</p>   
+            <p><span id="location">modules/SQL_SCRIPTS/All Querys/webLdManagerUsers.sql</span></p>   
+            <hr />
+            
+            <p>Alterada a versão para 2.3.0. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0x56DDA6BF</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0x56DDA6BF</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset> 
+        <fieldset>                                                                                                                 
+            <legend>23/08/2011 - v2.2.1</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u23082011221');" />              
+            <div id="u23082011221" style="display: none;">
+            <p>Regulável se a conexão com o mssql é persistente ou não. <span id="location">ldmssql.class.php</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">define('PERSISTENT_CONNECTION', false); //Deixa a conexão com o banco de dados persistente</pre></p>
+            <hr />
+            
+            <p>Alterada a versão para 2.2.1. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0x2018FC1E</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0x2018FC1E</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset>      
+        <fieldset>                                                                                                                 
+            <legend>18/08/2011 - v2.2.0</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u18082011220');" />              
+            <div id="u18082011220" style="display: none;">
+            <p>Novo sistema de Golden Archer pelo site. <span id="location">ldpaneluser.class.php, *.tpl.php, paneluser[GOLDEN_ARCHER].tpl.php, ldpaneluser.lang.php, principais arquivos dos templates css nas últimas linhas</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">$PANELUSER_PREMISSIONS['GOLDEN_ARCHER'] = array(/*Ligar*/ 1, /*Free*/ 1, /*Vip 1*/ 1, /*Vip 2*/ 1, /*Vip 3*/ 1, /*Vip 4*/ 1, /*Vip 5*/ 1); //Golden Archer</pre></p>
+            <p>Execute a query do arquivo citado abaixo no query analyzer usando o banco de dados que o site foi instalado.</p>   
+            <p><span id="location">modules/SQL_SCRIPTS/All Querys/webGoldenArcher.sql</span></p>   
+            <hr />
+            
+            <p>Novo sistema de evento Show do Milhão. <span id="location">ldpaneluser.class.php, *.tpl.php, paneluser[*].tpl.php, ldpaneluser.lang.php, principais arquivos dos templates css nas últimas linhas</span></p>
+            <p>Execute a query do arquivo citado abaixo no query analyzer usando o banco de dados que o site foi instalado.</p>   
+            <p><span id="location">modules/SQL_SCRIPTS/All Querys/Segunda query - webQuestions.sql</span></p>   
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">/*
+    @Configurações do evento de perguntas - Show do Milhão.
+*/
+$GAME_QUESTION['ENABLE'] = true; //Liga o sistema
+$GAME_QUESTION['WAIT'] = 180; //Caso sorteado, deve esperar X segundos para ser sorteado novamente.
+$GAME_QUESTION['LUCK'] = array(0, 10000, 9500); //Inicio, Fim, deve acertar ao minimo.
+$GAME_QUESTION['PREMIUM'] = array(
+    //É IMPORTANTE QUE CADA CATEGORIA ABAIXO (A = FACIL,B = MODERADO,C = DIFÍCIL,D = NIVEL TÉCNICO), TENHA PELO MENOS 1 ITEM CADASTRADO PARA PRÊMIO PARA NÃO CAUSAR ANOMALIAS NO SISTEMA!
+    "A" => array( //Perguntas faceis - Sugestão: Itens fracos
+        array("idCategorie" => 0, "idItem" => 8, "options" => array("Level" => 5, "Option" => 3, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, false, false, true, false, false), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+        array("idCategorie" => 1, "idItem" => 4, "options" => array("Level" => 3, "Option" => 4, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(false, true, false, false, true, false), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+    ),
+    "B" => array( //Perguntas moderadas - Sugestão: Itens moderados
+        array("idCategorie" => 2, "idItem" => 7, "options" => array("Level" => 9, "Option" => 5, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(false, true, true, false, true, false), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+        array("idCategorie" => 4, "idItem" => 6, "options" => array("Level" => 8, "Option" => 6, "Skill" => true, "Luck" => true, "Serial" => true, "Excellent" => array(true, false, true, false, false, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+    ),
+    "C" => array( //Perguntas dificeis - Sugestão: Itens dificeis
+        array("idCategorie" => 5, "idItem" => 8, "options" => array("Level" => 11, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, false, true, true, false), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+        array("idCategorie" => 0, "idItem" => 11, "options" => array("Level" => 11, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, false, true, true, true, false), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+    ),
+    "D" => array( //Perguntas a nivel técnico - Sugestão: Itens cobiçados
+        array("idCategorie" => 12, "idItem" => 4, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, false, false), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+        array("idCategorie" => 14, "idItem" => 14, "options" => array("Level" => 0, "Option" => 0, "Skill" => false, "Luck" => false, "Serial" => true, "Excellent" => array(false, false, false, false, false, false), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+    )
+); //Prêmios</pre></p>
+            <hr />
+            
+            <p>Fixado o template darkstyle para mostrar no painel do usuário o balão com os novos vips. <span id="location">ldpaneluser[*].tpl.php</span></p>
+            <hr />
+            
+            <p>Fixado erro no template refresh do link Master reset no painel de usuário. <span id="location">ldpaneluser[*].tpl.php</span></p>
+            <hr />
+            
+            <p>A opção de esconder os stats no perfil do personagem agora esconde Mapa e coordenadas. <span id="location">ldrankings.class.php</span></p>
+            <hr />
+            
+            <p>Alterada a versão para 2.2.0. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0x571FCC88</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0x571FCC88</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset>   
+        <fieldset>                                                                                                                 
+            <legend>18/08/2011 - v2.1.1</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u18082011211');" />              
+            <div id="u18082011211" style="display: none;">
+            <p>Fixado loop demorado na hora de remover os vips. <span id="location">sincronizeVip.txt</span></p>
+            <hr />
+            <p>Fixado erro no Gerenciar depositos que estava com o status errado. <span id="location">ldpaneladmin.class.php</span></p>
+            <hr />
+            <p>Adicionado um texto referente ao gerenciar deposito que estava faltando. <span id="location">ldpaneladmin.lang.php</span></p>
+            <hr />
+            
+            <p>Alterada a versão para 2.1.1. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0x225E4247</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0x225E4247</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset> 
+        <fieldset>                                                                                                                 
+            <legend>16/08/2011 - v2.1.0</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u16082011210');" />              
+            <div id="u16082011210" style="display: none;">
+            <p>Suporte para 5 tipos de vips. <span id="location">ldgeneral.class.php, ldpaneluser.class.php, ldvips.class.php, ldtpl.class.php, *.tpl.php</span></p>
+            <p><pre id="phpMultipleLines">Devido ao alto número de linhas alteradas no settings.php nessa parte do update, será necessário trocar
+a sua settings.php atual pela nova que acompanha esta versão do site para evitar erros de edição.</pre></p>
+            <hr /> 
+            
+            <p>Adiciona uma settings.php em inglês para clientes do exterior. <span id="location">settings_english.php</span></p>
+            <hr /> 
+            
+            <p>Deletar conta agora deleta Baus Extras. <span id="location">ldpaneladmin.class.php</span></p>
+            <hr /> 
+            
+            <p>Sistema de linguagem agora tem todos os textos internos costomizaveis na pasta /languages/. <span id="location">ldlanguage.class.php, *.class.php</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">/*
+    @Sistema de linguagem
+*/
+define('LANGUAGE_PATH', 'pt-br');</pre></p>
+            <hr />
+            
+            <p>Opção de esconder os stats no perfil do personagem. <span id="location">ldranking.class.php</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">$RANKING_CONFIGS['STATS'] = TRUE; //Mostra os status do personagem (Força, Agilidade, Energia, Vitalidade, Comando) </pre></p>
+            <hr />
+            
+            <p>Adicionada opção de forçar o cadastro de logins minusculos. <span id="location">ldregister.class.php</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">$REGISTER_SETTINGS['USERNAME']['FORCELOWER'] = true; //Força o login a ser minusculo. </pre></p>
+            <hr />
+            
+            <p>Colocado filtro de planos para gerenciar screenshots (free, e vips). <span id="location">screenshots.module.php</span></p>
+            <p>Procure a linha abaixo no <span id="location">settings.php</span>:</p>
+            <p><pre id="phpMultipleLines">$PANELUSER_PREMISSIONS['SCREENSHOT'] = array(/*Ligar*/ 1); //Gerenciar Screenshots - Painel usuário</pre></p>
+            <p>Troque ela pela linha abaixo:</p>
+            <p><pre id="phpMultipleLines">$PANELUSER_PREMISSIONS['SCREENSHOT'] = array(/*Ligar*/ 1, /*Free*/ 1, /*Vip Silver*/ 1, /*Vip Gold*/ 1); //Gerenciar Screenshots - Painel usuário</pre></p>
+            <hr />   
+                     
+            <p>Fixada opção de mudar classe para não bugar Quests e Magias. <span id="location">ldpaneluser.class.php</span></p>
+            <hr />
+                     
+            <p>Sistemas que envolvem itens adaptados para funcionar no PHP 5.3. <span id="location">ldvault.class.php, ldcharacter.class.php</span></p>
+            <hr />
+            
+            <p>Ranking de Gens da X-Team adaptado para funcionar no SQL 2000. <span id="location">ldranking.class.php</span></p>
+            <hr />
+            
+            <p>Adicionado sistema de bônus de itens no cadastro. <span id="location">ldregister.class.php, ldItemMake.class.php, ldregister.tpl.php</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">$REGISTER_SETTINGS['BONUS_ITEM']['ACTIVE'] = TRUE; //Ativa bonus de item ao cadastrar
+$REGISTER_SETTINGS['BONUS_ITEM']['VERSION'] = 3; //1 = (Versões antigas sem personal store [97d]), 2 = (Versões antigas com personal store [1.0]), 3 = (Versões novas com personal store e harmony [1.02n ou acima]) 
+/**
+* Como configurar o sistema abaixo:
+* O sistema está configurado para dar um Kit de Blade Knight, Soul Master, Muse Elf por padrão, para cadastrar mais itens ou kits, siga a logica dos exemplos;
+* Atenção, mesmo que você use uma versão antiga que não contenha sockets, harmony e etc, não remova a opção, e sim, apenas coloque o valor correspondente a ela desligada!
+* 
+* A opção: "Name", deve conter o nome do kit a ser entregue para o player
+* A opção: "Items", deve conter os items a serem entregues para o player
+*   Dentro da opção "Items", existe as propriedades:
+*       "idCategorie", deve ser a categoria do item desejado (informação contida no item(kor).txt ou item.txt do MuServer)
+*       "idItem", deve ser o id do item desejado (informação contida no item(kor).txt ou item.txt do MuServer)
+*       "options", aqui dentro serão ditas as propriedades do item.
+*           "Level", determine o level que o item irá ter. (Valores possiveis: 0 até 15)
+*           "Option", determine o option do item (opção da life). (Valores possiveis: para +0 coloque 0, para +4 coloque 1, para +8 coloque 2, para +12 coloque 3, para +16 coloque 4, para +20 coloque 5, para +24 coloque 6, para +28 coloque 7)
+*           "Skill", determine se o item terá Skill ou não. (Valores possiveis: true para sim, false para não)
+*           "Luck", determine se o item terá Luck ou não. (Valores possiveis: true para sim, false para não)
+*           "Serial", determine se o item terá Serial ou não, (Recomendamos: SIM) caso sim, sera pego um serial na ordem do MuServer (igual o MuShopping), caso não, o serial será colocado 00000000. (Valores possiveis: true para sim, false para não)
+*           "Excellent", determine quais opções excelentes o item vai possuir. Observe que existem 6 valores a serem definidos aqui (true, true, true, true, true, true), veja a ordem em um editor, e teste o cadastro para checar se esta correto! (Valores possiveis: true para sim, false para não)
+*           "Ancient", determine se o item é ancient ou não. (Valores possiveis: 0, 1 ou 2; 0 para nada, 1 para ancient 1, e 2 para o ancient 2).
+*           "Refine", determine se o item é refinado ou não (Option 380). (Valores possiveis: 0, 1 ou 2; 0 para nada, 1 para ancient 1, e 2 para o ancient 2).
+*           "HarmonyType", determine se o tipo de option harmony. (Valores possiveis: 0 [NADA], 1, 2, 3, 4, 5, 6, 7, 8, 9, 10).
+*           "HarmonyType", determine se o level do option harmony. (Valores possiveis: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13).
+*           "SocketOption", determine quais opções sockets o item vai possuir. Observe que existem 5 valores a serem definidos aqui (255, 255, 255, 255, 255), teste o cadastro para checar se esta correto! (Valores possiveis: 255 para sem socket, 254 para socket vazio, demais valores vide editor. [Para versões SCF / SCFMT = 0 para sem socket, 255 para socket vazio])
+*/
+$REGISTER_SETTINGS['BONUS_ITEM']['ITEMS'] = array(
+    array(
+        "Name" => "Kit de Blade Knight", 
+        "Items" => array(
+            array("idCategorie" => 7, "idItem" => 17, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+            array("idCategorie" => 8, "idItem" => 17, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+            array("idCategorie" => 9, "idItem" => 17, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+            array("idCategorie" => 10, "idItem" => 17, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+            array("idCategorie" => 11, "idItem" => 17, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+            array("idCategorie" => 12, "idItem" => 5, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+            array("idCategorie" => 0, "idItem" => 22, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+        )
+    ),
+    array(
+        "Name" => "Kit de Soul Master", 
+        "Items" => array(
+            array("idCategorie" => 7, "idItem" => 22, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+            array("idCategorie" => 8, "idItem" => 22, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+            array("idCategorie" => 9, "idItem" => 22, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+            array("idCategorie" => 10, "idItem" => 22, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+            array("idCategorie" => 11, "idItem" => 22, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+            array("idCategorie" => 12, "idItem" => 4, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+            array("idCategorie" => 5, "idItem" => 13, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+        )
+    ),
+    array(
+        "Name" => "Kit de Muse Elf", 
+        "Items" => array(
+            array("idCategorie" => 7, "idItem" => 24, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+            array("idCategorie" => 8, "idItem" => 24, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+            array("idCategorie" => 9, "idItem" => 24, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+            array("idCategorie" => 10, "idItem" => 24, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+            array("idCategorie" => 11, "idItem" => 24, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+            array("idCategorie" => 12, "idItem" => 3, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+            array("idCategorie" => 6, "idItem" => 6, "options" => array("Level" => 13, "Option" => 7, "Skill" => false, "Luck" => true, "Serial" => true, "Excellent" => array(true, true, true, true, true, true), "Ancient" => 0, "Refine" => false, "HarmonyType" => 0, "HarmonyLevel" => 0, "SocketOption" => array(255,255,255,255,255))),
+        )
+    ),
+); //Lista de Kits dos itens ao cadastrar</pre></p>
+            <hr />
+            
+            <p>Alterada a versão para 2.1.0. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0x555972D1</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0x555972D1</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset>    
+        <fieldset>                                                                                                                 
+            <legend>02/08/2011 - v2.0.4</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('y02082011204');" />              
+            <div id="y02082011204" style="display: none;">
+            <p>Fixado erro de segurança. <span id="location">ldsecurity.tpl.php</span></p>
+            <hr /> 
+            <p>Fixado erro de query. <span id="location">ldpaneluser.tpl.php</span></p>
+            <hr /> 
+            
+            <p>Alterada a versão para 2.0.4. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0x53F6DCFF</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0x53F6DCFF</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset>  
+        <fieldset>                                                                                                                 
+            <legend>25/07/2011 - v2.0.3</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u25072011203');" />              
+            <div id="u25072011203" style="display: none;">
+            <p>Removida a opção de chegagem de loopback devido a problemas de rotas do no-ip. <span id="location">ldsecurity.tpl.php</span></p>
+            <hr /> 
+            
+            <p>Alterada a versão para 2.0.3. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0xCD92495C</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0xCD92495C</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset> 
+        <fieldset>                                                                                                                 
+            <legend>19/04/2011 - v2.0.2</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u19042011202');" />              
+            <div id="u19042011202" style="display: none;">
+            <p>Nova opção de mostrar o chat do jogo em tempo real na inicial do site. <span id="location">ldajax.class.php, index.tpl.php</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">/*
+    @Chat em tempo real na home (Depende do "MuSite - ChatServer.exe" ligado)
+*/
+$CHAT_REAL_TIME['ENABLE'] = true; //true para ligar, false para desligar
+$CHAT_REAL_TIME['TYPES'] = array(0, //Chat
+                                 1, //Party
+                                 2, //Guild
+                                 3, //Mensagem Global
+                                 4, //Anúncio de Guild
+                                 5, //Whisper
+                                 6, //Aliança
+                                 7, //Game Master
+                                 8, //Post
+                                 ); //Tipos de chat que irão aparecer na inicial do site delete a linha que você nao deseja habilitar ou comente com // na frente do numero</pre></p>
+            <hr />
+                                                                      
+            <p>Erros de conexão com o banco de dados agora param o site (Evita super uso da hospedagem). <span id="location">ldmssql.class.php</span></p>
+            <hr />
+            <p>Otimizado sistema de conexão com o mssql (Evita super uso da hospedagem). <span id="location">ldmssql.class.php</span></p>
+            <hr />
+            <p>Ranking de Gens compativel com MuServer X-Team. <span id="location">ldranking.class.php</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">$RANKING_CONFIGS['GENS_MANUFACTURER'] = 1; // 0 = MuServer ENC Team / 1 = X-Team </pre></p>
+            <hr />
+            
+            <p>Fixado erro de case sensitive na coluna CtlCode. <span id="location">ldgeneral.class.php, ldajax.class.php</span></p>
+            <hr />
+            <p>Fixado erro de desconexão do usuário usando o joinserver. <span id="location">ldgame.class.php</span></p>
+            <hr />
+            <p>Fixado erro no Master reset na verificação de resets necessários. <span id="location">ldpaneluser.class.php</span></p>
+            <hr />
+            <p>Alterado tempo de checagem de licença de 2 horas para 24 horas. <span id="location">ldsecurity.class.php</span></p>
+            <hr />
+            
+                                                                      
+            <p>Alterada a versão para 2.0.2. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0xBA9579CA</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0xBA9579CA</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset>  
+        <fieldset>                                                                                                                 
+            <legend>08/04/2011 - v2.0.1</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u08042011201');" />              
+            <div id="u08042011201" style="display: none;">
+            <p>Fixada ordenação de resultados no ranking de resets. <span id="location">ldrankings.class.php</span></p>
+            <hr />
+            <p>Fixado campo cor da letra no gerenciar deposito no template sunonline. <span id="location">paneladmin[DEPOSITS_COMPLETING].tpl.php, paneladmin[DEPOSITS_FALSE].tpl.php, paneladmin[DEPOSITS_IN_OPERATION].tpl.php</span></p>
+            <hr />
+                                                                      
+            <p>Alterada a versão para 2.0.1. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0x239C2870</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0x239C2870</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset> 
+        <fieldset>                                                                                                                 
+            <legend>12/03/2011 - v2.0.0</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u12032011200');" />              
+            <div id="u12032011200" style="display: none;">
+            <p>Criado o novo template: Sunonline. <span id="location">templates/sunonline/</span></p>
+            <hr />
+            
+            <p>Alterado o Mostrar Equipe para Css. <span id="location">templates/sunonline/_Css/common.css, templates/refresh/images/Refresh.css, templates/ja_sanidine_free/media/system/template.css, templates/darkstyle/css/style.css</span></p>
+            <hr />
+            
+            <p>Adicionado a opção de mostrar tópicos de todos os foruns. <span id="location">ldhome.class.php, settings.php</span></p>
+            <hr />
+            
+            <p>Trocado o sistema de licença. <span id="location">index.php, ldcrypt.class.php, /licenses/</span></p>
+            <hr />
+            
+            <p>Adicionado ranking de Gens System (Compativel com ENC Team). <span id="location">ldrankings.class.php, rankings.tpl.php, /images/gens/</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">/*
+    @Configurações dos rankings da pagina inicial
+*/
+$RANKING_CONFIGS['GENS'] = TRUE; //Ligar sistema do ranking de gens</pre></p>
+            <hr />  
+            
+            <p>Adicionado ranking de Master Reset no template ja_sanidine_free (Estava faltando o select). <span id="location">rankings.tpl.php</span></p>
+            <hr />
+                   
+            <p>Alterada algumas configurações padrões do settings.php para uma configuração mais facil. <span id="location">settings.php</span></p>
+            <hr />
+                                                                      
+            <p>Alterada a versão para 2.0.0. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0x549B18E6</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0x549B18E6</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset>  
+        <fieldset>                                                                                                                 
+            <legend>10/03/2011 - v1.7.4</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u10032011174');" />              
+            <div id="u10032011174" style="display: none;">
+            <p>Fixado erro de overflow no login. <span id="location">ldregister.class.php</span></p>
+            <hr />
+                                                                            
+            <p>Alterada a versão para 1.7.4. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0x1119B0AA</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0x1119B0AA</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset> 
+        <fieldset>                                                                                                                 
+            <legend>01/03/2011 - v1.7.3</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u01032011173');" />              
+            <div id="u01032011173" style="display: none;">
+            <p>Fixado erro de segurança no sistema de criptografia. <span id="location">index.php, ldcrypt.class.php</span></p>
+            <hr />
+                                                                            
+            <p>Alterada a versão para 1.7.3. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0x8F7D2509</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0x8F7D2509</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset> 
+        <fieldset>                                                                                                                 
+            <legend>22/02/2011 - v1.7.2</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u22022011172');" />              
+            <div id="u22022011172" style="display: none;">
+            <p>Adicionado no menu Ferramentas para o jogo a opção: Ver Chat em tempo real. <span id="location">paneladmin.tpl.php, paneladmin[GAME_CHAT_SERVER].tpl.php, paneladmin[*].tpl.php</span></p>
+            <p>Execute a query do arquivo abaixo no query analyzer.</p>   
+            <p><span id="location">modules/SQL_SCRIPTS/webChatServer.sql</span></p> 
+            <p><span id="location">modules/SQL_SCRIPTS/webChatServerRemove.sql</span></p> 
+            <p><span id="location">modules/SQL_SCRIPTS/webChatServerWrite.sql</span></p> 
+            <p>&nbsp;</p>
+            <p>Copie a pasta: <em>/MuSite_ChatServer/</em> que se encontra junto com o site para o computador que roda o MuServer e salve em um lugar que você achar apropriado.</p>
+            <p>Deixe executando no servidor o arquivo <em>MuSite - ChatServer.exe</em> (Regular na aba Configurações os dados do Sql e outras preferencias).</p>
+            <p>OBS.: Para o <em>MuSite - ChatServer.exe</em> funcionar, é necessário ter instalado no computador o Microsoft NetFramework 3.5.</p>
+            <p>&nbsp;</p>
+            <p>Para fazer o seu <em>GameServer.exe</em> enviar os Chats para o <em>MuSite - ChatServer.exe</em>, no arquivo: <em>commonserver.cfg</em>, procure as linhas abaixo e deixe-as configuradas como abaixo (Caso não tenha essas linhas, crie-as):</p>
+            <p><pre id="phpMultipleLines">WriteSkillLog = 0; Gravar log de Skill [1=ativado, 0=desativado]
+WriteChatLog    = 1; Gravar log de Chat [1=ativado, 0=desativado]
+HackLogServer   = 127.0.0.1; Ip de Onde Serão Gravados os Logs </pre></p>
+            <p>Após configurar o <em>commonserver.cfg</em> como dito acima, reinicie o <em>GameServer.exe</em> e irá funcionar normalmente.</p>
+            <p>Atenção: Caso você tenha feito EXATAMENTE o que foi dito acima corretamente e não funcionou, é por que seu <em>GameServer.exe</em> não é compativel com essa funcionalidade.</p>
+            <hr />
+                                                                            
+            <p>Alterada a versão para 1.7.2. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0xF87A159F</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0xF87A159F</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset> 
+        <fieldset>                                                                                                                 
+            <legend>15/02/2011 - v1.7.1</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u15022011171');" />              
+            <div id="u15022011171" style="display: none;">                                                                   
+            <p>Fixado erro ao cadastrar / dar bonus. <span id="location">ldregister.class.php</span></p>
+            <hr /> 
+                                                                              
+            <p>Fixado debug no cronjob da página inicial. <span id="location">index.php</span></p>
+            <hr />
+                                                                               
+            <p>Alterada a versão para 1.7.1. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0x61734425</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0x61734425</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset>
+        <fieldset>                                                                                                                 
+            <legend>07/02/2011 - v1.7.0</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u07022011170');" />              
+            <div id="u07022011170" style="display: none;">                                                                   
+            <p>Atualizado o sistema de criptografia do IonCube para a versão mais recente. <span id="location">*.php</span></p>
+            <hr />                                                                                                      
+            <p>Colocado separadores no changelog para melhor leitura. <span id="location">changelog.html</span></p>
+            <hr />                                                                                                      
+            <p>Reformulada algumas linhas no settings.php para melhor entendimento. <span id="location">settings.php</span></p>
+            <hr />                                                                                                      
+            
+            <p>Adicionado o menu Ferramentas para o jogo no painel admin. <span id="location">paneladmin.tpl.php, paneladmin[*].tpl.php</span></p>
+            <hr />                                                                                                       
+            
+            <p>Adicionado no menu Ferramentas para o jogo a opção: Enviar mensagem global para todos online. <span id="location">paneladmin.tpl.php, paneladmin[GAME_MSG_ALL].tpl.php</span></p>
+            <hr />                                                                                                      
+            
+            <p>Adicionado no menu Ferramentas para o jogo a opção: Enviar mensagem para determinados logins online. <span id="location">paneladmin.tpl.php, paneladmin[GAME_MSG_SPECIFIC].tpl.php</span></p>
+            <hr />                                                                                                      
+            
+            <p>Adicionado no menu Ferramentas para o jogo a opção: Desconectar contas onlines. <span id="location">paneladmin.tpl.php, paneladmin[GAME_DISCONNECT].tpl.php</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">/*
+    @Configurações Painel / Administrador.
+    @Modulo: Ferramentas para o jogo.
+*/                                                                                                                                                                
+$PANELADMIN_MODULE['JOINSERVER']['IP'] = "127.0.0.1"; //IP do JoinServer do Servidor.                    
+$PANELADMIN_MODULE['JOINSERVER']['PORT'] = "55970"; //Porta do JoinServer do Servidor. </pre></p>
+            <hr />                                                                                                      
+            
+            <p>Fixado o erro no template Ja_sanidine_free que bugava os tamanhos no IE 8. <span id="location">templates\ja_sanidine_free\media\system\css\template.css</span></p>
+            <hr />                                                                                                      
+            
+            <p>Colocada a opção de ler o vip / cashs em outro banco de dados sem ser o definido na linha define('DATABASE', 'webSite');. <span id="location">setings.php, *.class.php</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas em VERDE:</p>
+            <p><pre id="phpMultipleLines">/*
+    @Configurações das tabelas do webSite.
+*/
+$TABLES_CONFIGS['WEBVIPS'] = array(<strong style="color: green;">"database" => "webSite", //webSite || MuOnline</strong>
+                                   "table" => "webVips", //webVips || MEMB_INFO
+                                   "columnUsername" => "username", //username || memb___id
+                                   "columnType" => "type", //type || vip
+                                   "columnDateBegin" => "dateBegin",
+                                   "columnDateEnd" => "dateEnd");
+                                   
+$TABLES_CONFIGS['WEBCASH'] = array(<strong style="color: green;">"database" => "webSite", //webSite || MuOnline</strong>
+                                   "table" => "webCash", //webCash || MEMB_INFO
+                                   "columnUsername" => "username", //username || memb___id
+                                   "columnAmount" => "amount", //amount || gold
+                                   "columnAmount2" => "amount2"); //amount2 || gold2 </pre></p>
+            <hr />
+            
+            <p>Colocada na opção de transferir resets o valor minimo aceito em cadas transferencia. <span id="location">ldpaneluser.class.php</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">/*
+    @Configurações Painel do Usuário.
+    @Modulo: Transferir resets
+*/                                                                                                                                                                
+$PANELUSER_MODULE['RESET_TRANSFER']['MIN_REQUIRE'] = 10; //Minimo de resets que podem ser transferidos. </pre></p>
+            <hr />
+            
+            <p>Fixado o bonus de cashs ao cadastrar usando uma tabela MEMB_INFO para armazenar os dados. <span id="location">ldregister.class.php</span></p>
+            <hr />                                                                                                      
+            
+            <p>Banir conta apenas com o nome do personagem (painel gm / adm). <span id="location">ldpaneladmin.class.php, paneladmin[MANAGER_BAN_ACCOUNT].tpl.php, panelgamemaster[MANAGER_BAN_ACCOUNT].tpl.php</span></p>
+            <hr />                                                                                                      
+            
+            <p>Fixado contagem do master reset usando a licença de demonstração. <span id="location">ldpaneluser.class.php</span></p>
+            <hr />                                                                                                      
+            
+            <p>Consertado erro de ortografia ao trocar de pid. <span id="location">ldpaneluser.class.php</span></p>
+            <hr />                                                                   
+            
+            <p>Adicionado mais uma verificação para checar e-mail válido no cadastro. <span id="location">ldjax.class.php, ldregister.class.php</span></p>
+            <hr />                                                                   
+            
+            <p>Adicionada opção no painel de usuário: Desconectar conta. <span id="location">ldpaneluser.class.php, paneluser.tpl.php, paneluser[GAME_DISCONNECT].tpl.php, paneluser[*].tpl.php</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">$PANELUSER_PREMISSIONS['GAME_DISCONNECT'] = array(/*Ligar*/ 1, /*Free*/ 1, /*Vip Silver*/ 1, /*Vip Gold*/ 1); //Desconectar conta  </pre></p>
+            <hr /> 
+                                                                              
+            <p>Adicionada função de include nos templates (Veja abaixo como usar). <span id="location">ldTpl.class.php</span></p>
+            <p><pre id="phpMultipleLines">Primeiro vou explicar a funcionalidade da função.
+Isso funciona como se fosse a função include() ou require() nativas do php.
+Caso você for um webmaster ou webdesign ao editar as paginas do site por exemplo ao editar o menu do painel de usuário para adicionar um menu, você teria que alterar todas as paneluser[*].tpl.php.
+Sendo isso um trabalho desgastante...
+Pensando nisso fiz uma pequena função para reconheçer no template os includes exclusivos do site.
+Exemplo em php: include("templates/ja_sanidine_free/header.tpl.php");
+Exemplo pelo template: {#INCLUDE:header}
+
+Somente isso..
+O site irá abrir automaticamente a header.tpl.php e colocar no lugar que estava a escrita {#INCLUDE:header}.</pre></p>
+            <hr />                                                                   
+            
+            <p>Adicionada opção no painel de usuário: Transferir Cash1 / Cash 2. <span id="location">ldpaneluser.class.php, paneluser.tpl.php, paneluser[TRANSFER_CASH].tpl.php, paneluser[*].tpl.php</span></p>
+            <p>Execute a query abaixo no query analyzer.</p>   
+            <p><pre id="phpMultipleLines">ALTER TABLE [dbo].[MEMB_INFO] ADD [resale] BIT DEFAULT 0 NOT NULL
+GO</pre></p>
+            <hr /> 
+                                                                               
+            <p>Adicionada opção no painel de administrador: Liberar / Travar conta para transferir Cash 1 / Cash 2. <span id="location">ldpaneladmin.class.php, paneladmin.tpl.php, paneladmin[MANAGER_ACCOUNTS_TRANSFER_CASH].tpl.php, paneladmin[*].tpl.php</span></p>
+            <hr /> 
+                                                                               
+            <p>Diferenciado pedidos de suporte que necessitam de resposta pela cor vermelha no painel admin. <span id="location">ldpaneladmin.class.php</span></p>
+            <hr /> 
+                                                                               
+            <p>Colocada a opção de limpar Quests / Skill ao mudar de classe. <span id="location">ldpaneluser.class.php</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">/*
+    @Configurações Painel do Usuário.
+    @Modulo: Alterar classe
+*/
+$PANELUSER_MODULE['CHANGE_CLASS']['RESET_QUESTS'] = true; //Resetar Quest ao trocar de classe
+$PANELUSER_MODULE['CHANGE_CLASS']['RESET_SKILLS'] = true; //Resetar Skills ao trocar de classe</pre></p>
+            <hr />  
+            
+            <p>Alterado o cronjob altura de 2500px com overflow de 250px. <span id="location">cronjob.class.php, index.php</span></p>
+            <hr />
+            
+            <p>Alterado o cronjob para mostrar debug de erros de querys. <span id="location">cronjob.class.php</span></p>
+            <hr />
+            
+            <p>Adicionado conversor de timestamp vip para inteiros. <span id="location">convertVipStampToInteger.txt, cronjob.class.php</span></p>
+            <p>Execute a query abaixo no query analyzer.</p>   
+            <p><pre id="phpMultipleLines">INSERT INTO [dbo].[webCronjob] ([scriptName],[lastExecution],[intervalExecution],[runTimes],[active]) VALUES ('convertVipStampToInteger',0,21600,0,1);</pre></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas em VERDE:</p>
+            <p><pre id="phpMultipleLines">/*
+    @Configurações das tabelas do webSite.
+*/
+$TABLES_CONFIGS['WEBVIPS'] = array("database" => "webSite", //webSite || MuOnline
+                                   "table" => "webVips", //webVips || MEMB_INFO
+                                   "columnUsername" => "username", //username || memb___id
+                                   "columnType" => "type", //type || vip
+                                   "columnDateBegin" => "dateBegin",
+                                   "columnDateEnd" => "dateEnd",
+                                   <strong style="color: green;">"columnDateEndInteger" => "dateEndInteger"</strong>); </pre></p>
+            <p>Execute a query analyzer a query abaixo no banco de dados onde o site foi instalado, caso a tabela onde fica seus vips não seja, webVips, altere o webVips em verde abaixo para o nome da tabela que fica o seus vips.</p>   
+            <p><pre id="phpMultipleLines">ALTER TABLE [dbo].[<strong style="color: green;">webVips</strong>] ADD [dateEndInteger] SMALLINT DEFAULT 0 NOT NULL
+GO</pre></p>
+            <hr />
+            
+            <p>Alterada a versão para 1.7.0. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0x167474B3</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0x167474B3</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset> 
+        <fieldset>                                                                                                                 
+            <legend>12/12/2010 - v1.6.2</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u12122010162');" />              
+            <div id="u12122010162" style="display: none;">                                                                   
+            <p>Fixado alterar nick para checar se o personagem possui guild antes de trocar de nick. <span id="location">ldpaneluser.class.php</span></p>
+            <hr />                                                                   
+            <p>Fixado erro ao remover cash pelo painel admin usando um banco de dados não padrão do site. <span id="location">ldpaneladmin.class.php</span></p>
+            <hr />                                                                   
+            <p>Fixado erro ao redistribuir pontos com a classe de Dark Lord ou Lord Emperor. <span id="location">ldpaneluser.class.php</span></p>
+            <hr />                                                                   
+            <p>Alterada a versão para 1.6.2. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0xF9B87FA8</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0xF9B87FA8</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset> 
+        <fieldset>                                                                                                                 
+            <legend>01/12/2010 - v1.6.1</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u01122010161');" />              
+            <div id="u01122010161" style="display: none;">                                                                   
+            <p>Fixado alterar classe para versão season 6 no painel admin. <span id="location">ldpaneladmin.class.php</span></p>
+            <hr />                                                                   
+            <p>Adaptado o baú virtual para a versão Season 6. <span id="location">ldItemDatabase.class.php</span></p>
+            <hr />                                                                   
+            <p>Alterada a versão para 1.6.1. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0x60B12E12</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0x60B12E12</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset>
+        <fieldset>                                                                                                                 
+            <legend>29/11/2010 - v1.6.0</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u29112010160');" />              
+            <div id="u29112010160" style="display: none;">                                                                   
+            <p>Fixado a data do alterar plano vip. <span id="location">ldpaneladmin.class.php</span></p>
+            <hr />                                                                   
+            <p>Adicionado suporte a nova versão Season 6. <span id="location">ldpaneladmin.class.php,ldpaneluser.class.php</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">$CLASS_CHARACTERS['CLASSCODES'] = array(/*IDENTIFICAÇÃO*/ /*CLASSCODE*/ /*CLASSNAME*/ 
+                                        "DW" => array(0, "Dark Wizard"),
+                                        "SM" => array(1, "Soul Master"),
+                                        "GM" => array(2, "Grand Master"),
+                                        "DK" => array(16, "Dark Knight"),
+                                        "BK" => array(17, "Blade Knight"),
+                                        "BM" => array(18, "Blade Master"),
+                                        "FE" => array(32, "Fairy Elf"),
+                                        "ME" => array(33, "Muse Elf"),
+                                        "HE" => array(34, "High Elf"),
+                                        "MG" => array(48, "Magic Gladiator"),
+                                        "DMM" => array(49, "Duel Master"), //Algumas season 4 usam 50
+                                        "DL" => array(64, "Dark Lord"),
+                                        "LE" => array(65, "Lord Emperor"), //Algumas season 4 usam 66
+                                        "SU" => array(80, "Summoner"),
+                                        "BS" => array(81, "Blood Summoner"),
+                                        "DMS" => array(82, "Dimension Master")<strong style="font-size: 15px;">,
+                                        "RF" => array(96, "Rage Fighter"),
+                                        "FM" => array(98, "Fist Master")</strong>
+                                        ); </pre></p>
+            <hr />
+            <p>Alterada a versão para 1.6.0. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0x8CF9F167</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0x8CF9F167</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset>
+        <fieldset>                                                                                                                 
+            <legend>07/10/2010 - v1.5.4</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u07102010154');" />              
+            <div id="u07102010154" style="display: none;">                                                                   
+            <p>Adaptado sistema de item para aceitar versões 99am. <span id="location">ldItemParse.class.php</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">$VIRTUAL_VAULT['SERIAL_INC_INDEX'] = false; // true para sim, false para não - Use essa opção para a versão 99MV desenvolvida pelo Alex, que coloca o prefixo F9 no serial para colocar um incremento de 32 no index do item assim podendo colocar mais de 31 itens por categoria na versão.</pre></p>
+            <hr />
+            <p>Alterada a versão para 1.5.4. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0x129D64C4</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0x129D64C4</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset>
+        <fieldset>                                                                                                                 
+            <legend>22/09/2010 - v1.5.3</legend>                                                                                     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u22092010153');" />              
+            <div id="u22092010153" style="display: none;">                                                                   
+            <p>Fixado no mostrar players onlines a coluna configuravel COLUMN_RESETS. <span id="location">ldonlines.class.php</span></p>
+            <hr />
+            <p>Alterada a versão para 1.5.3. <span id="location">index.php</span>
+            <pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0x8CF9F167</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0x8CF9F167</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>21/09/2010 - v1.5.2</legend>
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u21092010152');" />              
+            <div id="u21092010152" style="display: none;">                                                                              
+            <p>Adicionado controlador de updates no site. <span id="location">[index.php, ldversion.class.php]</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines" style="background: white;"><span style="color: #FF8000">/*
+&nbsp;&nbsp;&nbsp;&nbsp;@Configurações&nbsp;de&nbsp;updates&nbsp;(atualizações)
+&nbsp;&nbsp;&nbsp;&nbsp;@Essa&nbsp;configuração&nbsp;tem&nbsp;o&nbsp;objetivo&nbsp;de&nbsp;evitar&nbsp;que&nbsp;você&nbsp;atualize&nbsp;o&nbsp;site&nbsp;sem&nbsp;ler&nbsp;o&nbsp;changelog.html&nbsp;da&nbsp;nova&nbsp;versão
+&nbsp;&nbsp;&nbsp;&nbsp;@Evitando&nbsp;assim&nbsp;que&nbsp;você&nbsp;esqueça&nbsp;de&nbsp;fazer&nbsp;algum&nbsp;tipo&nbsp;de&nbsp;configuração&nbsp;para&nbsp;que&nbsp;a&nbsp;nova&nbsp;versão&nbsp;do&nbsp;site&nbsp;funcione&nbsp;corretamente.
+&nbsp;&nbsp;&nbsp;&nbsp;@Para&nbsp;pegar&nbsp;o&nbsp;valor&nbsp;do&nbsp;updateKeyChangelog,&nbsp;leia&nbsp;o&nbsp;changelog&nbsp;e&nbsp;pegue&nbsp;o&nbsp;numero&nbsp;do&nbsp;update&nbsp;correspondente&nbsp;ao&nbsp;que&nbsp;você&nbsp;está&nbsp;usando.
+*/
+<br /></span><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB">0xFBFEC1F1</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></pre></p>
+            <hr />                                                                                                     
+            <p>Fixado erro no leitor do item.txt para aceitar versões 99am. <span id="location">[ldItemDatabase.class.php]</span></p>
+            <hr />                                                                                                     
+            <p>Adicionada opção de gerenciar segunda moeda do site no painel admin com gravação de logs. </p>
+            <p>Alterações nas classes:<br />
+            <span id="location">ldpaneladmin.class.php</span></p>
+            <hr />
+            <p>Alterações no template ja_sanidine_free:<br />
+            <span id="location">paneladmin[ADD_CASH].tpl.php, paneladmin[REMOVE_CASH].tpl.php</span></p>
+            <hr />
+            <p>Alterações no template refresh:<br />                                                                                                            
+            <span id="location">paneladmin[ADD_CASH].tpl.php, paneladmin[REMOVE_CASH].tpl.php</span></p>
+            <hr />
+            <p>Alterações no template darkstyle:<br />                                                                    
+            <span id="location">paneladmin[ADD_CASH].tpl.php, paneladmin[REMOVE_CASH].tpl.php</span></p>
+            <hr />
+            <p><pre id="phpMultipleLines" style="background: white;">Altere no settings.php a chave de update para: <span style="color: #0000BB; font-weight: bold;">0xFBFEC1F1</span>
+Exemplo de como irá ficar: <em><span style="color: #0000BB">define</span><span style="color: #007700">(</span><span style="color: #DD0000">"updateKeyChangelog"</span><span style="color: #007700">,&nbsp;</span><span style="color: #0000BB; font-weight: bold;">0xFBFEC1F1</span><span style="color: #007700">);&nbsp;</span><span style="color: #FF8000">//Veja&nbsp;a&nbsp;Chave&nbsp;de&nbsp;atualização&nbsp;no&nbsp;Changelog.html&nbsp;que&nbsp;acompanha&nbsp;o&nbsp;site.</span></em></pre></p>
+            <hr />
+            </div>
+        </fieldset>
+        <fieldset>                                          
+            <legend>15/09/2010 - v1.5.1</legend>     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u15092010151');" />              
+            <div id="u15092010151" style="display: none;">                                                                          
+            <p>Fixado erro no leitor do item.txt para aceitar versões 97d. <span id="location">[ldItemDatabase.class.php]</span></p>
+            <hr />                                                                                                     
+            <p>Adicionado pequeno debug para mostrar onde esta o erro no item.txt. <span id="location">[ldItemDatabase.class.php]</span></p>
+            <hr />                                                                              
+            <p>Usando a licença demo você pode enviar até 20 itens para o baú virtual. <span id="location">[ldpaneluser.class.php]</span></p>
+            <hr />
+            </div>
+        </fieldset>
+        <fieldset>                                         
+            <legend>12/09/2010 - v1.5.0</legend>     
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u12092010150');" />              
+            <div id="u12092010150" style="display: none;">                                                                         
+            <p>Adicionada segunda moeda no site. <span id="location">[ldpaneluser.class.php, paneluser.tpl.php, ldgeneral.class.php]</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">define('CASH_NAME2', 'Golds'); //Nome da moeda segunda moeda</pre></p>
+            <p>Alterar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">$TABLES_CONFIGS['WEBCASH'] = array("table" => "webCash", //webCash || MEMB_INFO
+                                  "columnUsername" => "username", //username || memb___id
+                                  "columnAmount" => "amount"); //amount || gold
+                                  
+                                  <strong>PARA:</strong>
+                                  
+$TABLES_CONFIGS['WEBCASH'] = array("table" => "webCash", //webCash || MEMB_INFO
+                                  "columnUsername" => "username", //username || memb___id
+                                  "columnAmount" => "amount"<strong>, //amount || gold
+                                  "columnAmount2" => "amount2"); //amount2 || gold2</strong>  </pre></p>
+            <p>Execute a query abaixo no query analyzer no banco de dados do site.</p>   
+            <p><pre id="phpMultipleLines">ALTER TABLE [dbo].[webCash] ADD [amount2] INT DEFAULT 0 NOT NULL</pre></p>
+            <hr />
+            <p>Adicioada funcionalidade para dar Cash no cadastro. <span id="location">[ldregister.class.php]</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">$REGISTER_SETTINGS['BONUS_CASH']['AMOUNT'] = 0; //Valor padrão que o player recebe da moeda 1 do site.
+$REGISTER_SETTINGS['BONUS_CASH']['AMOUNT2'] = 0; //Valor padrão que o player recebe da moeda 2 do site.</pre></p>
+            <hr />
+            </div>
+        </fieldset>
+        <fieldset>                                         
+            <legend>09/09/2010 - v1.5.0</legend>         
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u09092010150');" />              
+            <div id="u09092010150" style="display: none;">                                                                     
+            <p>Adicionado bau virtual. </p>
+            <p>Alterações nas classes:<br />
+            <span id="location">ldpaneluser.class.php, ldItemClass/*</span></p>
+            <hr />
+            <p>Alterações no template ja_sanidine_free:<br />
+            <span id="location">paneluser[VIRTUAL_VAULT].tpl.php, *.tpl.php, templates\ja_sanidine_free\media\system\css\template.css, templates\ja_sanidine_free\media\system\js\jquery-1.4.2.js</span></p>
+            <hr />
+            <p>Alterações no template refresh:<br />
+            <span id="location">paneluser[VIRTUAL_VAULT].tpl.php, *.tpl.php, templates\refresh\images\Refresh.css, templates\refresh\jquery-1.4.2.js</span></p>
+            <hr />
+            <p>Alterações no template darkstyle:<br />
+            <span id="location">paneluser[VIRTUAL_VAULT].tpl.php, *.tpl.php, templates\darkstyle\css\style.css</span></p>
+            <hr />
+            <p>Fixado tratamento do DarkLord na função de redistribuir pontos. <span id="location">[ldpaneluser.class.php]</span></p>
+            <hr />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>03/09/2010 - v1.4.3</legend> 
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u03092010143');" />              
+            <div id="u03092010143" style="display: none;">                                                                              
+            <p>Alterado para mostrar o ultimo personagem conectado invés do login nas screenshots <span id="location">[screenshots.module.php]</span></p>
+            <hr />                                                                            
+            <p>Colocada trava de IP para votar nas screenshots. <span id="location">[screenshots.module.php, clearIpsTimeLimitScreenshot.txt, cronjob.class.php]</span></p>
+            <p>Execute a query do arquivo abaixo no query analyzer.</p>   
+            <p><span id="location">modules/SQL_SCRIPTS/webScreenshotsIps.sql</span></p> 
+            <p>Execute a query abaixo no query analyzer.</p>   
+            <p><pre id="phpMultipleLines">ALTER TABLE [dbo].[webCronjob] DROP COLUMN [idTask] 
+GO
+ALTER TABLE [dbo].[webCronjob] ADD [idTask] SMALLINT IDENTITY(1,1) NOT NULL
+GO
+ALTER TABLE [dbo].[webCronjob] WITH NOCHECK ADD 
+    CONSTRAINT [PK_webConjob] PRIMARY KEY  CLUSTERED 
+    (
+        [scriptName]
+    )  ON [PRIMARY] 
+GO
+INSERT INTO [dbo].[webCronjob] ([scriptName],[lastExecution],[intervalExecution],[runTimes],[active]) VALUES ('clearIpsTimeLimitScreenshot', 0, 60, 0, 1)
+GO</pre></p> 
+            <hr />
+            <p>Colocada trava para não flodarem os comentários das noticias. <span id="location">[ldajax.class.php]</span></p>
+            <hr />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>25/08/2010 - v1.4.2</legend>   
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u25082010142');" />              
+            <div id="u25082010142" style="display: none;">                                                                            
+            <p>Fixado o estouro caracters no mudar nome (bug realizado no FireBug). <span id="location">[ldpaneluser.class.php]</span></p>
+            <hr />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>19/08/2010 - v1.4.1</legend> 
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u19082010141');" />              
+            <div id="u19082010141" style="display: none;">                                                                              
+            <p>Adicionada novas funções na interface de modulo. <span id="location">[ldmodules.class.php]</span></p>
+            <hr />                                                                              
+            <p>Fixado a função de checarlogin no modulo de screenshot e no modulo de exemplo. <span id="location">[sample.module.php, screenshots.module.php]</span></p>
+            <hr />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>17/08/2010 - v1.4.0</legend>  
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u17082010140');" />              
+            <div id="u17082010140" style="display: none;">                                                                             
+            <p>Adicionado sistema de modulos. <span id="location">[index.php, ldmodules.class.php, /modules/classes/modules/]</span></p>
+            <p>Modulo base para desenvolvimento: <span id="location">/modules/classes/modules/sample.module.php</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">/*
+    @Configurações de modulos.
+*/                                                                                                                                                                
+$MODULES['REGISTER'] = array();</pre></p>
+            <hr />                                                                              
+            <p>Desenvolvido sistema de Screenshot para ensinar a usar o sistema de modulos. (Módulo não encriptado). <span id="location">[screenshots.module.php, index.tpl.php, screenshot.tpl.php, settings.php, dlimage.class.php, paneluser[SCREENSHOT].tpl.php]</span></p>
+            <p>Alterar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">$MODULES['REGISTER'] = array();
+Para: 
+$MODULES['REGISTER'] = array("screenshots");</pre></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">/*
+    @Screenshot module
+*/
+$PANELUSER_PREMISSIONS['SCREENSHOT'] = array(/*Ligar*/ 1); //Gerenciar Screenshots - Painel usuário
+$SCREENSHOTS['MAX_WIDTH'] = 640; //Tamanho máximo da foto normal ao ser enviada...
+$SCREENSHOTS['HOME'] = true; //Exibir top screens na home
+$SCREENSHOTS['TOP_HOME'] = 5; //Exibir até X screens na home</pre></p>
+            <p>Execute a query do arquivo abaixo no query analyzer.</p>   
+            <p><span id="location">modules/SQL_SCRIPTS/webScreenshots.sql</span></p> 
+            <hr />                                                                              
+            <p>Fixado erro de variavel no javascript do template ja_sanidine_free. <span id="location">[paineluser[*].tpl.php]</span></p>
+            <hr />
+            <p>Adicionado na pagina inicial do template DarkStyle o ranking de top guils. <span id="location">[index.tpl.php]</span></p>
+            <hr />
+            <p>Fixado erro de barra de rolagem horizontal na pagina pricipal do template ja_sanidine_free. <span id="location">[index.tpl.php]</span></p>
+            <hr />
+            <p>Fixado erro do redistribuir pontos no template darkstyle. <span id="location">[functions.js]</span></p>
+            <hr />
+            <p>Chars com CTLCODE NULL agora aparecem no ranking. <span id="location">[gerateCharacterRanking*.txt]</span></p>
+            <hr />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>16/08/2010 - v1.3.6</legend>
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u16082010136');" />              
+            <div id="u16082010136" style="display: none;">                                                                               
+            <p>Fixado erro de alterar email. <span id="location">[ldpaneluser.class.php]</span></p>
+            <hr />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>02/08/2010 - v1.3.5</legend> 
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u02082010135');" />              
+            <div id="u02082010135" style="display: none;">                                                                              
+            <p>Regulado checagem de loopback apenas para o servidor selecionado. <span id="location">[index.php]</span></p>
+            <hr />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>27/07/2010 - v1.3.4</legend>  
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u27072010134');" />              
+            <div id="u27072010134" style="display: none;">                                                                             
+            <p>Sistema de licenças usando cache de 1 hora. (Necessária permissão de escrita na pasta /licenses/) <span id="location">[index.php]</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">define("autenticationCache", true); // Guarda a chave de segurança em cache para não fazer requisições a cada pagina acessada. </pre></p>
+            <hr />
+            <p>Comentada as linhas no settings.php com as descrições de cada uma. <span id="location">[settings.php]</span></p>
+            <hr />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>26/07/2010 - v.1.3.3</legend>   
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u26072010133');" />              
+            <div id="u26072010133" style="display: none;">                                                                            
+            <p>Alterado sistema de licenças, agora compativel sem o allow_url_fopen ligado pois usa a biblioteca CURL caso esteja indisponivel a allow_url_fopen. <span id="location">[index.php]</span></p>  
+            <hr /> 
+            </div>                
+        </fieldset>
+        <fieldset>
+            <legend>07/06/2010 - v.1.3.2</legend> 
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u07062010132');" />              
+            <div id="u07062010132" style="display: none;">                                                                             
+            <p>Alterado tempo de limite da autenticação para 2 horas. <span id="location">[index.php]</span></p>  
+            <hr />
+            </div>                 
+        </fieldset>
+        <fieldset>
+            <legend>11/05/2010</legend>   
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u11052010');" />              
+            <div id="u11052010" style="display: none;">                                                                            
+            <p>Adicionado no cronjob funcionalidade de auto-destravar depois de 10 minutos. <span id="location">[cronjob.class.php]</span></p>  
+            <p>Adicionado no cronjob debug de comandos mssql. <span id="location">[cronjob.class.php]</span></p>  
+            <p>Execute a query do arquivo abaixo no query analyzer.</p>   
+            <p><span id="location">modules/SQL_SCRIPTS/webCronjobConfig.sql</span></p> 
+            <hr />                          
+            <p>Opção para desligar busca de informações basicas no sql. <span id="location">[ldgeneral.class.php]</span></p>   
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">define('DISABLE_BASIC_INFOS', false); //Desligar a busca de: Total de contas, personagens, vips, contas e personagens banidos</pre></p>
+            <hr />                                     
+            <p>Adicionado o novo template free DarkStyle by Denis Lins.</p>   
+            <hr /> 
+            </div>                 
+        </fieldset>
+        <fieldset>
+            <legend>10/05/2010</legend>    
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u10052010');" />              
+            <div id="u10052010" style="display: none;">                                                                           
+            <p>Refeito sistema de desenhar logomarca de guilds. Redução do processador para 0% de uso. <span id="location">[logoGuildDecode.php]</span></p>  
+            <hr />                                                                              
+            <p>Consertada conexão do mssql na ultimas do forum. <span id="location">[ldhome.class.php]</span></p>  
+            <hr />                                                                             
+            <p>Fixado os acentos nas ultimas do forum. <span id="location">[ldhome.class.php]</span></p>  
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">$FORUM_CONFIGS['UTF8_DECODE'] = false;    // Deixe como true caso os acetos estejam bugando.</pre></p>
+            <hr /> 
+            </div>                          
+        </fieldset>
+        <fieldset>
+            <legend>26/04/2010</legend> 
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u26042010');" />              
+            <div id="u26042010" style="display: none;">                                                                              
+            <p>Consertado o tamanho das imagens nos comentarios das noticias. <span id="location">[ldajax.class.php]</span></p>  
+            <hr />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>25/04/2010</legend> 
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u25042010');" />              
+            <div id="u25042010" style="display: none;">                                                                              
+            <p>Consertado log de ações no painel de game masters. <span id="location">[ldpaneladmin.class.php]</span></p>  
+            <hr />                                         
+            <p>Consertado os acentos nos comentários das noticias. <span id="location">[ldajax.class.php]</span></p>  
+            <hr />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>22/04/2010</legend> 
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u22042010');" />              
+            <div id="u22042010" style="display: none;">                                                                              
+            <p>Banner do castle siege. <span id="location">[ldhome.class.php, index.tpl.php]</span></p>  
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">/*
+    @Configurações do evento do castle siege.                                                                               
+*/
+$CASTLE_SIEGE['ENABLE'] = TRUE; //Liga o banner do evento do castle siege na pagina pricipal do site
+$CASTLE_SIEGE['CONFRONTATION'] = "Sábado as 15:00h"; //Data da batalha do castle siege</pre></p> 
+            <hr />                                         
+            <p>Log de todas as ações do painel admin. <span id="location">[ldpaneladmin.class.php]</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">/*
+    @Configurações Painel do Game Master / Administrador.
+    @Modulo: Gravação de logs das ações executadas no painel.
+*/                                                                                                                                                                
+$PANELADMIN_MODULE['LOG']['Active'] = true; //Ativa os logs do painel.                    
+$PANELADMIN_MODULE['LOG']['DirLog'] = "logs"; //Pasta para gravação dos logs, a pasta deve ficar na raiz do site (OBS: Coloque uma pasta que ninguem saiba e essa pasta deve conter permissão de escrita.).</pre></p>
+            <hr />                                         
+            <p>Sistema de serial compativel com datas de vencimento e limitações. <span id="location">[ldpaneladmin.class.php, ldpaneluser.class.php, index.php]</span></p>
+            <hr />                                         
+            <p>Corrigido menu duplo do master reset no template ja_sanidine. <span id="location">[paneluser[MASTER_RESET].tpl.php]</span></p>
+            <hr />                                         
+            <p>Corrigido problema do refresh pegar a foto do siege do ja_sanidine. <span id="location">[index.tpl.php]</span></p>
+            <hr />                                         
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>21/04/2010</legend> 
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u21042010');" />              
+            <div id="u21042010" style="display: none;">                                                                              
+            <p>Corrigido erro na opção de que mostra se o char é pk. <span id="location">[ldpaneluser.class.php]</span></p>  
+            <hr />                                                              
+            <p>Comentários nas noticias do site. <span id="location">[ldpaneladmin.class.php, ldajax.class.php, readNotice.tpl.php, ldhome.class.php]</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">/*
+    @Configurações das noticias.                                                                               
+*/
+$NOTICES['LAST'] = 10; //Mostrar as X ultimas noticias na pagina inicial do site
+$NOTICES['COMMENTS'] = TRUE; //Liga / Desliga a opção de comentários nas noticias</pre></p>
+            <p>Execute a query do arquivo abaixo no query analyzer.</p>   
+            <p><span id="location">modules/SQL_SCRIPTS/webNoticesComments.sql</span></p>  
+            <hr /> 
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>20/04/2010</legend>
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u20042010');" />              
+            <div id="u20042010" style="display: none;">                                                                               
+            <p>Corrigido erro ao dar bonus do master reset. <span id="location">[ldpaneluser.class.php]</span></p>  
+            <hr />                                                                              
+            <p>Configurar nomes dos planos vip. <span id="location">[settings.php, ldgeneral.class.php, ldonlines.class.php, ldranking.class.php, ldpaneladmin.class.php, ldpaneluser.class.php, ldregister.class.php]</span></p>  
+            <p>Trocado em todas as paginas do template os texto: Free para {#VIP_NAME_0}, Vip Silver para {#VIP_NAME_1} e Vip Gold para {#VIP_NAME_2}. <span id="location">[*.tpl.php]</span></p>  
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">$PANELUSER_MODULE['BUY_VIPS']['NAME_FLATS'] = array(/*0*/ "Free", /*1*/ "Vip Silver", /*2*/ "Vip Gold"); //Nome dos planos do servidor</pre></p>  
+            <hr />                                                                              
+            <p>Corrigido erro de ortografia no template ja_sanidine_free. <span id="location">[paineladmin[*].tpl.php]</span></p>  
+            <hr />                                                                              
+            <p>SMTP compativel com Gmail / Yahoo mail / Outros. <span id="location">[ldrecovery.class.php, ldpaneluser.class.php, phpmailer.class.php]</span></p>  
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">$Config_SMTP['Port']         = 25;   //Porta do servidor SMTP</pre></p>  
+            <p><pre id="phpMultipleLines">    @Exemplo de como usar o SMTP de hospedagens normais:
+        $Config_SMTP['Server']      = "smtp.mudkt.com.br";    //Servidor SMTP
+        $Config_SMTP['Port']        = 25;   //Porta do servidor SMTP
+        $Config_SMTP['User']        = "daldegam@mudkt.com.br";  //Usuário Servidor
+        $Config_SMTP['Password']    = "***"; //Senha Servidor
+        $Config_SMTP['Debug']       = false; //Debug (Apenas para usuários avançados)
+        $Config_SMTP['From']        = "daldegam@mudkt.com.br";  //Remetente dos emails                               
+
+    @Exemplo de como usar o SMTP do Gmail da Google: (Para Gmail a extension=php_openssl.dll deve estar habilitada)
+        $Config_SMTP['Server']      = "ssl://smtp.gmail.com";    //Servidor SMTP
+        $Config_SMTP['Port']        = 465;   //Porta do servidor SMTP
+        $Config_SMTP['User']        = "daldegam@gmail.com";  //Usuário Servidor
+        $Config_SMTP['Password']    = "***"; //Senha Servidor
+        $Config_SMTP['Debug']       = false; //Debug (Apenas para usuários avançados)
+        $Config_SMTP['From']        = "daldegam@gmail.com";  //Remetente dos emails  
+        
+    @Exemplo de como usar o SMTP do Yahoo Mail: 
+        $Config_SMTP['Server']      = "smtp.mail.yahoo.com.br";    //Servidor SMTP
+        $Config_SMTP['Port']        = 25;   //Porta do servidor SMTP
+        $Config_SMTP['User']        = "daldegam@yahoo.com.br";  //Usuário Servidor
+        $Config_SMTP['Password']    = "***"; //Senha Servidor
+        $Config_SMTP['Debug']       = false; //Debug (Apenas para usuários avançados)
+        $Config_SMTP['From']        = "daldegam@yahoo.com.br";  //Remetente dos emails</pre></p>  
+            <hr />
+            <p>Sistema de ultimas do forum. Suporte aos foruns: IPB, vBulletin, phpBB. <span id="location">[ldhome.class.php, index.tpl.php]</span></p>                                                                              
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">/*
+    @Configurações das últimas do forum.                                                                               
+*/                                                                                                                                                                
+$FORUM_CONFIGS['ENABLE'] = TRUE; // Ligar / Desligar as ultimas do forum
+$FORUM_CONFIGS['TYPE'] = 0; // 0 = vBulletin, 1 = IPB, 2 = phpBB
+$FORUM_CONFIGS['LAST_TOPICS'] = 10; // Ultimos X tópicos.
+$FORUM_CONFIGS['NUMBER_FORUM'] = 2; // Número do forum onde serão puxados os tópicos.
+$FORUM_CONFIGS['LINKS_TOPICS'] = "http://www.forum.mudkt.com.br/showthread.php?t=%d";    // Link base dos tópicos.
+$FORUM_CONFIGS['LINK_FORUM'] = "http://www.forum.mudkt.com.br/";    // Link do forum.
+
+$FORUM_CONFIGS['DATABASE']['TYPE'] = 0;    // 0 = MYSQL, 1 = MSSQL.
+$FORUM_CONFIGS['DATABASE']['HOST'] = "127.0.0.1";    // Host onde será feita a conexão do forum.
+$FORUM_CONFIGS['DATABASE']['USERNAME'] = "usuario";    // Nome do usuário.
+$FORUM_CONFIGS['DATABASE']['PASSWORD'] = "senha";    // Senha do usuário.
+$FORUM_CONFIGS['DATABASE']['DB_NAME'] = "bancodedados";    // Nome do banco de dados.
+$FORUM_CONFIGS['DATABASE']['TABLE_PREFIX'] = "";    // Prefixo no nome das tabelas.</pre></p>  
+            <hr />
+            <p>Adicionado o campo motivo para banimento no painel de gamemaster. <span id="location">[panelgamemaster[MANAGER_BAN_ACCOUNT].tpl.php, panelgamemaster[MANAGER_BAN_CHARACTER].tpl.php]</span></p>                                                                              
+            <hr />                                          
+            <p>Sistema de busca de guilds e personagens. <span id="location">[rankings.tpl.php]</span></p> 
+            <hr />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>11/04/2010</legend> 
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u11042010');" />              
+            <div id="u11042010" style="display: none;">                                                                              
+            <p>Corrigido erro ao selecionar personagens com nicks especiais no painel. <span id="location">[ldpaneluser.class.php]</span></p>  
+            <hr />                                                                              
+            <p>Corrigido erro no javascript do distribuir pontos (DL / LE com classes diferentes não subtraiam os pontos). <span id="location">[ldpaneluser.class.php]</span></p>  
+            <hr />                                                                              
+            <p>Nova opção de adicionar o bonus do Master Reset em outra coluna no sql. <span id="location">[ldpaneluser.class.php]</span></p>  
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">$PANELUSER_MODULE['MASTER_RESET']['Bonus']['Columns'] = array("table" => "webCash", "columnUsername" => "username", "columnAmount" => "amount"); //Onde sera creditado o bonus do master reset.</pre></p>  
+            <hr />
+        <p>Sistema de autoupdate com diretório separado para versões 1.3 ou acima. <span id="location">[ldpaneladmin.class.php]</span></p>  
+            <hr /> 
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>08/04/2010</legend> 
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u08042010');" />              
+            <div id="u08042010" style="display: none;">                                                                              
+            <p>Sistema de licenças re-escrito. <span id="location">[/licenses]</span></p>  
+        <p><pre id="phpMultipleLines">/*
+    @Configurações do serial
+*/
+define("countryPreference", 0x01); // Para Brasil 0x01, Estados Unidos da América 0x02</pre></p>  
+            <hr />                                                                              
+            <p>Ocultadas as mensagens caso a conexão com o connectserver falhe. <span id="location">[ldcs.class.php]</span></p>  
+            <hr />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>07/04/2010</legend> 
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u07042010');" />              
+            <div id="u07042010" style="display: none;">                                                                              
+            <p>Regular colunas dos rankings semanais / mensais / pk. <span id="location">[ldpaneluser.class.php, settings.php]</span></p>  
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">define('COLUMN_RESETS_WEEK','resetsWeek');   //Coluna onde ficam armarzenados os Resets semanais na character
+define('COLUMN_RESETS_MONTH','resetsMonth');   //Coluna onde ficam armarzenados os Resets mensais na character
+define('COLUMN_PK_RANKING','PkCountWeb');   //Coluna onde ficam armarzenados a contagem de PK na character</pre></p> 
+            <hr />                                                        
+            <p>Regular se pode ou não cadastrar com um unico email mais de uma vez. <span id="location">[ldregister.class.php, settings.php]</span></p>  
+            <p>Adicionar no <span id="location">settings.php</span> a linha:</p>
+            <p><pre id="phpMultipleLines">$REGISTER_SETTINGS['EMAIL_REPEAT'] = false; //Pode cadastrar com o mesmo email duas vezes.</pre></p> 
+            <hr />                                                           
+            <p>Limitar número de tickets que um player pode ter em aberto. (Evitar floods). <span id="location">[ldpaneluser.class.php, settings.php]</span></p>  
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">/*
+    @Configurações Painel do Usuário.
+    @Modulo: Abrir ticket
+*/                                                                                                                                                                
+$PANELUSER_MODULE['OPEN_TICKET']['MAX_OPEN'] = 1; //Máximo de tickets que um player pode possuir em aberto. </pre></p> 
+            <hr />                                                        
+            <p>Corrigido numero da classe das elfs para nascer na cidade certa ao resetar / master reset. <span id="location">[ldpaneluser.class.php]</span></p>
+            <hr />                                                        
+            <p>Master reset cobrando X pontos ou X resets ou até mesmo ambos. <span id="location">[ldpaneluser.class.php, settings.php]</span></p>              
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">$PANELUSER_MODULE['MASTER_RESET']['PointsRequire'] = array("Strength" => 32000, "Dexterity" => 32000, "Vitality" => 32000, "Energy" => 32000, "Leadership" => 32000); //Requer X reset para dar o master reset.        
+$PANELUSER_MODULE['MASTER_RESET']['PointsAfter'] = array("Strength" => 32, "Dexterity" => 32, "Vitality" => 32, "Energy" => 32, "Leadership" => 32); //Após master resetado irá ficar com os status.</pre></p>  
+            <hr />                                                        
+            <p>Corrigida função de deletar conta para apagar registros do site. <span id="location">[ldpaneladmin.class.php]</span></p>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>17/1/2010</legend>
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u17012010');" />              
+            <div id="u17012010" style="display: none;">                                                                               
+            <p>Alterada a altura do cronjob para evitar overflows. <span id="location">[conjob.class.php]</span></p>
+            <p>Alteração do CronJob para tarefas variadas executando comandos phps escritos em txts. <span id="location">[conjob.class.php],[modules/classes/cronjobTasks/*.txt]</span></p>
+            <p>Execute a query abaixo no query analyzer no banco de dados do site.</p>   
+            <p><pre id="phpMultipleLines">DROP TABLE webCronjob</pre></p>   
+            <hr />                                                                              
+            <p>Colocar o sistema de ranking com buffer para não pesar o sql ao carregar a pagina inicial / rankings. <span id="location">[ldrankings.class.php],[ldhome.class.php]</span><br />
+            <em>Reduzido em 22% para 3% o gasto de CPU do sqlserver na hora de abrir o site comparando com o sistema antigo (db com 60 mil contas / 93 mil chars).</em></p>                                         
+            <p>Execute a query dos arquivos abaixo no query analyzer.</p>   
+            <p><span id="location">modules/SQL_SCRIPTS/webCronjobConfig.sql</span></p>  
+            <p><span id="location">modules/SQL_SCRIPTS/webRankingCharactersLevel.sql</span></p>             
+            <p><span id="location">modules/SQL_SCRIPTS/webRankingCharactersMasterReset.sql</span></p>             
+            <p><span id="location">modules/SQL_SCRIPTS/webRankingCharactersPk.sql</span></p>             
+            <p><span id="location">modules/SQL_SCRIPTS/webRankingCharactersResets.sql</span></p>             
+            <p><span id="location">modules/SQL_SCRIPTS/webRankingCharactersResetsMonth.sql</span></p>             
+            <p><span id="location">modules/SQL_SCRIPTS/webRankingCharactersResetsWeek.sql</span></p>             
+            </div> 
+        </fieldset>
+        <fieldset>
+            <legend>16/1/2010</legend>  
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u16012010');" />              
+            <div id="u16012010" style="display: none;">                                                                    
+            <p>Changelog.txt reescrito em HTML para melhor entendimento.</p> 
+            <hr />                                        
+            <p>Consertado o erro de português: Prontos para Pontos nos tops guild. <span id="location">[ldhome.class.php]</span></p>
+            <hr />                                                                                 
+            <p>Alterado todos os arquivos que usam Zend Guard para IonCube.</p>
+            <hr />                                                                                 
+            <p>Adicionado tempo de intervalo para envio de emails por login. <span id="location">[ldrecovery.class.php],[cronjob.class.php]</span></p>                                         
+            <p>Adicione no <span id="location">[settings.php]</span> a linha:</p>                                         
+            <p><span id="php">$Config_SMTP['LimitTime']   = 1;    //Tempo em minutos entre cada requisição para envio de emails por login.</span></p>                                         
+            <p>Execute a query do arquivo: <span id="location">modules/SQL_SCRIPTS/webSendEmailLimit.sql</span> no query analyzer.</p>   
+            <hr />                                                                              
+            <p>Adicionado página para mostrar players banidos (contas / personagens). <span id="location">[ldbanned.class.php],[banned.tpl.php],[*.tpl.php],[paneladmin[MANAGER_BAN_CHARACTER].tpl.php],[paneladmin[MANAGER_BAN_ACCOUNT].tpl.php],[index.php],[ldpaneladmin.class.php]</span></p>
+            <p>Executar no query analyzer no banco de dados que o webSite está instalado:</p>
+            <p><pre id="phpMultipleLines">ALTER TABLE dbo.[webBanneds] ADD description varchar(50) NULL 
+GO            
+ALTER TABLE dbo.[webBanneds] ADD bannedBy varchar(10) NULL
+GO</pre></p> 
+            <hr />                                                                              
+            <p>Adicionado sistema de Enquetes (vota só logado ou não <span id="location">[settings.php]</span>). <span id="location">[*.tpl.php],[ldgeneral.class.php],[ldajax.class.php],[ldpaneladmin.class.php],[paneladmin[*].tpl.php],[conjob.class.php]</span></p>
+            <p>Adicionar no <span id="location">settings.php</span> as linhas:</p>
+            <p><pre id="phpMultipleLines">/*
+    @Configurações do sistema de enquetes.                                                                               
+*/                                                                                                                                                                
+$POLL['LOGIN'] = true; //Para votar deve estar logado? true = sim, false = nao.
+$POLL['HANG_WITH'] = array("type" => 3, //0 = liberar votos sem travas, 1 = travar por ip, 2 = travar por cookie, 3 = travar por IP / cookie
+                           "time" => 1); // Tempo em minutos para votar novamente.</pre></p>
+            <p>Execute a query dos arquivos abaixo no query analyzer.</p>   
+            <p><span id="location">modules/SQL_SCRIPTS/webPollQuestions.sql</span></p>   
+            <p><span id="location">modules/SQL_SCRIPTS/webPollAnswers.sql</span></p>   
+            <p><span id="location">modules/SQL_SCRIPTS/webPollIps.sql</span></p>
+            </div>   
+        </fieldset>
+        <fieldset>
+            <legend>22/12/2009</legend>
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u22122009');" />              
+            <div id="u22122009" style="display: none;">                                                                      
+            <p>Corrigido o type do ranking de guilds. <span id="location">[ldrankings.class.php]</span></p>  
+            </div>                                       
+        </fieldset>
+        <fieldset>
+            <legend>15/12/2009</legend> 
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u15122009');" />              
+            <div id="u15122009" style="display: none;">                                                                     
+            <p>Adicionado sistema de fotos. <span id="location">[modules/classes/ldpaneluser.class.php],[modules/classes/ldvips.class.php],[modules/classes/ldhome.class.php],[modules/classes/ldrankings.class.php],[modules/classes/logoGuildDecode.php],[modules/uploads/photos/nophoto.jpg],[refresh/index.tpl.php],[refresh/paneluser[*].tpl.php]</span></p>
+            <p>Execute no <span id="location">query analyzer</span> a query abaixo:</p>
+            <p><span id="php">ALTER TABLE dbo.[Character] ADD image varchar(50) NULL</span></p>
+            <p><span id="location">settings.php</span>, adicione a seguinte linha abaixo:</p>
+            <p><span id="php">$PANELUSER_PREMISSIONS['MANAGER_PHOTO'] = array(/*Ligar*/ 1, /*Free*/ 1, /*Vip Silver*/ 1, /*Vip Gold*/ 1);</span></p>
+            <p>Adicionado a funcionalidade de alterar a data do vip / plano. <span id="location">[modules/class/ldpaneladmin.class.php],[templates/refresh/paneladmin[TRANSFORM_VIP].tpl.php]</span></p>
+            </div>
+        </fieldset>
+        <fieldset>                                           
+            <legend>4/12/2009</legend>        
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u04122009');" />              
+            <div id="u04122009" style="display: none;">                                                              
+            <p>Consertado o classcode na função de distribuir pontos. <span id="location">[ldpaneluser.class.php]</span></p>
+            <p>Consertado o incremento na função de resetar. <span id="location">[ldpaneluser.class.php]</span></p>
+            <p>Consertado o incremento na função de master reset. <span id="location">[ldpaneluser.class.php]</span></p>                                         
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>27/11/2009</legend>   
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u27112009');" />              
+            <div id="u27112009" style="display: none;">                                                                   
+            <p>Adicionado função de templates adicionais. <span id="location">[index.php]</span><br />
+<em>Para usar abra a pagina assim: ?page=custonPage&template=NOME_DO_TEMPLATE<br />
+Onde NOME_DO_TEMPLATE é o nome do template na pasta de templates.</em></p>
+<p>Implantado o sistema Cronjob. <span id="location">[ldmssql.class.php],[cronjob.class.php],[index.php],[settings.php],[Tabela: webCronjob]</span></p>
+<p>Adicione no settings.php as linhas abaixo:
+<pre id="phpMultipleLines">/*
+    @Configurações do Cron. 
+    @Cronjob é um sistema que permite a execução de tarefas automaticamente.                                             
+*/                                                                                                                                                                
+$CRON_JOB['Active'] = true; //Ativa o serviço do cron. Coloque true para sim, false para não.
+$CRON_JOB['Debug'] = true; //Ativa o debugger. Coloque true para sim, false para não.</pre></p>      
+            </div>                                   
+        </fieldset>
+        <fieldset>
+            <legend>19/11/2009</legend>   
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u19112009');" />              
+            <div id="u19112009" style="display: none;">                                                                  
+            <p>Adicionada uma nova opção de resets no site.</p>
+            <p>Adicione a linha abaixo no <span id="location">settings.php</span>:</p>
+            <p><span id="php">//RESET_MODE: 4 = Dinâmico, irá ler todas as configurações de resets para determinado numero de resets com adição em escalas de resets.</span></p>
+            <p>Adicionada a opção de limitar resets no site. <span id="location">[ldpaneluser.class.php]</span></p>
+            <p>Adicione a linha abaixo no <span id="location">settings.php</span>:</p>
+            <p><span id="php">$PANELUSER_MODULE['RESET']['LimitResets'] = array(/*Free*/ 300,/*Vip Silver*/ 400,/*Vip Gold*/ 500); //Resets máximos. Deixe 0 para ilimitado.</span></p>
+            <p>Adicionada a funcionalidade de Elf nascerem em Noria quando resetarem. <span id="location">[ldpaneluser.class.php]</span></p>
+            <p>Adicionado o serviço de logs de atividades no painel do usuário. <span id="location">[ldpaneluser.class.php]</span></p>
+            <p>Adicione no <span id="location">settings.php</span> as linhas abaixo:</p>
+            <p><pre id="phpMultipleLines">/*
+    @Configurações Painel do Usuário.
+    @Modulo: Gravação de logs das ações executadas no painel do usuário.
+*/                                                                                                                                                                
+$PANELUSER_MODULE['LOG']['Active'] = true; //Ativa os logs do painel.                    
+$PANELUSER_MODULE['LOG']['DirLog'] = "logs/pastaLogsUserPanel"; //Pasta para gravação dos logs, a pasta deve ficar na raiz do site (OBS: Coloque uma pasta que ninguem saiba e essa pasta deve conter permissão de escrita.).</pre>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>17/11/2009</legend> 
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u17112009');" />              
+            <div id="u17112009" style="display: none;">                                                                     
+            <p><p>Alteração das classes de smtp. <span id="location">[modules/classes/phpmailer.class.php],[modules/classes/smtp.class.php],[modules/classes/ldrecovery.class.php],[modules/classes/ldpaneluser.class.php]</span></p></p>                                         
+            <p>Adicionado no email de recuperar senha a resposta secreta. <span id="location">[ldrecovery.class.php]</span></p>
+            <p>Ocutada a mensagem de não possivel conectar no connectserver. <span id="location">[ldcs.class.php]</span></p>
+            <p>Nova função para evitar vazamento de arquivos do site por administradores que zipam os arquivos do site e deixam na pasta raiz do site possibilitando o vazamento de arquivos. <span id="location">[ldsecurity.class.php]</span>
+            <p><em>-- Essa função renomeia os arquivos zipados que estão na pasta raiz do site para um nome que não seja obvio.<br />
+            -- Exemplo: www.rar ou www.zip (os mais comuns), ele vai renomear para tipo: 3154651984_www.zip.$$$<br />
+            -- Assim impedindo que alguma pessoa baixe o site ou arquivos sem autorização.</em></p>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>30/09/2009</legend> 
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u30092009');" />              
+            <div id="u30092009" style="display: none;">                                                                     
+            <p>Correção da query no sincronizar vips. <span id="location">[ldpaineladmin.class.php]</span></p>                                         
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>28/09/2009</legend>
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u28092009');" />              
+            <div id="u28092009" style="display: none;">                                                                     
+            <p>Corrigido erro na query de adiciona vips. <span id="location">[ldregister.class.php]</span></p> 
+            </div>                                        
+        </fieldset>
+        <fieldset>
+            <legend>16/9/2009</legend>
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u16092009');" />              
+            <div id="u16092009" style="display: none;">                                                                      
+            <p>Adicionado configurações de tabela (webVips) no <span id="location">settings.php</span></p>
+            <p>Compatibilidade de configurações de tabela  (webVips). <span id="location">[ldgeneral.class.php],[ldonlines.class.php],[ldpaneluser.class.php],[ldpaneladmin.class.php],[ldrankings.class.php]</span></p>
+            <p>Corrigida escrita do botão alterar. <span id="location">[refresh/paneladmin[TRANSFORM_VIP].tpl.php]</span></p>
+            <p>Deletada a pagina. <span id="location">[ldsockets.class.php]</span></p>
+            <p>Adicionada/Alterada query de Vips no registro. <span id="location">[ldregister.class.php]</span><br />
+            <em>OBS: Caso use a webSite.dbo.webVips executar query: "<span id="location">modules/SQL_SCRIPTS/Transferir memb___id para webVips.txt</span>" (Processo lento, Aguarde...)</em></p>
+            <p>Adicionado configurações de tabela (webCash) no <span id="location">settings.php</span></p>
+            <p>Compatibilidade de configurações de tabela  (webCash). <span id="location">[ldpaneladmin.class.php],[ldpaneluser.class.php]</span></p>
+            <p>Adicionada query de Cash no registro. <span id="location">[ldregister.class.php]</span><br />
+            <em>OBS: Caso use a webSite.dbo.webCash executar query: "<span id="location">modules/SQL_SCRIPTS/Transferir memb___id para webCash.txt</span>" (Processo lento, Aguarde...)</em></p>
+            <p>Rankings na página inicial:</p>
+            <p><pre id="phpMultipleLines">{#RANK_TOP_RESETS_HOME}
+{#RANK_TOP_RESETS_WEEK_HOME}
+{#RANK_TOP_RESETS_MONTH_HOME}
+{#RANK_TOP_PK_HOME}
+{#RANK_TOP_LEVEL_HOME}
+{#RANK_TOP_GUILDS_HOME}</pre></p>
+            <p>Opção de regular rankings adicionadas no <span id="location">settings.php</span><br />
+             -- Escolher quantidade de tops no ranking.<br />
+             -- Opção de ligar / desligar rankings na página inicial.</p>
+            <p>Atualizado a <span id="location">index.tpl.php</span> do template refresh com os novos rankings.</p>
+            <p>Adicionado master reset. <span id="location">[ldpaneluser.class.php]</span></p>
+            <p>Adicionada linha de configurar permissões do master resets na <span id="location">settings.php</span></p>
+            <p>Adicionado configurações do MasterReset no <span id="location">settings.php</span></p>
+            <p>Adicionado configurações de permissão do master reset no <span id="location">ldvips.class.php</span></p>
+            <p>Adicionado ranking de master resets na pagina inicial {#RANK_TOP_MASTER_RESETS_HOME} <span id="location">[ldhome.class.php]</span></p>
+            <p>Adicionado ranking de Master resets na pagina de rankings normais. <span id="location">[ldranking.class.php]</span></p>
+            <p>Adicionado o ranking de master resets no template refresh. <span id="location">[refresh/ranking.tpl.php]</span></p>
+            <p>Adicionado configuração do ranking de master reset da home na pagina <span id="location">settings.php</span></p>
+            <p>Atualizadas todas as paginas do template refresh com o menu do master reset.</p> 
+<p><pre>===========================================================
+============== Resumo do que voce deve fazer: =============
+===========================================================
+1 - Você deve abrir o seu arquivo <span id="location">settings.php</span> e adicionar os seguintes codigos:
+   ------------------------------
+   -- Início do código abaixo:
+   ------------------------------
+<pre id="phpMultipleLines">/*
+    @Configurações das tabelas do webSite.
+*/
+define('COLUMN_MASTER_RESETS','MResets'); //Coluna na character que ficam os MasterResets
+
+$TABLES_CONFIGS['WEBVIPS'] = array("table" => "webVips", //webVips || MEMB_INFO
+                                   "columnUsername" => "username", //username || memb___id
+                                   "columnType" => "type", //type || vip
+                                   "columnDateBegin" => "dateBegin",
+                                   "columnDateEnd" => "dateEnd");
+                                   
+$TABLES_CONFIGS['WEBCASH'] = array("table" => "webCash", //webCash || MEMB_INFO
+                                  "columnUsername" => "username", //username || memb___id
+                                  "columnAmount" => "amount"); //amount || gold                                   
+  
+/*
+    @Configurações dos rankings da pagina inicial
+*/
+$RANKING_HOME_CONFIGS['TOPAMOUNT'] = 5; //Mostrar Top 3 nos rankings da pagina inicial                     
+$RANKING_HOME_STATS['RANKING_RESETS_HOME'] = true; // true = ligar / false = desligar (Ranking de resets)
+$RANKING_HOME_STATS['RANKING_RESETS_WEEK_HOME'] = true; // true = ligar / false = desligar (Ranking de resets semanal)  
+$RANKING_HOME_STATS['RANKING_RESETS_MONTH_HOME'] = true; // true = ligar / false = desligar (Ranking de resets mensal)  
+$RANKING_HOME_STATS['RANKING_MASTER_RESETS_HOME'] = true; // true = ligar / false = desligar (Ranking de resets mensal)  
+$RANKING_HOME_STATS['RANKING_PK_HOME'] = true; // true = ligar / false = desligar (Ranking de PK)  
+$RANKING_HOME_STATS['RANKING_LEVELS_HOME'] = true; // true = ligar / false = desligar (Ranking de Levels)  
+$RANKING_HOME_STATS['RANKING_GUILDS_HOME'] = true; // true = ligar / false = desligar (Ranking de Levels)  
+ 
+ 
+/*
+    @Configurações Painel do Usuário.
+    @Modulo: Master Reset
+*/                                                                                                                                                                
+$PANELUSER_MODULE['MASTER_RESET']['Bonus']['Active'] = true; //Ativa bonus de Cash ao dar o master reset. 
+$PANELUSER_MODULE['MASTER_RESET']['Bonus']['Amount'] = array(/*Free*/ 10,/*Vip Silver*/ 20,/*Vip Gold*/ 30); //Quantidade de Cash que o player vai ganhar por Master Reset. 
+$PANELUSER_MODULE['MASTER_RESET']['ResetsRequire'] = array(/*Free*/ 500,/*Vip Silver*/ 450,/*Vip Gold*/ 400); //Requer X reset para dar o master reset. </pre>
+   ------------------------------
+   -- Terminó do código acima... 
+   ------------------------------                        
+ 2 - Execute no query analyzer as seguintes query:
+   "<span id="location">modules/SQL_SCRIPTS/Transferir_memb___id_para_webVips.txt</span>"
+   "<span id="location">modules/SQL_SCRIPTS/Transferir_memb___id_para_webCash.txt</span>"
+   PS: Processo lento... aguarde ele terminar de rodar as querys...
+
+ 3 - Apenas o template "REFRESH" está atualizado com os novos rankings / master reset, se você usa templates de terceiros favor solicitar as atualizações com o desenvolvedor do mesmo.
+
+ ===========================================================
+ ============== Fim do resumo das alterações. ==============
+ ===========================================================</pre></p> 
+            </div>                                     
+        </fieldset>
+        <fieldset>
+            <legend>17/6/2009</legend>
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u17062009');" />              
+            <div id="u17062009" style="display: none;">                                                                    
+            <p>Nova classe de captcha. <span id="location">[ldcaptcha.class.php]</span></p>
+            <p>Implantação da classe de captcha. <span id="location">[index.php]</span></p>
+            <p>Alteração do template para mostrar o captcha. <span id="location">[register.tpl.php]</span></p>
+            <p>Alteração na classe do template para checar o catpcha. <span id="location">[ldregister.class.php]</span></p> 
+            </div>                                        
+        </fieldset>
+        <fieldset>
+            <legend>8/6/2009</legend>
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u08062009');" />              
+            <div id="u08062009" style="display: none;">                                                                      
+            <p>Alterado esquema de rankings no template refresh. <span id="location">[rankings.tpl.php]</span></p>
+            <p>Alterado sistema de rankings <span id="location">[ldrankings.class.php]</span></p>
+            <p>Adicionado na Character as colunas: resetsWeek (int), resetsMonth (int), PkCountWeb (int). [BD]</p>
+            <p>Executar no query analyzer: <pre id="phpMultipleLines">
+ALTER TABLE dbo.Character ADD resetsWeek int NOT NULL DEFAULT 0 
+GO
+ALTER TABLE dbo.Character ADD resetsMonth int NOT NULL DEFAULT 0
+GO
+ALTER TABLE dbo.Character ADD PkCountWeb int NOT NULL DEFAULT 0
+GO</pre></p>
+            <p>Criar Job com tempo de 1 semana com o steep: <span id="php">UPDATE Character SET resetsWeek = 0</span></p>
+            <p>Criar Job com tempo de 1 mês com o steep: <span id="php">UPDATE Character SET resetsMonth = 0</span></p>
+            <p>-- Adicionado suporte para Ranking de resets semanais / mensais. <span id="location">[ldrankings.class.php]</span></p>
+            <p>Adicionado na função de resets as colunas resetsWeek, resetsMonth com incremento a cada reset. <span id="location">[ldpaneluser.class.php]</span></p>
+            <p>Adicionado ranking de PK (mortes) <span id="location">[rankings.tpl.php]</span></p>
+            <p>Adicionado na função de limpar pk a coluna PkCountWeb. <span id="location">[ldpaneluser.class.php]</span></p>
+            <p>Adicionado bloqueio de alterar nick caso o personagem esteja banido. <span id="location">[ldpaneluser.class.php]</span></p>
+            <p>Correção da opção de deletar personagem. <span id="location">[ldpaneladmin.class.php]</span></p>                                         
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>4/5/2009</legend> 
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u04052009');" />              
+            <div id="u04052009" style="display: none;">                                                                     
+            <p>Correção do modulo de confirmar pagamento. <span id="location">[ldpaneladmin.class.php]</span></p> 
+            </div>                                        
+        </fieldset>
+        <fieldset>
+            <legend>3/5/2009</legend>
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u03052009');" />              
+            <div id="u03052009" style="display: none;">                                                                      
+            <p>Adicionados os campos [Login, Personagem, Setor] no setor de tickets painel admin. <span id="location">[ldpaneladmin.class.php]</span></p>
+            <p>Alterado modulo de reset para ganhar pontos no 0 reset. <span id="location">[ldpaneluser.class.php]</span></p> 
+            </div>                                        
+        </fieldset>
+        <fieldset>
+            <legend>4/4/2009</legend> 
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u04042009');" />              
+            <div id="u04042009" style="display: none;">                                                                     
+            <p>Emulação do main.exe para o connectserver para versões antigas. <span id="location">[ldcs.class.php]</span></p>
+            <p>Configurações de paramentros para o emulador connectserver. <span id="location">[ldgeneral.class.php]</span></p>
+            <p>Adicionar linha no <span id="location">settings.php</span></p>
+            <p>Procure por: <span id="php">$Config_Find_Rooms_ConnectServer['Enable']</span></p>     
+            <p>Coloque a linha: <span id="php">$Config_Find_Rooms_ConnectServer['version'] = 2; //Use 1 para versões velhas (0.97d), use 2 para versões season 2 ou maiores.</span></p>
+            <p>Abaixo dela e configure conforme escrito no comentário da linha.</p>  
+            </div>                                       
+        </fieldset>
+        <fieldset>
+            <legend>2/4/2009</legend>
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u02042009');" />              
+            <div id="u02042009" style="display: none;">                                                                     
+            <p>Correção do editar conta no painel admin (Erro da senha sem hash md5). <span id="location">[ldpaneladmin.class.php]</span></p>
+            <p>Função de brinde de vip. <span id="location">[ldregister.class.php]</span></p>
+            <p>Add configurações no. <span id="location">[settings.php]</span></p>    
+            <p><pre id="phpMultipleLines">/*
+    @Configurações do cadastro.
+*/
+$REGISTER_SETTINGS['BONUS_VIP']['ACTIVE'] = false; //Ativa bonus de vip no cadastro.
+$REGISTER_SETTINGS['BONUS_VIP']['TYPE'] = 1; //Tipo de bonus na hora do cadastro: 1 = Vip Silver, 2 = Vip Gold
+$REGISTER_SETTINGS['BONUS_VIP']['DAYS'] = 5; //Quatidades de dias de vip a ser dado como brinde.</pre></p> 
+            </div>                                 
+        </fieldset>
+        <fieldset>
+            <legend>28/3/2009</legend> 
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u28032009');" />              
+            <div id="u28032009" style="display: none;">                                                                     
+            <p>Correção do modulo de resets na questão de resetar quest bugar a classe. <span id="location">[ldpaneluser.class.php]</span></p>
+            <p>Correção da pattern do alterar nick. <span id="location">[ldpaneluser.class.php]</span></p> 
+            </div>                                        
+        </fieldset>
+        <fieldset>
+            <legend>15/3/2009</legend>  
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u15032009');" />              
+            <div id="u15032009" style="display: none;">                                                                    
+            <p>Add lista de classes codes. <span id="location">[settings.php]</span></p>                                         
+            <p><pre id="phpMultipleLines">/*
+    @Configurações de classes.
+*/
+$CLASS_CHARACTERS['CLASSCODES'] = array(/*IDENTIFICAÇÃO*/ /*CLASSCODE*/ /*CLASSNAME*/ 
+                                    "DW" => array(0, "Dark Wizard"),
+                                    "SM" => array(1, "Soul Master"),
+                                    "GM" => array(2, "Grand Master"),
+                                    "DK" => array(16, "Dark Knight"),
+                                    "BK" => array(17, "Blade Knight"),
+                                    "BM" => array(18, "Blade Master"),
+                                    "FE" => array(32, "Fariy Elf"),
+                                    "ME" => array(33, "Muse Elf"),
+                                    "HE" => array(34, "High Elf"),
+                                    "MG" => array(48, "Magic Gladiator"),
+                                    "DMM" => array(49, "Duel Master"),
+                                    "DL" => array(64, "Dark Lord"),
+                                    "LE" => array(65, "Lord Emperor"),
+                                    "SU" => array(80, "Summoner"),
+                                    "BS" => array(81, "Blood Summoner"),
+                                    "DMS" => array(82, "Dimension Master")
+                                    );</pre></p> 
+            <p>Add lista de classes codes. <span id="location">[ldpaneluser.class.php]</span></p>
+            <p>Add lista de classes codes. <span id="location">[ldpaneladmin.class.php]</span><br />
+            <em>OBS.: Site 100% compativel com muservers ta TSN.</em></p>
+            <p>Correção da INDENTIFY_DUPLIC na classe. <span id="location">[settings.php]</span></p>
+            <p>Correção da INDENTIFY_DUPLIC na classe. <span id="location">[ldpaneluser.class.php]</span></p>
+            <p>Correção da INDENTIFY_DUPLIC na classe. <span id="location">[ldpaneladmin.class.php]</span></p> 
+            </div>                                       
+        </fieldset>
+        <fieldset>
+            <legend>11/3/2009</legend> 
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u11032009');" />              
+            <div id="u11032009" style="display: none;">                                                                     
+            <p>Correção no modulo de resets acumulativo. <span id="location">[ldpaneluser.class.php]</span></p> 
+            </div>                                        
+        </fieldset>
+        <fieldset>
+            <legend>4/3/2009</legend> 
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u04032009');" />              
+            <div id="u04032009" style="display: none;">                                                                     
+            <p>Correção da opção de ver tickets. <span id="location">[ldpaneladmin.class.php]</span></p>   
+            </div>                                      
+        </fieldset>
+        <fieldset>
+            <legend>26/02/2009</legend> 
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u26022009');" />              
+            <div id="u26022009" style="display: none;">                                                                     
+            <p>Correção na função de desbanir contas. <span id="location">[ldpaneladmin.class.php]</span></p>
+            <p>Correção em bug de segurança. <span id="location">[autoload.php]</span></p>
+            <p>Correção em bug de segurança. <span id="location">[ldajax.class.php]</span></p>
+            <p>Correção em bug de segurança. <span id="location">[ldcrypt.class.php]</span></p>
+            <p>Correção em bug de segurança. <span id="location">[ldcs.class.php]</span></p>
+            <p>Correção em bug de segurança. <span id="location">[lddownloads.class.php]</span></p>
+            <p>Correção em bug de segurança. <span id="location">[ldgeneral.class.php]</span></p>
+            <p>Correção em bug de segurança. <span id="location">[ldhome.class.php]</span></p>
+            <p>Correção em bug de segurança. <span id="location">[ldmorse.class.php]</span></p>
+            <p>Correção em bug de segurança. <span id="location">[ldmssql.class.php]</span></p>
+            <p>Correção em bug de segurança. <span id="location">[ldnotice.class.php]</span></p>
+            <p>Correção em bug de segurança. <span id="location">[ldonlines.class.php]</span></p>
+            <p>Correção em bug de segurança. <span id="location">[ldpaneladmin.class.php]</span></p>
+            <p>Correção em bug de segurança. <span id="location">[ldpanelgamemaster.class.php]</span></p>
+            <p>Correção em bug de segurança. <span id="location">[ldpaneluser.class.php]</span></p>
+            <p>Correção em bug de segurança. <span id="location">[ldrankings.class.php]</span></p>
+            <p>Correção em bug de segurança. <span id="location">[ldrecovery.class.php]</span></p>
+            <p>Correção em bug de segurança. <span id="location">[ldregister.class.php]</span></p>
+            <p>Correção em bug de segurança. <span id="location">[ldsecurity.class.php]</span></p>
+            <p>Correção em bug de segurança. <span id="location">[ldsmtp.class.php]</span></p>
+            <p>Correção em bug de segurança. <span id="location">[ldsockets.class.php]</span></p>
+            <p>Correção em bug de segurança. <span id="location">[ldtime.class.php]</span></p>
+            <p>Correção em bug de segurança. <span id="location">[ldtpl.class.php]</span></p>
+            <p>Correção em bug de segurança. <span id="location">[ldvips.class.php]</span></p>  
+            </div>                                                 
+        </fieldset>
+        <fieldset>
+            <legend>24/02/2009</legend>   
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u24022009');" />              
+            <div id="u24022009" style="display: none;">                                                                   
+            <p>Correção do alterar senha no painel do usuário; <span id="location">[ldpaneluser.class.php]</span></p> 
+            </div>                                                  
+        </fieldset>
+        <fieldset>
+            <legend>18/02/2009</legend>  
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u18022009');" />              
+            <div id="u18022009" style="display: none;">                                                                    
+            <p>Adicionada a linha: <span id="php">define('SHOPPING_LINK','#');</span>. <span id="location">[settings.php]</span></p>
+            <p>Adicionada a opção de gerar link com variavel <span id="php">{#SHOPPING_LINK}</span> nos templates. <span id="location">[ldgeneral.class.php]</span></p>
+            </div>
+        </fieldset>     
+        <fieldset>
+            <legend>17/02/2009</legend>
+            <input type="button" value="Clique para mostrar / ocultar" onclick="javascript: showOrHidden('u17022009');" />              
+            <div id="u17022009" style="display: none;"> 
+            <p>Correção da variavel <span id="php">{#BAN_CHARACETERS_DATAILS}</span>. <span id="location">[ldpaneluser.class.php]</span></p>
+            <p>Correção da opção de mostrar onlines por sala especifica. <span id="location">[ldonlines.class.php]</span></p>
+            <p>Correção da query que mostra a equipe online. <span id="location">[ldajax.class.php]</span></p>
+            <p>Adicionada a linha: <span id="php">define('SESSION_NAME', 'SQro0hq39JQr');</span>. <span id="location">[settings.php]</span></p>
+            <p>Adicionada a função: session_name();. <span id="location">[index.php]</span></p>
+            <p>Correção da classe de smtp. <span id="location">[ldsmtp.class.php]</span></p>
+            <p>Adicionada a linha: <span id="php">define('PASSWORD_UPDATE', 'username:password');</span>. <span id="location">[settings.php]</span></p>
+            <p>Desenvolvido o módulo de updates no painel de admin. <span id="location">[ldpaneladmin.class.php]</span></p>
+            <p>Correção da constante <span id="php">TITLE_SITE</span>. <span id="location">[ldrecovery.class.php]</span></p>
+            <p>Correção do total onlines / alteração na query. <span id="location">[ldonlines.class.php]</span></p>
+            <p>Correção do hash de md5 no cadastro. <span id="location">[ldregister.class.php]</span></p>
+            </div>
+        </fieldset>  
+        
+        <fieldset>
+            <legend>Futuros Updates</legend>
+            <p>Ranking de master level.</p>                                         
+            <p>Modulo do cashshop.</p>                                         
+            <p>Modulo do PcPoint.</p>                                         
+            <p>Modulo do PagSeguro (Confirmações de pagamento automaticas).</p>                                         
+            <p>Anti-dupe (varbinary 1200 / 1920).</p>                                         
+            <p>Sistema de Mukut integrado com um novo ranking.</p>                                                                        
+            <p>Sistema de ticket com Vips destacados na pagina para o adm dar prioridade.</p>                                                                                  
+            <p>Adicionar vip para todos no painel admin.</p>                                         
+            <p>Sistema de assinatura para foruns.</p>                                         
+            <p>Sistema de divulgação via mensagem pessoal do Microsoft Mensseger (MSN).</p>                                         
+            <p>Opção nova de consertar pontos negativos no painel de controle.</p>                                         
+            <p>Adicionar um novo tipo de reset (5 - Dinamico tabelado diferente do atual).</p>                                           
+            <p>Opção no painel admin para deletar / fechar tickets em massa.</p>     
+        </fieldset> 
+    </div>
+</body>
+</html>

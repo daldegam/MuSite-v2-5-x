@@ -1,0 +1,44 @@
+#global_gnb * { margin:0; padding:0; font:11px/14px Verdana, Arial, sans-serif; color:#686868; }
+#global_gnb a, #global_gnb a:link, #global_gnb a:visited { color:#686868; text-decoration:none; }
+#global_gnb a:hover { text-decoration:underline; }
+#global_gnb img { border:none; }
+#global_gnb li { list-style:none; }
+#global_gnb table { border-collapse:collapse; }
+#global_gnb { position:relative; min-width:990px; height:37px; background:url('../images/common/nav_pattern_bg.gif') repeat-x; z-index:10; }
+#global_gnb #global_header table { width:100%; }
+#global_gnb #global_header table td { vertical-align:top; }
+#global_gnb #global_header table table { width:550px; margin:0 0 0 auto; }
+#global_gnb #global_header table table td { text-align:right; }
+#global_gnb #global_header h1 { float:left; padding:11px 0 0 30px; }
+#global_gnb #global_header #global_nav_menu { float:left; padding:13px 0 0 2px; }
+#global_gnb #global_header #global_nav_menu li { float:left; height:13px; overflow:hidden; }
+#global_gnb #global_header #global_nav_menu li .depth1 a { float:left; height:13px; padding:0 12px; font-size:10px; color:red; text-decoration:none; line-height:12px; }
+#global_gnb #global_header #global_nav_menu li.bdnone { border:none; }
+#global_gnb #global_header #global_nav_gamebox { position:absolute; left:64px; top:24px; display:none; width:98px; height:82px; z-index:100; }
+#global_gnb #global_header #global_nav_gamebox .nav_pngbg { position:absolute; left:0; top:0; width:98px; height:122px; background:url('http://image.webzen.com/Global/Games/common/nav_games_bg2_new.png') no-repeat; _background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://image.webzen.com/Global/Games/common/nav_games_bg2_new.png', sizingMethod='crop'); }
+#global_gnb #global_header #global_nav_gamebox ul { position:relative; width:78px; margin:15px auto 0; z-index:1000; }
+#global_gnb #global_header #global_nav_gamebox ul li { float:none; height:14px; padding:0; border:none; cursor:pointer; }
+#global_gnb #global_header #global_nav_gamebox ul li a { display:block; height:14px; padding:0 0 0 7px; color:#a6a6a6; font-size:10px; text-decoration:none; letter-spacing:-1px; line-height:12px; overflow:hidden; }
+#global_gnb #global_header #global_nav_gamebox ul li a.on { background-color:#706f70; color:#c2bebe; }
+#global_gnb #global_header #global_nav_forumsbox { position:absolute; left:123px; top:24px; display:none; width:114px; height:82px; z-index:100; }
+#global_gnb #global_header #global_nav_forumsbox .nav_pngbg { position:absolute; left:0; top:0; width:114px; height:82px; background:url('http://image.webzen.com/Global/Games/common/nav_forums_bg2.png') no-repeat; _background:none;_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://image.webzen.com/Global/Games/common/nav_forums_bg2.png', sizingMethod='crop'); }
+#global_gnb #global_header #global_nav_forumsbox ul { position:relative; width:94px; margin:15px auto 0; z-index:1000; }
+#global_gnb #global_header #global_nav_forumsbox ul li { float:none; height:14px; padding:0; border:none; cursor:pointer; }
+#global_gnb #global_header #global_nav_forumsbox ul li a { display:block; height:14px; padding:0 0 0 7px; color:#a6a6a6; font-size:10px; text-decoration:none; letter-spacing:-1px; line-height:12px; overflow:hidden; }
+#global_gnb #global_header #global_nav_forumsbox ul li a.on { background-color:#706f70; color:#c2bebe; }
+#global_gnb #global_header #global_nav_register { float:right; padding:8px 30px 0 0; }
+    #global_header #global_nav_register li { float:left; height:14px; margin:3px 0 0 0; border-left:1px solid #fafafb; border-right:1px solid #d7d7d8; }
+    #global_header #global_nav_register li.username { padding:0 10px 0 0; border:none; color:#717d20; }
+    #global_header #global_nav_register li.bdnone_support { border-left:none; }
+    #global_header #global_nav_register li.bdnone { border-right:none; }
+    #global_header #global_nav_register li a { float:left; display:block; height:14px; padding:0 7px; font-weight:bold; font-size:10px; color:#b0b1b2; letter-spacing:-1px; text-decoration:none; }
+
+#global_gnb #global_header #global_nav_language { height:21px; margin:0; padding:0 5px 0 0; border:none; }
+#global_gnb #global_header #global_nav_language #languageGlobalSelect { display:block; position:relative; width:90px; height:19px; background-color:#fff; border:1px solid #d7d8d8; cursor:pointer; text-align:left; }
+#global_gnb #global_header #global_nav_language #languageGlobalSelect a.default { float:none; display:block; height:19px; padding:0 0 0 9px; background:url('http://image.webzen.com/Global/Games/common/nav_select_icon.gif') right top no-repeat; color:#f00; font-weight:bold; font-size:10px; line-height:18px; letter-spacing:0px; }
+#global_gnb #global_header #global_nav_language #languageGlobalSelect a.default:hover { text-decoration:none; }
+#global_gnb #global_header #global_nav_language #languageGlobalSelect ul { position:absolute; left:-1px; top:19px; display:none; width:100%; background-color:#fff; border:1px solid #d7d8d8; border-top:none; }
+#global_gnb #global_header #global_nav_language #languageGlobalSelect ul li { float:none; display:block; width:100%; height:19px; margin:0; padding:0; border:none; border-top:1px solid #d7d8d8; letter-spacing:0px; }
+#global_gnb #global_header #global_nav_language #languageGlobalSelect ul li a { float:none; display:block; height:19px; padding:0 0 0 9px; color:#b0b1b2; font-weight:normal; font-size:10px; line-height:17px; letter-spacing:0px; }
+#global_gnb #global_header #global_nav_language #languageGlobalSelect ul li a:hover { background-color:#eee; color:#b0b1b2; text-decoration:none; }
+#global_gnb #global_header #global_nav_language #languageGlobalSelect ul li a.selected { background-color:#eee; color:#b0b1b2; letter-spacing:0px; }

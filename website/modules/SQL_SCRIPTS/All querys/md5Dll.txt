@@ -1,0 +1,6 @@
+USE master
+GO
+sp_addextendedproc 'XP_MD5_EncodeKeyVal', 'WZ_MD5_MOD.dll'
+GO
+sp_addextendedproc 'XP_MD5_CheckValue', 'WZ_MD5_MOD.dll'
+GO

@@ -1,0 +1,18 @@
+USE [webSite]
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[webPwdHashWrite]
+@login VARCHAR(10),
+@senha VARCHAR(10)
+AS
+BEGIN
+
+DECLARE @Hash BINARY(16);
+EXEC master..XP_MD5_EncodeKeyVal @senha, @login, @Hash OUT;
+UPDATE MuOnline.dbo.MEMB_INFO SET memb__pwd = @Hash WHERE memb___id = @login;
+
+END

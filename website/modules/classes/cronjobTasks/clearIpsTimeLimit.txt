@@ -1,0 +1,5 @@
+global $TABLES_CONFIGS;
+$time = time();
+$this->queryStatement("DELETE FROM ". DATABASE .".dbo.webPollIps WHERE requestTime < '".$time."'");
+$this->addSymbol(42, $this->colors['black'], $this->colors['lightgreen']);  
+$this->addStringImg(50, "Execução bem sucedida.", $this->colors['black']); 

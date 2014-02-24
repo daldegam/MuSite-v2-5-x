@@ -1,0 +1,35 @@
+#ja-header,
+#ja-topbar,
+#ja-topsl
+{
+	width: 930px;
+}
+#ja-subnav
+{
+	width: 910px;
+}
+
+/* Narrow */
+.narrow #ja-header,
+.narrow #ja-topbar,
+.narrow #ja-topsl
+{
+	width: 730px;
+}
+.narrow #ja-subnav
+{
+	width: 710px;
+}
+
+#ja-contentsl1 {
+	width: 100%;
+}
+
+.article-toolswrap ,.article-toolswrap .article-tools{
+	width; 100%;
+	display: block;
+}
+
+#ja-current-content ,#ja-content-bot{
+	display: block;
+}

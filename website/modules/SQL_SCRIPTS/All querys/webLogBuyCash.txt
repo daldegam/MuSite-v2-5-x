@@ -1,0 +1,36 @@
+USE [webSite]
+GO
+/****** Object:  Table [dbo].[webLogBuyCash]    Script Date: 02/16/2009 17:15:07 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[webLogBuyCash](
+	[id] [int] IDENTITY(1,1) NOT FOR REPLICATION NOT NULL,
+	[username] [varchar](12) COLLATE Chinese_PRC_CI_AS NOT NULL,
+	[cash] [int] NULL,
+	[banco] [varchar](50) COLLATE Chinese_PRC_CI_AS NULL,
+	[nterminal] [varchar](50) COLLATE Chinese_PRC_CI_AS NULL,
+	[ntransferencia] [varchar](50) COLLATE Chinese_PRC_CI_AS NULL,
+	[agencia_acolhedora] [varchar](50) COLLATE Chinese_PRC_CI_AS NULL,
+	[nsequencia] [varchar](50) COLLATE Chinese_PRC_CI_AS NULL,
+	[ctr] [varchar](50) COLLATE Chinese_PRC_CI_AS NULL,
+	[caixa_eletronico] [varchar](50) COLLATE Chinese_PRC_CI_AS NULL,
+	[nenvelope] [varchar](50) COLLATE Chinese_PRC_CI_AS NULL,
+	[ndocumento] [varchar](50) COLLATE Chinese_PRC_CI_AS NULL,
+	[ncontrole] [varchar](50) COLLATE Chinese_PRC_CI_AS NULL,
+	[noperador] [varchar](50) COLLATE Chinese_PRC_CI_AS NULL,
+	[data] [varchar](50) COLLATE Chinese_PRC_CI_AS NULL,
+	[hora] [varchar](50) COLLATE Chinese_PRC_CI_AS NULL,
+	[pago_em] [varchar](50) COLLATE Chinese_PRC_CI_AS NULL,
+	[anexo] [varchar](255) COLLATE Chinese_PRC_CI_AS NULL,
+	[comentario] [text] COLLATE Chinese_PRC_CI_AS NULL,
+	[valor] [varchar](10) COLLATE Chinese_PRC_CI_AS NULL,
+	[status] [int] NOT NULL CONSTRAINT [DF_webLogBuyCash_status]  DEFAULT ((0)),
+	[comentario_adm] [text] COLLATE Chinese_PRC_CI_AS NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF

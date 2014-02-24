@@ -1,0 +1,19 @@
+USE [webSite]
+GO
+/****** Object:  Table [dbo].[webRecord]    Script Date: 02/16/2009 17:15:59 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[webRecord](
+	[record] [smallint] NOT NULL CONSTRAINT [DF_webRecord_record]  DEFAULT ((0)),
+	[date] [varchar](10) COLLATE Latin1_General_CI_AS NOT NULL
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF
+GO
+
+INSERT INTO [dbo].[webRecord] ([record], [date]) VALUES (0,0)

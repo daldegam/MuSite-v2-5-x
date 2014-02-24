@@ -1,0 +1,18 @@
+USE [webSite]
+GO
+/****** Object:  Table [dbo].[webNotices]    Script Date: 02/16/2009 17:15:29 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[webNotices](
+	[id] [smallint] IDENTITY(1,1) NOT NULL,
+	[subject] [varchar](50) COLLATE Latin1_General_CI_AS NOT NULL,
+	[content] [text] COLLATE Latin1_General_CI_AS NOT NULL,
+	[date] [varchar](10) COLLATE Latin1_General_CI_AS NOT NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF

@@ -1,0 +1,623 @@
+/********************************************
+   AUTHOR:  			Erwin Aligam 
+   WEBSITE:   			http://www.styleshout.com/
+	TEMPLATE NAME:		Refresh
+   TEMPLATE CODE: 	    S-0002
+   VERSION:             1.0        
+   MODIFICAÇÕES:        LEANDRO DALDEGAM  	
+ *******************************************/
+ 
+/********************************************
+   HTML ELEMENTS
+********************************************/ 
+
+/* Top Elements */
+* { margin: 0; padding: 0; }
+
+body {
+	background: #CCCCCC;
+	font: 70%/1.5em Verdana, Tahoma, arial, sans-serif;
+	color: #333; 
+	text-align: center;
+}
+
+/* links */
+a, a:visited {
+	text-decoration: none;
+	color: #4F82CB; 
+	background: inherit;
+}
+a:hover {
+	color: #4EBF37;
+	background: inherit;
+}
+
+/* headers */
+h1, h2, h3 {
+	font-family: Tahoma, Verdana, 'Trebuchet MS', Sans-serif;
+	font-weight: Bold; 		
+}
+h1 {
+	font-size: 120%;	
+}
+h2 {
+	font-size: 110%;
+	text-transform: uppercase;
+	color: #88ac0b;
+}
+h3 {
+	font-size: 110%;
+	color: #666666; 
+}
+h6 {
+	font-size: 120%;	
+}
+
+/* images */
+img {
+	border: 2px solid #CCC;
+}
+img.float-right {
+  margin: 5px 0px 10px 10px;  
+}
+img.float-left {
+  margin: 5px 10px 10px 0px;
+}
+
+h1, h2, h3, h6, p {
+	padding: 10px;		
+	margin: 0;
+}
+ul, ol {
+	margin: 5px 20px;
+	padding: 0 20px;
+	color: #88ac0b;	
+}
+ul span, ol span {
+	color: #666666;
+}
+
+code {
+  margin: 5px 0;
+  padding: 10px;
+  text-align: left;
+  display: block;
+  overflow: auto;  
+  font: 500 1em/1.5em 'Lucida Console', 'courier new', monospace ;
+  /* white-space: pre; */
+  background: #FAFAFA;
+  border: 1px solid #f2f2f2;  
+}
+.quadros {
+  margin: 5px 0;
+  padding: 10px;
+  text-align: left;
+  display: block;
+  overflow: auto;  
+  /* white-space: pre; */
+  background: #FAFAFA;
+  border: 3px solid #EFEFEF;  
+}
+.qdestaques {
+  margin: 5px 0;
+  padding: 10px;
+  text-align: left;
+  display: block;
+  overflow: auto;  
+  /* white-space: pre; */
+  background: #FAFAFA;
+  border: 3px solid #FF3737;  
+}
+.qdestaques2 {
+  margin: 5px 0;
+  padding: 10px;
+  text-align: left;
+  display: block;
+  overflow: auto;  
+  /* white-space: pre; */
+  background: #EDEBFE;
+  border: 3px solid #5339CC;  
+}
+acronym {
+  cursor: help;
+  border-bottom: 1px solid #777;
+}
+blockquote {
+	margin: 10px;
+ 	padding: 0 0 0 28px;  
+   border: 1px solid #f2f2f2; 
+  	background: #FAFAFA url(quote.gif) no-repeat 5px 5px;    
+}
+
+/* form elements */
+form {
+	margin:10px; padding: 0 5px;
+	border: 1px solid #f2f2f2; 
+	background-color: #FAFAFA; 
+}
+label {
+	display:block;
+	font-weight:bold;
+	margin:5px 0;
+}
+input {
+	padding:2px;
+	border:1px solid #CFCFCF;
+	font: normal 1em Verdana, sans-serif;
+	color:#777;
+}
+textarea {
+	width:400px;
+	padding:2px;
+	font: normal 1em Verdana, sans-serif;
+	border:1px solid #eee;
+	height:100px;
+	display:block;
+	color:#777;
+}
+input.button { 
+	margin: 0; 
+	font: bolder 12px Arial, Sans-serif; 
+	border: 1px solid #CCC; 
+	padding: 2px 3px; 
+	background: #CCC url(buttonbg.gif) repeat-x left bottom;
+}
+
+/* search */
+form.search {
+	position: absolute;
+	top: 35px; right: 25px;
+	background: transparent;
+	border: none;	
+}	
+form.search input.textbox {
+	margin: 0; padding: 1px 2px;
+	width: 120px;
+	background: #FFF;
+	color: #333; 
+}
+form.search input.button {
+	background: #CCC url(headerbg.gif) repeat-x;
+	color: #333;
+	border: none;	
+	width: 70px; height: 21px;
+}
+
+/********************************************
+   LAYOUT
+********************************************/ 
+#wrap {
+	width: 820px;
+	background: #CCC url(content.jpg) repeat-y center top;
+	margin: 0 auto;
+	text-align: left;
+}
+#content-wrap {
+	clear: both;
+	width: 760px;
+	padding: 0; 
+	margin: 0 auto;
+}
+#header {
+	width: 820px;
+	position: relative;
+	height: 248px;
+	background: #CCC url(header.jpg) no-repeat center top;
+	padding: 0;
+	font-size: 14px;
+	color: #FFF;
+}
+#header h1#logo-text {
+	position: absolute;
+	margin: 0; padding: 0;
+	font: bolder 3.3em 'Trebuchet MS', Arial, Sans-serif;
+	letter-spacing: -2px;
+	color: #FFF;
+	text-transform: none;
+	
+	/* change the values of top and left to adjust the position of the logo*/
+	top: 28px; left: 50px;	
+}
+#header h2#slogan {
+	position: absolute;
+	margin: 0; padding: 0;
+	font: normal .8em 'Trebuchet MS', Arial, Sans-serif;
+	text-transform: none;
+	color: #FFF;
+	
+	/* change the values of top and left to adjust the position of the slogan*/
+	top: 74px; left: 58px;		
+}
+
+/* Menu */
+#menu {
+	clear: both;	
+	margin: 0; padding: 0 40px 0 0;
+	background: url(menu.jpg) repeat-y center top;	
+	font: bold 12px/26px Verdana, Arial, Tahoma, Sans-serif;
+	height: 26px;
+}
+#menu ul {
+	float: right;
+	list-style: none;
+	margin:0; padding: 0;
+}
+#menu ul li {
+	display: inline;
+}
+#menu ul li a {
+	display: block;
+	float: left;
+	padding: 0 8px;
+	color: #FFF;	
+	text-decoration: none;
+}
+#menu ul li a:hover {
+	background-color: #ECECEC;
+	color: #333;	
+}
+#menu ul li#current a {	
+	background-color: #FFF;
+	color: #333;
+}
+
+/* Main Column */
+#main {
+	float:right;
+	width: 72%;
+	padding: 0; margin: 0;
+}
+#main h1 {
+	margin-top: 10px;
+	font: Bold 125% Verdana, 'Trebuchet MS', Sans-serif;
+	color: #88ac0b;
+	padding: 5px 0 5px 25px; 	
+	border-bottom: 1px solid #EFF0F1;
+	background: #FFF url(square-green.png) no-repeat 3px 50%;	
+}
+
+.post-footer {
+	background-color: #FAFAFA;
+	padding: 5px; margin: 20px 10px 0 10px;
+	border: 1px solid #f2f2f2;
+	font-size: 95%;	
+}
+.post-footer .date {
+	background: url(clock.gif) no-repeat left center;
+	padding-left: 20px; margin: 0 10px 0 5px;
+}
+.post-footer .comments {
+	background: url(comment.gif) no-repeat left center;
+	padding-left: 20px; margin: 0 10px 0 5px;
+}
+.post-footer .readmore {
+	background: url(page.gif) no-repeat left center;
+	padding-left: 20px; margin: 0 10px 0 5px;
+}
+
+/* Sidebars */	
+#sidebar {
+	width: 27%;
+	padding: 0; margin: 0;	
+}		
+#sidebar h1 {
+	margin-top: 10px;
+	padding: 5px 0 5px 10px; 
+	font: bold 1.1em Verdana, 'Trebuchet MS', Sans-serif;
+	color: #555;
+	background: #EEF0F1 url(headerbg.gif) repeat-x left bottom;	
+	border: 1px solid #EFF0F1;
+}
+#sidebar .left-box {
+	border: 1px solid #EFF0F1; 
+	margin: 0 0 5px 0;	
+}
+#sidebar ul.sidemenu {
+	list-style: none;
+	text-align: left;
+	margin: 3px 0 8px 0; padding: 0;
+	text-decoration: none;		
+}
+#sidebar ul.sidemenu li {
+	border-bottom: 1px solid #EFF0F1;
+	background: url(go.gif) no-repeat 5px 5px;	
+	padding: 2px 0 2px 25px;
+	margin: 0 2px;	
+}
+#sidebar ul.sidemenu a {
+	font-weight: bolder;
+	text-decoration: none;	
+	background-image: none;	
+}
+/* Footer */	
+#footer {
+	color: #666666;
+	background: #CCC url(footer.jpg) no-repeat center top;
+	clear: both;
+	width: 820px;
+	height: 55px;
+	text-align: center;	
+	font-size: 92%;
+}
+#footer a { text-decoration: none; }
+
+/* alignment classes */
+.float-left  { float: left; }
+.float-right { float: right; }
+.align-left  { text-align: left; }
+.align-right { text-align: right; }
+
+/* display and additional classes */
+.clear { clear: both; }
+.gray { color: #CCC; }
+
+/*
+#gauge_onlines_total {
+border:outset;
+border-width:thin;
+width:150px; 
+font-size: 1px; 
+}
+#gauge_onlines_progress {
+background-color:#00A600;
+height:6px;
+}
+*/
+.gauge{margin:0px;padding:0px;overflow:hidden;}
+.gauge .top{margin:0px 1px;overflow:hidden;height:1px;background:#b2b2b2;}
+.gauge .bottom{margin:0px 1px;overflow:hidden;height:1px;background:#8d8d8d;}
+.gauge .content{border-left-width:1px;border-right-width:1px;border-style:none solid;border-left-color:#aaa;border-right-color:#aaa;overflow:hidden;background:#fff;}
+.gauge .content .filling{background-color:#39b3d5;}
+.gauge .content .remaining{border:1px solid #efefef;overflow:hidden;background-color:#fff;}
+
+
+/* Virtual vault */
+.vaultBox {                
+    width: 300px;
+    height: 589px;
+    background-image: url(vault.png); 
+}
+
+.vaultBox #vaultName {                
+    position: relative;
+    top: 15px;  
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 11px;
+    text-align: center;
+    color: #fff;
+}
+
+.vaultBox ul#itemsVaultGame, ul#itemsVaultVirtual {                   
+    position: relative;
+    top: 66px;
+    left: 25px;               
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: auto;                 
+    width: 251px;
+    height: 474px;    
+}
+.vaultBox ul#itemsVaultGame li, ul#itemsVaultVirtual li {                
+    width: 96%;
+    height: 17px;    
+    margin: 0;
+    padding-left: 8px;
+    color: #fff;
+    overflow: hidden;
+    list-style: none; 
+    background: none;
+}
+.vaultBox ul#itemsVaultGame li:hover, ul#itemsVaultVirtual li:hover {                
+    width: 96%;
+    height: 17px;    
+    margin: 0;    
+    padding-left: 8px;
+    color: #000;
+    background-color: #FFF;
+    overflow: hidden; 
+}
+.vaultBox ul#itemsVaultGame li:hover, ul#itemsVaultVirtual li:hover {                
+    cursor: pointer; 
+}
+
+.staffOffline { color:#000000; font-weight:normal; }
+.staffOnline { color:#008000; }
+
+/* interface game */
+.goldenArcherBox {                
+    width: 491px;
+    height: 589px;
+    background-image: url(goldenarcher/interface.jpg); 
+    font: 11px Tahoma,Geneva,sans-serif !important;
+}
+
+.goldenArcherBox #goldenArcherName {                
+    position: relative;
+    top: 15px;  
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 11px;
+    text-align: center;
+    color: #96FFF0;
+    width: 300px;
+}
+.goldenArcherBox #serialText {                
+    height: 300px;
+    left: 30px;
+    position: relative;
+    top: 65px;
+    width: 240px;
+    text-align: justify;
+}
+.goldenArcherBox #serialText p {                
+    color: #fff;
+    font-size: 11px;
+    padding: 0px;
+    font: Tahoma, Geneva, sans-serif !important;
+}
+.goldenArcherBox #serialText p.goldText {                
+    color: #EAE25B;
+    font-size: 11px;
+    text-align: center;
+}
+.goldenArcherBox #serialText p.bold { 
+    font-weight: bold;
+}
+.goldenArcherBox #serialInput {                
+    position: relative;
+    top: 106px;
+    left: 62px;
+    width: 174px;
+}
+.goldenArcherBox #serialInput input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #FFFFFF;
+    font-size: 12px;
+    height: 17px;
+    text-align: center;
+    width: 168px;
+}
+.goldenArcherBox #serialCheck {                
+    position: relative;
+    top: 131px;
+    left: 53px;
+    width: 193px;
+}  
+.goldenArcherBox #serialCheck input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: yellow;
+    font-size: 12px;
+    height: 31px;
+    text-align: center;
+    width: 190px;
+}
+.goldenArcherBox #serialResponse {                
+    position: relative;
+    top: 151px;
+    left: 53px;
+    width: 193px;
+    text-align: center;  
+}
+.goldenArcherBox #serialResponse p.yellow{                
+    color: yellow;
+    font-weight: bold;
+}
+.goldenArcherBox #serialResponse p.white{                
+    color: white; 
+    font-weight: bold;
+}
+
+
+
+/* question event */
+#questionsEvent {
+    width: 450px; 
+    height: 360px;
+    font-size: 12px;
+}
+#questionsEvent form {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    background: #fff;
+}
+#questionsEvent #answerQuestion {
+    text-align: center;
+}
+#questionsEvent #answerQuestion p { 
+    font-weight: bold;
+    font-size: 12px;
+    color: #000; 
+    line-height: normal;
+    margin: 0;
+    padding: 0; 
+}
+#questionsEvent #answerQuestion p.congratulations { 
+    font-weight: bold;
+    font-size: 16px;
+    color: green;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+#questionsEvent #optionsQuestion { 
+    margin: 10px;
+    width: 425px;
+    overflow: hidden;
+    padding-top: 10px;
+}
+#questionsEvent #stringQuestion { 
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    width: 425px;
+    background-color: #F2F2F2;
+    /*padding: 5px;*/
+    text-align: center;
+    margin-bottom: 2px;
+}
+#questionsEvent #stringsAnswer { 
+    color: black;
+    font-size: 12px;       
+    padding: 5px;
+    background-color: #F8F8F8;
+    text-align: left;
+}
+#questionsEvent #buttonSubmit { 
+    width: 425px;
+    background-color: #F8F8F8;
+} 
+#questionsEvent #buttonSubmit input { 
+    color: #000;
+    margin: 5px;
+    width: 412px;
+}  
+#questionsEvent #reponseSubmit { 
+    text-align: center;
+} 
+#questionsEvent #reponseSubmit p { 
+    font-weight: bold;
+    font-size: 12px;
+    color: #000;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+} 
+#questionsEvent #reponseSubmit p.correctResponse { 
+    font-weight: bold;
+    font-size: 16px;
+    color: green;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+#questionsEvent #reponseSubmit p.incorrectResponse { 
+    font-weight: bold;
+    color: red;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+#questionsEvent #reponseSubmit p.serial { 
+    font-weight: bold;
+    font-size: 16px;
+    color: green;
+    line-height: normal;
+    margin: 0;
+    padding: 0;
+}
+                           
+#questionsEvent #timerString {
+    float: right;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 12px;
+}
+#questionsEvent #timerCount {
+    display: inline;
+    font-weight: bold;
+    color: green;
+    font-size: 12px;
+}

@@ -1,0 +1,41 @@
+------------------------------------------------------------------
+---------- ATENÇÃO! ESSE ARQUIVO NÃO É PARA INSTALAÇÃO!-----------
+------------- É APENAS UM GUIA PARA DESENVOLVEDORES! -------------
+------------------------------------------------------------------
+
+
+
+-- Query para transformar o timestamp armazenado no banco de dados do musite para a quantidade 
+-- de dias restantes de vip nos sistemas convencionais usados hoje em dia.
+-- By Leandro Daldegam - 16/01/2010
+
+SELECT 
+	DATEDIFF(day, GETDATE(), DATEADD(s, CAST([dateend] as int), '19700101')) as [diasRestantes] 
+FROM 
+	[dbo].[webVips]
+WHERE
+	[username] = 'daldegam'
+
+
+------------------------------------------
+
+-- Para converter o valor da coluna [dateEnd] para a coluna [creditos], 
+-- usar uma Job de 1 em 1 hora para executa essas duas querys abaixo:
+
+UPDATE [dbo].[MEMB_INFO]
+	SET [MEMB_INFO].[creditos] = DATEDIFF(day, GETDATE(), DATEADD(s, CAST([MEMB_INFO].[dateEnd] as int), '19700101'))
+
+UPDATE [dbo].[MEMB_INFO]
+	SET [MEMB_INFO].[creditos] = 0 WHERE [MEMB_INFO].[creditos] < 0
+
+------------------------------------------
+
+UPDATE [dbo].[MEMB_INFO] SET [vip] = 2 WHERE [vip] = 4
+UPDATE [dbo].[MEMB_INFO] SET [dateEnd] = DATEDIFF(s, '19700101', GETDATE() + [creditos])
+UPDATE [dbo].[MEMB_INFO] SET [dateEnd] = 0, [vip] = 0, [dateBegin] = 0 WHERE [dateEnd] < DATEDIFF(s, '19700101', GETDATE())
+
+O que essas querys vão fazer:
+Criar as colunas: vip (nao tem problema ja ter ela criada, o comando será ignorado), dateBegin, dateEnd
+Depois converter todos os Vips 4 para Vip 2.
+Depois pegar todos os registros da creditos e converter para a dataEnd
+Depois pegar todos os registros com a dateEnd menor que a data atual e limpar os registros de vip, dateend e datebegin.

@@ -1,0 +1,179 @@
+/*------------------------------------------------------------------------
+# $JA#PRODUCT_NAME$ - Version $JA#VERSION$ - Licence Owner $JA#OWNER$
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2008 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+-------------------------------------------------------------------------*/
+
+.ja-tabswrap {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	z-index: 10;
+}
+
+.ja-tabswrap div.ja-tab-subcontent {
+	padding: 0px;	
+}
+
+.ja-tabswrap div.ja-tab-content {
+	position: absolute;	
+	border: none;
+	z-index: 100;
+	padding: 0;
+	width: 100%;
+}
+
+.ja-tabswrap .ja-tab-content ul {
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+.ja-tabswrap .ja-tab-content li {
+	padding: 4px 0 6px;
+	margin: 0;
+	background: none;
+}
+
+/* For tabs Top */
+.ja-tabs-title-top {
+	position: relative;
+	z-index: 10;
+}
+
+.ja-tabs-title-top ul.ja-tabs-title {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+}
+
+* html .ja-tabs-title-top ul.ja-tabs-title { /*IE 6*/
+	bottom: -1px;
+}
+
+.ja-tabs-title-top ul.ja-tabs-title li {
+	float: left;
+	background: none;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	display: block;
+}
+
+.ja-tab-panels-top {
+	position: relative;
+	clear: both;
+	overflow: hidden;
+	bottom: 0;
+	left: 0px;
+	width: 100%;
+	z-index: 1;	
+}
+
+*+html  .ja-tab-panels-top{
+
+}
+/*End*/
+
+
+/*For tabs Left*/
+.ja-tabs-title-left {
+	float:left;	
+}
+
+.ja-tabs-title-left ul.ja-tabs-title {
+	margin: 0;
+	padding: 0;
+	top: 10px;
+	left: 0px;
+	width: 100%;
+}
+
+.ja-tabs-title-left ul.ja-tabs-title li {
+	margin: 0px 0 0 1px;
+	padding: 0;
+	cursor: pointer;
+	display: block;
+}
+
+.ja-tab-panels-left {
+	position: relative;
+	overflow: hidden;
+	top: 5px;
+	height:100%;
+	left:10px;
+}
+/*End*/
+
+
+/*For tabs right*/
+.ja-tabs-title-right {
+	position: relative;
+	float:right;	
+	height:100%;
+}
+
+.ja-tabs-title-right ul.ja-tabs-title {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 10px;
+	right: 0;
+	width: 100%;
+}
+
+.ja-tabs-title-right ul.ja-tabs-title li {
+	margin: 0 0 0 1px;
+	padding: 0;
+	cursor: pointer;
+	display: block;
+}
+
+.ja-tab-panels-right {
+	position: relative;
+	overflow: hidden;
+	top: 5px;
+	height:100%;
+}
+
+/* for tabs bottom */
+.ja-tabs-title-bottom {
+}
+
+.ja-tabs-title-bottom ul.ja-tabs-title {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+}
+
+* html .ja-tabs-title-bottom ul.ja-tabs-title { /*IE 6*/
+	top: -1px;
+}
+
+.ja-tabs-title-bottom ul.ja-tabs-title li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	display: block;
+}
+
+.ja-tab-panels-bottom {
+	position: relative;
+	clear: both;
+	overflow: hidden;
+	top: 0;
+	width:100%;
+	left: 10px;
+	right: 0px;
+	z-index: 1;
+}
+/*End*/

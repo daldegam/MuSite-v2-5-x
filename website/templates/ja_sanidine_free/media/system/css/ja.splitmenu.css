@@ -1,0 +1,81 @@
+/*------------------------------------------------------------------------
+# $JA#PRODUCT_NAME$ - Version $JA#VERSION$ - Licence Owner $JA#OWNER$
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2008 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+-------------------------------------------------------------------------*/
+
+/* MAIN NAVIGATION
+----------------------------------------------------------- */
+#ja-splitmenu {
+	margin: 0;
+	padding: 8px 0 0 15px;
+	position: relative;
+	background: url(../../../images/mainnav-sep.gif) no-repeat 5px 18px;
+}
+
+#ja-splitmenu ul {
+	margin: 0;
+	padding: 0;
+}
+
+#ja-splitmenu li {
+	float: left;
+	padding: 0 14px 0 0;
+	margin: 0 2px;
+	background: url(../../../images/mainnav-sep.gif) no-repeat right 10px;
+}
+
+#ja-splitmenu a {
+	display: block;
+	float: left;
+	text-decoration: none;
+	font-weight: bold;
+	color: #999999;
+	padding: 0 0 0 15px;
+	height: 26px;
+	line-height: 26px;
+	text-transform: uppercase;
+	font-size: 92%;
+}
+
+#ja-splitmenu a span {
+	display: block;
+	float: left;
+	padding: 0 15px 0 0;
+	height: 26px;
+	line-height: 26px;
+}
+
+#ja-splitmenu a:hover,
+#ja-splitmenu a:active,
+#ja-splitmenu a:focus {
+	background: url(../../../images/mainnav-hover.gif) repeat-x left center #333333;
+	color: #FFFFFF;
+}
+
+#ja-splitmenu a:hover span,
+#ja-splitmenu a:active span,
+#ja-splitmenu a:focus span {
+	background: url(../../../images/mainnav-hover.gif) repeat-x right center #333333;
+	cursor: pointer;
+}
+
+#ja-splitmenu li.active a,
+#ja-splitmenu li.active a:hover,
+#ja-splitmenu li.active a:active,
+#ja-splitmenu li.active a:focus {
+	background: url(../../../images/mainnav-active.gif) no-repeat left center #FFCC00;
+	color: #333333;
+}
+
+#ja-splitmenu li.active a span,
+#ja-splitmenu li.active a:hover span,
+#ja-splitmenu li.active a:active span,
+#ja-splitmenu li.active a:focus span {
+	background: url(../../../images/mainnav-active.gif) no-repeat right center #FFCC00;
+	cursor: pointer;
+}

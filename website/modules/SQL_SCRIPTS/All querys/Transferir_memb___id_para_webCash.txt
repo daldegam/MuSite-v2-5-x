@@ -1,0 +1,12 @@
+declare @memb___id varchar(10);
+declare c cursor for select memb___id FROM MEMB_INFO
+open c
+FETCH NEXT FROM c INTO @memb___id
+WHILE @@FETCH_STATUS = 0
+BEGIN 
+	IF NOT EXISTS (SELECT 1 FROM webSite.dbo.webCash WHERE username=@memb___id)
+		INSERT INTO webSite.dbo.webCash (username, amount) VALUES (@memb___id, 0)
+ FETCH NEXT FROM c INTO @memb___id
+END
+CLOSE c
+DEALLOCATE c

@@ -1,0 +1,280 @@
+/*------------------------------------------------------------------------
+# $JA#PRODUCT_NAME$ - Version $JA#VERSION$ - Licence Owner $JA#OWNER$
+# ------------------------------------------------------------------------
+# Copyright (C) 2004-2008 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+# @license - Copyrighted Commercial Software
+# Author: J.O.O.M Solutions Co., Ltd
+# Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+# This file may not be redistributed in whole or significant part.
+-------------------------------------------------------------------------*/
+
+/* BONUS TYPOGRAPHY STYLES
+--------------------------------------------------------- */
+pre, .code {
+	background: #2F2F2F;
+	border-left: 5px solid #000000;
+	font: 1em/1.5 "Courier News", monospace;
+	margin: 5px 0 15px;
+	padding: 10px 15px;
+}
+
+blockquote {
+	padding: 1em 40px 1em 15px;
+}
+
+blockquote span.open {
+	background: url(../../../images/so-q.gif) no-repeat left top;
+	padding: 2px 0 2px 25px;
+}
+
+blockquote span.close {
+	background: url(../../../images/sc-q.gif) no-repeat bottom right;
+	padding: 2px 25px 2px 0;
+}
+
+/* Dropcap */
+.dropcap {
+	color: #CC0000;
+	display: block;
+	float: left;
+	font: 60px/58px Georgia, Times, serif;
+	padding: 0 10px 0 0;
+}
+
+/* Tips, Error, Message, Hightlight*/
+p.error {
+	background: url(../../../images/icon-error.gif) no-repeat 0px 4px;
+	color: #CC0000;
+	padding-left: 25px;
+}
+
+p.message {
+	background: url(../../../images/icon-info.gif) no-repeat 0px 4px;
+	color: #80CCE6;
+	padding-left: 25px;
+}
+
+p.tips {
+	background: url(../../../images/icon-tips.gif) no-repeat 0px 4px;
+	color: #FFCC00;
+	padding-left: 25px;
+}
+
+p.feed {
+	background: url(../../../images/icon-rss.gif) no-repeat 0px 4px;
+	padding: 3px 0 3px 25px;
+}
+
+.highlight {
+	color: #333333;
+	background: #FFFFCC;
+	font-weight: bold;
+	padding: 1px 5px;
+}
+
+/* Note Style */
+p.stickynote {
+	background: url(../../../images/sticky-bg.gif) no-repeat 5px center #2F2F2F;
+	border: 1px solid #3B3B3B;
+	padding: 15px 10px 15px 60px;
+}
+
+p.download {
+	background: url(../../../images/icon-download.gif) no-repeat 5px center #2F2F2F;
+	border: 1px solid #3B3B3B;
+	padding: 15px 10px 15px 60px;
+}
+
+.blocknumber {
+	clear: both;
+	padding: 5px 15px 10px;
+	position: relative;
+}
+
+/* Check list */
+ul.checklist {
+	list-style: none;
+}
+
+ul.checklist li {
+	background: url(../../../images/icon-checklist.gif) no-repeat 0 6px !important;
+	margin-left: 15px !important;
+	padding: 0 0 0 20px !important;
+}
+
+/* Check list (star) */
+ul.stars {
+	list-style: none;
+}
+
+ul.stars li {
+	background: url(../../../images/icon-star.gif) no-repeat 0 0px;
+	margin-left: 15px;
+	padding: 0 0 0 20px;
+}
+
+/* Check list arrow */
+ul.arrow {
+	list-style: none;
+}
+
+ul.arrow li {
+	background: url(../../../images/icon-arrow.gif) no-repeat 3px 7px;
+	margin-left: 15px;
+	padding: 0 0 0 20px;
+}
+
+/* Film list arrow */
+ul.film {
+	list-style: none;
+}
+
+ul.film li {
+	background: url(../../../images/icon-film.gif) no-repeat 0px 2px;
+	margin-left: 15px;
+	padding: 0 0 0 20px;
+	line-height: 180%;
+}
+
+/* Bignumber */
+.bignumber {
+	background: url(../../../images/ol-bg.gif) no-repeat top left;
+	color: #FFFFFF;
+	display: block;
+	float: left;
+	font: bold 20px/normal Arial, sans-serif;
+	margin-right: 8px;
+	padding: 6px 7px;
+}
+
+/* Talking box. Thinking box. */
+div.bubble1, div.bubble2, div.bubble3, div.bubble4 {
+	margin: 15px 0;
+}
+
+div.bubble1 span.author,
+div.bubble2 span.author,
+div.bubble3 span.author,
+div.bubble4 span.author {
+	background: url(../../../images/icon-author.gif) no-repeat left center;
+	font-weight: bold;
+	margin-left: 25px;
+	padding-left: 20px;
+}
+
+div.bubble1 div {
+	background: url(../../../images/bub1-br.gif) no-repeat bottom right;
+	margin: 0;
+	width: 100%;
+}
+
+div.bubble1 div div {
+	background: url(../../../images/bub1-bl.gif) no-repeat bottom left;
+}
+
+div.bubble1 div div div {
+	background: url(../../../images/bub1-tr.gif) no-repeat top right;
+}
+
+div.bubble1 div div div div {
+	background: url(../../../images/bub1-tl.gif) no-repeat top left;
+}
+
+div.bubble1 div div div div div {
+	margin: 0;
+	padding: 10px 15px 20px;
+	width: auto;
+}
+
+div.bubble2 div {
+	background: url(../../../images/bub2-br.gif) no-repeat bottom right;
+	margin: 0;
+	width: 100%;
+}
+
+div.bubble2 div div {
+	background: url(../../../images/bub2-bl.gif) no-repeat bottom left;
+}
+
+div.bubble2 div div div {
+	background: url(../../../images/bub2-tr.gif) no-repeat top right;
+}
+
+div.bubble2 div div div div {
+	background: url(../../../images/bub2-tl.gif) no-repeat top left;
+}
+
+div.bubble2 div div div div div {
+	margin: 0;
+	padding: 10px 15px 25px;
+	width: auto;
+}
+
+div.bubble3 div {
+	background: url(../../../images/bub3-br.gif) no-repeat bottom right;
+	margin: 0;
+	width: 100%;
+}
+
+div.bubble3 div div {
+	background: url(../../../images/bub3-bl.gif) no-repeat bottom left;
+}
+
+div.bubble3 div div div {
+	background: url(../../../images/bub3-tr.gif) no-repeat top right;
+}
+
+div.bubble3 div div div div {
+	background: url(../../../images/bub3-tl.gif) no-repeat top left;
+}
+
+div.bubble3 div div div div div {
+	margin: 0;
+	padding: 10px 15px 45px;
+	width: auto;
+}
+
+div.bubble4 div {
+	background: url(../../../images/bub4-br.gif) no-repeat bottom right;
+	margin: 0;
+	width: 100%;
+}
+
+div.bubble4 div div {
+	background: url(../../../images/bub4-bl.gif) no-repeat bottom left;
+}
+
+div.bubble4 div div div {
+	background: url(../../../images/bub4-tr.gif) no-repeat top right;
+}
+
+div.bubble4 div div div div {
+	background: url(../../../images/bub4-tl.gif) no-repeat top left;
+}
+
+div.bubble4 div div div div div {
+	margin: 0;
+	padding: 10px 15px 45px;
+	width: auto;
+}
+
+/* Legend */
+.legend-title {
+	background: #222222;
+	display: block;
+	font-size: 100%;
+	float: left;
+	font-weight: bold;
+	left: 7px;
+	margin: 0;
+	padding: 0 3px;
+	position: absolute;
+	top: -10px;
+}
+
+.legend {
+	border: 1px solid #3B3B3B;
+	margin: 10px 0;
+	padding: 0 10px;
+	position: relative;
+}

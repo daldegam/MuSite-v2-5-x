@@ -1,0 +1,17 @@
+USE [webSite]
+GO
+/****** Object:  Table [dbo].[webPrevilegy]    Script Date: 02/16/2009 17:15:41 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[webPrevilegy](
+	[id] [smallint] IDENTITY(1,1) NOT NULL,
+	[username] [varchar](12) COLLATE Latin1_General_CI_AS NOT NULL,
+	[previlegy] [smallint] NOT NULL CONSTRAINT [DF_webPrevilegy_previlegy]  DEFAULT ((0))
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF

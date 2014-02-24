@@ -1,0 +1,4 @@
+global $TABLES_CONFIGS;
+$this->queryStatement("UPDATE ".$TABLES_CONFIGS['WEBVIPS']['database'].".dbo.".$TABLES_CONFIGS['WEBVIPS']['table']." SET ".$TABLES_CONFIGS['WEBVIPS']['columnType']."=0, ".$TABLES_CONFIGS['WEBVIPS']['columnDateEnd']."=0, ".$TABLES_CONFIGS['WEBVIPS']['columnDateBegin']." = 0, ".$TABLES_CONFIGS['WEBVIPS']['columnDateEndInteger']."=0 WHERE ".$TABLES_CONFIGS['WEBVIPS']['columnDateEnd']." < '". time(). "'");
+$this->addSymbol(42, $this->colors['black'], $this->colors['lightgreen']);  
+$this->addStringImg(50, "Execução bem sucedida.", $this->colors['black']);

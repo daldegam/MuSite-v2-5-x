@@ -1,0 +1,23 @@
+USE [webSite]
+GO
+/****** Object:  Table [dbo].[webTickets]    Script Date: 02/16/2009 17:16:18 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[webTickets](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[username] [varchar](12) COLLATE Latin1_General_CI_AS NOT NULL,
+	[character] [varchar](12) COLLATE Latin1_General_CI_AS NOT NULL,
+	[sector] [varchar](20) COLLATE Latin1_General_CI_AS NOT NULL,
+	[subject] [varchar](30) COLLATE Latin1_General_CI_AS NOT NULL,
+	[description] [text] COLLATE Latin1_General_CI_AS NOT NULL,
+	[date] [varchar](10) COLLATE Latin1_General_CI_AS NOT NULL,
+	[ip] [varchar](50) COLLATE Latin1_General_CI_AS NOT NULL,
+	[status] [smallint] NOT NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF

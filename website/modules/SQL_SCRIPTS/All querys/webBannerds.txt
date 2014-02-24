@@ -1,0 +1,20 @@
+USE [webSite]
+GO
+/****** Object:  Table [dbo].[webBanneds]    Script Date: 01/16/2010 19:17:44 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[webBanneds](
+	[name] [varchar](12) COLLATE Latin1_General_CI_AS NOT NULL,
+	[datebegin] [varchar](10) COLLATE Latin1_General_CI_AS NOT NULL,
+	[dateend] [varchar](10) COLLATE Latin1_General_CI_AS NOT NULL,
+	[type] [smallint] NOT NULL,
+	[description] [varchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[bannedBy] [varchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]
+
+GO
+SET ANSI_PADDING OFF

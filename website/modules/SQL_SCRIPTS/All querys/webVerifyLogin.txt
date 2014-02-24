@@ -1,0 +1,29 @@
+USE [webSite]
+GO
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE PROCEDURE [dbo].[webVerifyLogin]
+@login VARCHAR(10),
+@senha VARCHAR(10),
+@md5 int
+AS
+BEGIN
+DECLARE @Valid int;
+SET @Valid = 0;
+
+IF @md5 = 1
+BEGIN
+	DECLARE @Hash BINARY(16);
+	EXEC master..XP_MD5_EncodeKeyVal @senha, @login, @Hash OUT;
+	SELECT @Valid = 1 FROM MuOnline.dbo.MEMB_INFO WHERE memb___id = @login AND memb__pwd = @Hash;
+END
+IF @md5 = 0
+BEGIN
+	SELECT @Valid = 1 FROM MuOnline.dbo.MEMB_INFO WHERE memb___id = @login AND memb__pwd = @senha;
+END
+
+SELECT @Valid;
+END
