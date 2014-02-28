@@ -7,7 +7,7 @@ Não nos responsabilizamos por qualquer vazamento destes arquivos, levando em co
 
 PROJETO DEFINITIVAMENTE ENCERRADO!
 
-Agradecemos a todos que nos ajudaram. Pedimos desculpas pelo encerramento de nossas atividades, mas infelizmente nossa hora chegou. Desejamos sucesso a todos e que algum dia possamos retornar nossas atividades. Assim como o projeto, a CTM Team, agora Cetemaster, não possui mais qualquer vínculo com tais arquivos.
+Agradecemos a todos que nos ajudaram. Pedimos desculpas pelo encerramento de nossas atividades, mas infelizmente nossa hora chegou. Desejamos sucesso a todos e que algum dia possamos retornar nossas atividades.
 
 Atenciosamente;
 
