@@ -177,10 +177,7 @@ if ( class_exists( "ldPanelAdmin" ) == false ) {
 			global $ldTpl;
             
 			$ldTpl->set("OS_DATAILS", $_ENV["OS"]);
-			if(ldSerial::checkTrialVersion()) 
-                $ldTpl->set("SOFTWARE_VERSION_DATAILS", $_SERVER["SERVER_SOFTWARE"]."<script>alert(\"/**\\n* @ Versão Trial\\n* @ Para adquirir a versão completa acesse:\\n*   www.daldegam.net ou www.daldegamserver.com\\n*   ldaldegam@hotmail.com\\n*   Telefone: (31) 8693-5000\\n* @ Site desenvolvido por Leandro Daldegam.\\n*/\");</script>");
-            else
-                $ldTpl->set("SOFTWARE_VERSION_DATAILS", $_SERVER["SERVER_SOFTWARE"]);
+			$ldTpl->set("SOFTWARE_VERSION_DATAILS", $_SERVER["SERVER_SOFTWARE"]);
 			$ldTpl->set("ADMIN_WEB_SERVER_EMAIL", $_SERVER["SERVER_ADMIN"]);			
 		}
         public function writeLog($type, $account, $character, $extraText)
@@ -269,10 +266,7 @@ if ( class_exists( "ldPanelAdmin" ) == false ) {
 			
 			if($_GET['Write'] == true)
 			{
-				if(ldSerial::checkTrialVersion())
-                    return $ldTpl->set("RESULTTPL", "<div class='qdestaques'>".LDPA_DEMO_OPTION_NON_AVAILABLE."</div>");
-                    
-                $this->address = sprintf($_POST['dirname'].$_POST['filename'], $_POST['database']);
+				$this->address = sprintf($_POST['dirname'].$_POST['filename'], $_POST['database']);
 				if($this->query("BACKUP DATABASE [".$_POST['database']."] TO  DISK = N'".$this->address."' WITH NOFORMAT, NOINIT,  NAME = N'".$_POST['database']."-Full Database Backup', SKIP, NOREWIND, NOUNLOAD,  STATS = 10"))
 					$tempResult .= "<div class=\"qdestaques2\">".LDPA_GENERATE_BACKUP_SUCCESS."<br /><em>".$this->address."</em></div>";
 				else
@@ -327,10 +321,7 @@ if ( class_exists( "ldPanelAdmin" ) == false ) {
 			global $ldTpl;
 			if($_GET['Write'] == true)
 			{
-				if(ldSerial::checkTrialVersion())
-                    return $ldTpl->set("RESULTTPL", "<div class='qdestaques'>".LDPA_DEMO_OPTION_NON_AVAILABLE."</div>");
-                
-                if(empty($_POST['account']) == true) return $ldTpl->set("RESULTTPL", "<div class=\"qdestaques\">".LDPA_FILL_LOGIN."</div>");
+				if(empty($_POST['account']) == true) return $ldTpl->set("RESULTTPL", "<div class=\"qdestaques\">".LDPA_FILL_LOGIN."</div>");
 				$findAccountQ = $this->query("SELECT 1 FROM ".DATABASE_ACCOUNTS.".dbo.MEMB_INFO WHERE memb___id='". $_POST['account'] ."'");
 				if(mssql_num_rows($findAccountQ) == 0) return $ldTpl->set("RESULTTPL", "<div class=\"qdestaques\">".LDPA_INVALID_LOGIN."</div>");
 				else
@@ -544,9 +535,6 @@ if ( class_exists( "ldPanelAdmin" ) == false ) {
 			}
 			elseif($_GET['Write'] == true && empty($_GET['character']) == false)
 			{
-				if(ldSerial::checkTrialVersion())
-                    return $ldTpl->set("RESULTTPL", "<div class='qdestaques'>".LDPA_DEMO_OPTION_NON_AVAILABLE."</div>");
-                
                 $this->query("UPDATE ".DATABASE_CHARACTERS.".dbo.Character SET Class = ". $_POST['Class'] .", cLevel = ". $_POST['cLevel'] .", LevelUpPoint = ". $_POST['LevelUpPoint'] .", Experience = ". $_POST['Experience'] .", Strength = ". $_POST['Strength'] .", Dexterity = ". $_POST['Dexterity'] .", Vitality = ". $_POST['Vitality'] .", Energy = ". $_POST['Energy'] .", Leadership = ". $_POST['Leadership'] .", Money = ". $_POST['Money'] .", MapNumber = ". $_POST['MapNumber'] .", MapPosX = ". $_POST['MapPosX'] .", MapPosY = ". $_POST['MapPosY'] .", PkCount = ". $_POST['PkCount'] .", PkLevel = ". $_POST['PkLevel'] .", PkTime = ". $_POST['PkTime'] .", CtlCode = ". $_POST['CtlCode'] .", ".COLUMN_RESETS." = ". $_POST['Resets'] ." WHERE Name='".$_GET['character']."'");
 				$tempTpl .= "<div class='qdestaques2'>".LDPA_EDIT_CHARACTER_TEXT_SUCCESS."</div>";
                 ldPanelAdmin::writeLog(5, '', $_GET['character'], print_r($_POST, true));
@@ -558,10 +546,7 @@ if ( class_exists( "ldPanelAdmin" ) == false ) {
 		 	global $ldTpl;
 			if($_GET['Write'] == true && empty($_POST['character']) == false)
 			{
-				if(ldSerial::checkTrialVersion())
-                    return $ldTpl->set("RESULTTPL", "<div class='qdestaques'>".LDPA_DEMO_OPTION_NON_AVAILABLE."</div>");
-                
-                $findCharacterQ = $this->query("SELECT Name FROM ".DATABASE_CHARACTERS.".dbo.Character WHERE Name='". $_POST['character'] ."'");
+				$findCharacterQ = $this->query("SELECT Name FROM ".DATABASE_CHARACTERS.".dbo.Character WHERE Name='". $_POST['character'] ."'");
 				if(mssql_num_rows($findCharacterQ) == 0) return $ldTpl->set("RESULTTPL", "<div class='qdestaques'>".LDPA_DELETE_CHARACTER_CHAR_NOT_FOUND."</div>");
 				else
 				{
@@ -808,9 +793,6 @@ if ( class_exists( "ldPanelAdmin" ) == false ) {
 							}
                             else
                             {
-                                if(ldSerial::checkTrialVersion())
-                                    return $ldTpl->set("RESULTTPL", "<div class='qdestaques'>".LDPA_DEMO_OPTION_NON_AVAILABLE."</div>");
-                
                                 $tmpTimestampBegin = mktime($_POST['beginHour'],$_POST['beginMinutes'],$_POST['beginSeconds'],$_POST['beginMonth'],$_POST['beginDay'],$_POST['beginYear']); 
                                 $tmpTimestampEnd = mktime($_POST['endHour'],$_POST['endMinutes'],$_POST['endSeconds'],$_POST['endMonth'],$_POST['endDay'],$_POST['endYear']);
                                 $this->query("UPDATE ".$TABLES_CONFIGS['WEBVIPS']['database'].".dbo.".$TABLES_CONFIGS['WEBVIPS']['table']." SET ".$TABLES_CONFIGS['WEBVIPS']['columnType']." = ".$_POST['flat'].", ".$TABLES_CONFIGS['WEBVIPS']['columnDateBegin']." = '{$tmpTimestampBegin}', ".$TABLES_CONFIGS['WEBVIPS']['columnDateEnd']." = '{$tmpTimestampEnd}'  WHERE ".$TABLES_CONFIGS['WEBVIPS']['columnUsername']." = '".$_POST['account']."'");

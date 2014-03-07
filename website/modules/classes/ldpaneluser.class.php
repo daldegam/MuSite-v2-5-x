@@ -1273,12 +1273,6 @@ if ( class_exists( "ldPanelUser" ) == false ) {
                     switch($_GET['to'])
                     {
                         case "virtual":
-                            if(ldSerial::checkTrialVersion())
-                            {
-                                $getItemsQ = $this->query("SELECT [AccountId] FROM [".DATABASE_ACCOUNTS."].[dbo].[ExtWareHouseVirtual] WHERE [AccountId] = '{$_SESSION['LOGIN']}'");
-                                if(mssql_num_rows($getItemsQ) >= 20)
-                                    throw new Exception("<div class='qdestaques'>".LDPU_VIRTUAL_VAULT_TEXT_SEND_DEMO."</div>");
-                            }
                             if($_GET['key'] < 0 || $_GET['key'] > 120)
                                 throw new Exception("loadOptionsVirtualVault() :: Invalid key");
                                 
@@ -1398,10 +1392,7 @@ if ( class_exists( "ldPanelUser" ) == false ) {
 					elseif(strlen($_POST['userPwd']) > 10) $tempRepost .= "<div class='qdestaques2'>".LDPU_DOUBLE_VAULT_INVALID_SIZE_PASSWORD."</div>";
 					elseif($checkPwd[0] == 0) $tempRepost .= "<div class='qdestaques2'>".LDPU_DOUBLE_VAULT_INVALID_PASSWORD."</div>";
 					else {
-                        if(ldSerial::checkTrialVersion())
-                            return $ldTpl->set("RespostWrite", "<div class='qdestaques'>".LDPU_DEMO_OPTION_NON_AVAILABLE."</div>");
-                            
-						if($this->query("UPDATE ".DATABASE_ACCOUNTS.".dbo.warehouse SET items = items2, items2 = items WHERE AccountID='".$_SESSION['LOGIN']."'"))
+                        if($this->query("UPDATE ".DATABASE_ACCOUNTS.".dbo.warehouse SET items = items2, items2 = items WHERE AccountID='".$_SESSION['LOGIN']."'"))
                         {
 							$tempRepost .= "<div class='qdestaques2'>".LDPU_DOUBLE_VAULT_SUCCESS_ALTER."</div>";
                             $this->writeLog(3, $_SESSION['LOGIN'], "", ""); 
@@ -1749,9 +1740,6 @@ if ( class_exists( "ldPanelUser" ) == false ) {
                         if($findCharacters[2] < $this->ZenRequire) $errorReset .= "<strong style='color:#FF0000'>".LDPU_RESET_NOT_HAVE_ZEN."</strong><br />";
                         if($findCharacters[0] >= $this->LimitResets && $this->LimitResets != 0) $errorReset .= "<strong style='color:#FF0000'>".LDPU_RESET_LIMIT_RESETS."</strong><br />";
                         
-                        if(ldSerial::checkTrialVersion())
-                            if($findCharacters[0] >= 200) $errorReset .= "<strong style='color:#FF0000'>".LDPU_RESET_TEXT_DEMO_LIMIT."</strong><br />";
-                        
                         if(isset($errorReset)) $tempRepost .= "<div class='qdestaques'>".$errorReset."</div>";
                         else
                         {
@@ -1928,9 +1916,6 @@ if ( class_exists( "ldPanelUser" ) == false ) {
                     if($findCharacters[2] < $this->ZenRequire) $errorReset .= "<strong style='color:#FF0000'>".LDPU_RESET_NOT_HAVE_ZEN."</strong><br />";
                     if(($findCharacters[0]-1) < $this->masterResetRequireResets) $errorReset .= "<strong style='color:#FF0000'>".LDPU_MRESET_TEXT_NOT_HAVE_RESETS."</strong><br />";
                    
-                    if(ldSerial::checkTrialVersion())
-                        if($findCharacters[4] >= 50) $errorReset .= "<strong style='color:#FF0000'>".LDPU_MRESET_TEXT_DEMO_LIMIT."</strong><br />";
-                            
                     if($_GET['reset'] == false)
                     {
                         $tempRepost .= "<div class='quadros'>
@@ -2399,10 +2384,7 @@ if ( class_exists( "ldPanelUser" ) == false ) {
 					}
 					else
 					{
-						if(ldSerial::checkTrialVersion())
-                            return $ldTpl->set("RespostWrite", "<div class='qdestaques'>".LDPU_DEMO_OPTION_NON_AVAILABLE."</div>");
-                    
-                        $this->query("UPDATE ".DATABASE_CHARACTERS.".dbo.Character SET MapNumber=".(int)$_POST['movemap'].", MapPosX=".(int)$_POST['coordX'].", MapPosY=".(int)$_POST['coordY']." WHERE Name='".$_GET['character']."'");
+						$this->query("UPDATE ".DATABASE_CHARACTERS.".dbo.Character SET MapNumber=".(int)$_POST['movemap'].", MapPosX=".(int)$_POST['coordX'].", MapPosY=".(int)$_POST['coordY']." WHERE Name='".$_GET['character']."'");
 						$tempRepost .= "<div class='qdestaques2'>".LDPU_MOVE_CHARCTER_SUCCESS."</div>";
 					    $this->writeLog(10, $_SESSION['LOGIN'], $_GET['character'], sprintf(LDPU_MOVE_CHARCTER_SUCCESS_LOG, (int)$_POST['movemap'], (int)$_POST['coordX'], (int)$_POST['coordY'])); 
                         $this->query("EXEC [dbo].[webPanelAction_MoveCharacter] '". $_SESSION['LOGIN'] ."', '".$_GET['character']."'"); 
@@ -2463,10 +2445,7 @@ if ( class_exists( "ldPanelUser" ) == false ) {
                         elseif($findCharStatus[0] == 1) $tempRepost .= "<div class='qdestaques'><strong style='color:#BB0000'>".LDPU_CHANGE_NICK_CHARACTER_BANNED."</strong></div>";
                         elseif(eregi("WEBZEN",$_POST['newnick']) == true || eregi("ADM",$_POST['newnick']) == true || eregi("GM",$_POST['newnick']) == true || eregi("MD",$_POST['newnick']) == true || eregi("NT",$_POST['newnick']) == true || eregi("DV",$_POST['newnick']) == true) $tempRepost .= "<div class='qdestaques2'><strong style='color:#BB0000'>".LDPU_CHANGE_NICK_INVALID_SIGLES."</strong></div>";
 						else {
-							if(ldSerial::checkTrialVersion())
-                                return $ldTpl->set("RespostWrite", "<div class='qdestaques'>".LDPU_DEMO_OPTION_NON_AVAILABLE."</div>");
-                            
-                            $selectSlotQ = $this->query("SELECT GameID1,GameID2,GameID3,GameID4,GameID5 FROM ".DATABASE_CHARACTERS.".dbo.AccountCharacter WHERE Id='".$_SESSION['LOGIN']."'");
+							$selectSlotQ = $this->query("SELECT GameID1,GameID2,GameID3,GameID4,GameID5 FROM ".DATABASE_CHARACTERS.".dbo.AccountCharacter WHERE Id='".$_SESSION['LOGIN']."'");
 							$selectSlot = mssql_fetch_object($selectSlotQ);
 							
 							if($selectSlot->GameID1 == $_GET['character']) $Slot_GameID = "GameID1";
@@ -2688,10 +2667,7 @@ if ( class_exists( "ldPanelUser" ) == false ) {
 					}
 					else
 					{
-						if(ldSerial::checkTrialVersion())
-                            return $ldTpl->set("RespostWrite", "<div class='qdestaques'>".LDPU_DEMO_OPTION_NON_AVAILABLE."</div>");
-                        
-                        if($findCharacters->Class == $CLASS_CHARACTERS['CLASSCODES']['DL'][0] || $findCharacters->Class == $CLASS_CHARACTERS['CLASSCODES']['LE'][0]) $this->query("UPDATE ".DATABASE_CHARACTERS.".dbo.Character SET LevelUpPoint = ".$this->totalPoints.",Strength = 30,Dexterity = 30,Vitality = 30,Energy = 30, Leadership = 30 WHERE Name='".$_GET['character']."'");
+						if($findCharacters->Class == $CLASS_CHARACTERS['CLASSCODES']['DL'][0] || $findCharacters->Class == $CLASS_CHARACTERS['CLASSCODES']['LE'][0]) $this->query("UPDATE ".DATABASE_CHARACTERS.".dbo.Character SET LevelUpPoint = ".$this->totalPoints.",Strength = 30,Dexterity = 30,Vitality = 30,Energy = 30, Leadership = 30 WHERE Name='".$_GET['character']."'");
 						else $this->query("UPDATE ".DATABASE_CHARACTERS.".dbo.Character SET LevelUpPoint = ".$this->totalPoints.",Strength = 30,Dexterity = 30,Vitality = 30,Energy = 30 WHERE Name='".$_GET['character']."'");
 						$tempRepost .= "<div class='qdestaques2'>".LDPU_REDISTRIBUTE_POINTS_SUCCESS."</div>";
                         $this->writeLog(13, $_SESSION['LOGIN'], $_GET['character'], ""); 
@@ -2852,9 +2828,6 @@ if ( class_exists( "ldPanelUser" ) == false ) {
                         elseif(preg_match("/^image\/(pjpeg|jpeg|png|gif|bmp)$/i", $this->photo['type']) == false) return $ldTpl->set("RespostWrite", "<div class='qdestaques'>".LDPU_MPHOTO_INVALID_TYPE."</div>"); 
                         else 
                         {
-                            if(ldSerial::checkTrialVersion())
-                                return $ldTpl->set("RespostWrite", "<div class='qdestaques'>".LDPU_DEMO_OPTION_NON_AVAILABLE."</div>");
-                        
                             switch($this->photo['type'])
                             {
                                 case 'image/jpeg': case 'image/jpg': $this->ext = ".jpg"; break;
