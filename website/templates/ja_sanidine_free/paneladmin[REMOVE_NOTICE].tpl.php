@@ -1,45 +1,78 @@
-<?php //0055e
-// // MuSite v.2.5.2.1 - with ldManager Beta
-// // Programado por Leandro Daldegam
-// //
-// // Email / MSN: ldaldegam@hotmail.com - suport.daldegam@hotmail.com
-// // Telefone: (31) 86935000
-// // Site: www.daldegamserver.com - www.daldegam.net
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo('Site error: the file <b>'.__FILE__.'</b> requires the ionCube PHP Loader '.basename($__ln).' to be installed by the website operator. If you are the website operator please use the <a href="http://www.ioncube.com/lw/">ionCube Loader Wizard</a> to assist with installation.');exit(199);
-?>
-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
+{#INCLUDE:header}
+<script type="text/javascript">
+function show_permission(area,free,vips,vipg, vip3, vip4, vip5) {
+    if(free == 1) var permission_free = "<span style='color:#009400'>Sim</span>"; else var permission_free = "<span style='color:#BB0000'>Não</span>";
+    if(vips == 1) var permission_vips = "<span style='color:#009400'>Sim</span>"; else var permission_vips = "<span style='color:#BB0000'>Não</span>";
+    if(vipg == 1) var permission_vipg = "<span style='color:#009400'>Sim</span>"; else var permission_vipg = "<span style='color:#BB0000'>Não</span>";
+    if(vip3 == 1) var permission_vip3 = "<span style='color:#009400'>Sim</span>"; else var permission_vip3 = "<span style='color:#BB0000'>Não</span>";
+    if(vip4 == 1) var permission_vip4 = "<span style='color:#009400'>Sim</span>"; else var permission_vip4 = "<span style='color:#BB0000'>Não</span>";
+    if(vip5 == 1) var permission_vip5 = "<span style='color:#009400'>Sim</span>"; else var permission_vip5 = "<span style='color:#BB0000'>Não</span>";
+    document.getElementById('option_permission_'+area).innerHTML = "<div style='margin-left: 20px; margin-top: 10px; margin-bottom: 10px;'>Permissões da Opção:<br/> \
+     - Free: "+permission_free+"<br/> \
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_1"]): ?>- {#VIP_NAME_1}: "+permission_vips+"<br/><?php endif; ?> \
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_2"]): ?>- {#VIP_NAME_2}: "+permission_vipg+"<br/><?php endif; ?>\
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_3"]): ?>- {#VIP_NAME_3}: "+permission_vip3+"<br/><?php endif; ?>\
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_4"]): ?>- {#VIP_NAME_4}: "+permission_vip4+"<br/><?php endif; ?>\
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_5"]): ?>- {#VIP_NAME_5}: "+permission_vip5+"<?php endif; ?></div>";
+}
+function clear_permission(area) {
+	document.getElementById('option_permission_'+area).innerHTML = "";
+}
+function AbreMenu(nome_div) {
+    var div = "";
+    var menus = 13;
+	for (var i=1; i < menus; i++) {
+		div = "div"+i;
+		document.getElementById(div).style.display = "none"; 
+		if (div == nome_div) {
+			document.getElementById(nome_div).style.display = "block"; 
+		}
+	}
+}
+function AbreMenuV2(nome_div) {
+	var div = "";
+	var menus = 3;
+	for (var i=1; i < menus; i++) {
+		div = "divV2"+i;
+		document.getElementById(div).style.display = "none"; 
+		if (div == nome_div) {
+			document.getElementById(nome_div).style.display = "block"; 
+		}
+	}
+}
+</script> 
+	<div id="ja-containerwrap-fr">
+		<div id="ja-container" class="clearfix">
+			<div id="ja-mainbody" class="clearfix">
+				<div id="ja-content">
+					<div id="ja-content-top">
+<div id="ja-content-bot" class="clearfix">
+							
+							<div id="ja-current-content" class="clearfix">
+                            
+                            <div id="etc"> 
+                                {#INCLUDE:menuPanelAdmin}
+                           
+                            <h1 style="margin-top: 20px; margin-bottom: 26px;">Remover notícia</h1>
+                            
+                            	<div id="etc">
+                                  <form action="?page=paneladmin&amp;option=REMOVE_NOTICE&amp;Write=true" method="post">
+                                    <em>Titulo:</em><br /><select name="id" class="inputbox">{#OPTIONS_ID_SELECT}</select> <br />
+                                    <input type="submit" value="Remover." class="button" style="margin-top:10px;" />
+                                  </form>
+                       		  </div>
+                                    <div style="margin-top: 10px;" id="logs_">
+                                    	{#RESULTTPL}
+                                    </div>
+                            	</div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			{#INCLUDE:menuLeft}
+			<br />
+			<div id="ja-tabs" class="clearfix"></div>
+			</div>
+		</div>
+ 	</div>
+{#INCLUDE:footer}

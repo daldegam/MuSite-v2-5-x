@@ -1,51 +1,98 @@
-<?php //0055e
-// // MuSite v.2.5.2.1 - with ldManager Beta
-// // Programado por Leandro Daldegam
-// //
-// // Email / MSN: ldaldegam@hotmail.com - suport.daldegam@hotmail.com
-// // Telefone: (31) 86935000
-// // Site: www.daldegamserver.com - www.daldegam.net
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo('Site error: the file <b>'.__FILE__.'</b> requires the ionCube PHP Loader '.basename($__ln).' to be installed by the website operator. If you are the website operator please use the <a href="http://www.ioncube.com/lw/">ionCube Loader Wizard</a> to assist with installation.');exit(199);
-?>
-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
+{#INCLUDE:header}
+<script type="text/javascript">
+function show_permission(area,free,vips,vipg, vip3, vip4, vip5) {
+    if(free == 1) var permission_free = "<span style='color:#009400'>Sim</span>"; else var permission_free = "<span style='color:#BB0000'>Não</span>";
+    if(vips == 1) var permission_vips = "<span style='color:#009400'>Sim</span>"; else var permission_vips = "<span style='color:#BB0000'>Não</span>";
+    if(vipg == 1) var permission_vipg = "<span style='color:#009400'>Sim</span>"; else var permission_vipg = "<span style='color:#BB0000'>Não</span>";
+    if(vip3 == 1) var permission_vip3 = "<span style='color:#009400'>Sim</span>"; else var permission_vip3 = "<span style='color:#BB0000'>Não</span>";
+    if(vip4 == 1) var permission_vip4 = "<span style='color:#009400'>Sim</span>"; else var permission_vip4 = "<span style='color:#BB0000'>Não</span>";
+    if(vip5 == 1) var permission_vip5 = "<span style='color:#009400'>Sim</span>"; else var permission_vip5 = "<span style='color:#BB0000'>Não</span>";
+    document.getElementById('option_permission_'+area).innerHTML = "<div style='margin-left: 20px; margin-top: 10px; margin-bottom: 10px;'>Permissões da Opção:<br/> \
+     - Free: "+permission_free+"<br/> \
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_1"]): ?>- {#VIP_NAME_1}: "+permission_vips+"<br/><?php endif; ?> \
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_2"]): ?>- {#VIP_NAME_2}: "+permission_vipg+"<br/><?php endif; ?>\
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_3"]): ?>- {#VIP_NAME_3}: "+permission_vip3+"<br/><?php endif; ?>\
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_4"]): ?>- {#VIP_NAME_4}: "+permission_vip4+"<br/><?php endif; ?>\
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_5"]): ?>- {#VIP_NAME_5}: "+permission_vip5+"<?php endif; ?></div>";
+}
+function clear_permission(area) {
+	document.getElementById('option_permission_'+area).innerHTML = "";
+}
+function AbreMenu(nome_div) {
+	var div = "";
+	var menus = 5;
+	for (var i=1; i < menus; i++) {
+		div = "div"+i;
+		document.getElementById(div).style.display = "none"; 
+		if (div == nome_div) {
+			document.getElementById(nome_div).style.display = "block"; 
+		}
+	}
+}
+function AbreMenuV2(nome_div) {
+	var div = "";
+	var menus = 3;
+	for (var i=1; i < menus; i++) {
+		div = "divV2"+i;
+		document.getElementById(div).style.display = "none"; 
+		if (div == nome_div) {
+			document.getElementById(nome_div).style.display = "block"; 
+		}
+	}
+}
+</script>  
+	<div id="ja-containerwrap-fr">
+		<div id="ja-container" class="clearfix">
+			<div id="ja-mainbody" class="clearfix">
+				<div id="ja-content">
+					<div id="ja-content-top">
+						<div id="ja-content-bot" class="clearfix">
+							
+							<div id="ja-current-content" class="clearfix">
+                           	  <div id="etc">
+                                {#INCLUDE:menuPanelUser}
+                            
+                            <h1 style="margin-top: 20px; margin-bottom: 26px;">Alterar Dados</h1>
+                            
+                          	<div id="etc" style="margin-bottom: 26px;">
+                            {#RespostWrite}
+                            </div>
+                            
+                            <div class="legend" style="margin-bottom: 25px;">
+                                  <h3 class="legend-title"><span style="font-size: 13px;">Dados da minha conta</span></h3>
+                         			<div style="margin-bottom: 8px; margin-top: 10px;">
+                                    <form action="?page=paneluser&amp;option=MODIFY_DATA&amp;Write=1" method="post">
+                                    <em>Meu nome:</em><br /><input name='userName' type='text' class="inputbox" value='{#MEMB_NAME}' maxlength='10' /><br />
+                                    <em>Meu telefone:</em><br /><input name='userTel' type='text' class="inputbox" value='{#TEL__NUMB}' maxlength='15' /><br />
+                                    <em>Meu email:</em><br /><input name='userMail' type='text' class="inputbox" value='{#MAIL_ADDR}' readonly='readonly' /><br />
+                                    <input type='submit' value='Alterar' class='button' style="margin-top: 6px;"/>
+                                    </form>
+                                     </div>
+                              </div>
+                                  
+                                 <div class="legend" style="margin-bottom: 1px;">
+                                  	<h3 class="legend-title"><span style="font-size: 13px;">Senha de acesso</span></h3>
+                         			 <div style="margin-bottom: 8px; margin-top: 10px;">
+                                     	<form action="?page=paneluser&amp;option=MODIFY_DATA&amp;Write=2" method="post">
+                                        <em>Senha atual:</em><br /><input name='userPwd' type='password' class="inputbox" maxlength='10' /><br />
+                                        <em>Senha Nova:</em><br /><input name='userPwdNew' type='password' class="inputbox" maxlength='10' /><br />
+                                        <em>Senha Nova:</em><br /><input name='userPwdNewRe' type='password' class="inputbox" maxlength='10' /><br />
+                                        <em>Pergunta secreta:</em><br /><strong>{#USER_FQUEST}</strong><br />
+                                        <em>Resposta Secreta:</em><br /><input name='userAnswer' type='text' class="inputbox" maxlength='50' /><br />
+                                        <input type='submit' value='Alterar' class='button' style="margin-top: 6px;"/><br />
+                                        </form> 
+                                     </div>
+                                </div>
+                          
+                           	  </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			{#INCLUDE:menuLeft}
+			<br />
+			<div id="ja-tabs" class="clearfix"></div>
+			</div>
+		</div>
+ 	</div>
+{#INCLUDE:footer}

@@ -1,47 +1,80 @@
-<?php //0055e
-// // MuSite v.2.5.2.1 - with ldManager Beta
-// // Programado por Leandro Daldegam
-// //
-// // Email / MSN: ldaldegam@hotmail.com - suport.daldegam@hotmail.com
-// // Telefone: (31) 86935000
-// // Site: www.daldegamserver.com - www.daldegam.net
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo('Site error: the file <b>'.__FILE__.'</b> requires the ionCube PHP Loader '.basename($__ln).' to be installed by the website operator. If you are the website operator please use the <a href="http://www.ioncube.com/lw/">ionCube Loader Wizard</a> to assist with installation.');exit(199);
-?>
-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
+{#INCLUDE:header}
+<script type="text/javascript">
+function show_permission(area,free,vips,vipg, vip3, vip4, vip5) {
+    if(free == 1) var permission_free = "<span style='color:#009400'>Sim</span>"; else var permission_free = "<span style='color:#BB0000'>Não</span>";
+    if(vips == 1) var permission_vips = "<span style='color:#009400'>Sim</span>"; else var permission_vips = "<span style='color:#BB0000'>Não</span>";
+    if(vipg == 1) var permission_vipg = "<span style='color:#009400'>Sim</span>"; else var permission_vipg = "<span style='color:#BB0000'>Não</span>";
+    if(vip3 == 1) var permission_vip3 = "<span style='color:#009400'>Sim</span>"; else var permission_vip3 = "<span style='color:#BB0000'>Não</span>";
+    if(vip4 == 1) var permission_vip4 = "<span style='color:#009400'>Sim</span>"; else var permission_vip4 = "<span style='color:#BB0000'>Não</span>";
+    if(vip5 == 1) var permission_vip5 = "<span style='color:#009400'>Sim</span>"; else var permission_vip5 = "<span style='color:#BB0000'>Não</span>";
+    document.getElementById('option_permission_'+area).innerHTML = "<div style='margin-left: 20px; margin-top: 10px; margin-bottom: 10px;'>Permissões da Opção:<br/> \
+     - Free: "+permission_free+"<br/> \
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_1"]): ?>- {#VIP_NAME_1}: "+permission_vips+"<br/><?php endif; ?> \
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_2"]): ?>- {#VIP_NAME_2}: "+permission_vipg+"<br/><?php endif; ?>\
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_3"]): ?>- {#VIP_NAME_3}: "+permission_vip3+"<br/><?php endif; ?>\
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_4"]): ?>- {#VIP_NAME_4}: "+permission_vip4+"<br/><?php endif; ?>\
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_5"]): ?>- {#VIP_NAME_5}: "+permission_vip5+"<?php endif; ?></div>";
+}
+function clear_permission(area) {
+	document.getElementById('option_permission_'+area).innerHTML = "";
+}
+function AbreMenu(nome_div) {
+    var div = "";
+    var menus = 13;
+	for (var i=1; i < menus; i++) {
+		div = "div"+i;
+		document.getElementById(div).style.display = "none"; 
+		if (div == nome_div) {
+			document.getElementById(nome_div).style.display = "block"; 
+		}
+	}
+}
+function AbreMenuV2(nome_div) {
+	var div = "";
+	var menus = 3;
+	for (var i=1; i < menus; i++) {
+		div = "divV2"+i;
+		document.getElementById(div).style.display = "none"; 
+		if (div == nome_div) {
+			document.getElementById(nome_div).style.display = "block"; 
+		}
+	}
+}
+</script> 
+	<div id="ja-containerwrap-fr">
+		<div id="ja-container" class="clearfix">
+			<div id="ja-mainbody" class="clearfix">
+				<div id="ja-content">
+					<div id="ja-content-top">
+<div id="ja-content-bot" class="clearfix">
+							
+							<div id="ja-current-content" class="clearfix">
+                            
+                            <div id="etc"> 
+                                {#INCLUDE:menuPanelAdmin}
+                           
+                            <h1 style="margin-top: 20px; margin-bottom: 26px;">Gerar Backup</h1>
+                            
+                            	<div id="etc">
+                                  <form action="?page=paneladmin&amp;option=GERATE_BACKUPS&amp;Write=true" method="post">
+                                    <em>Banco de dados:</em> <select name='database' class="inputbox">{#DATABASE_LIST}</select><br />
+                                    <em>Nome do arquivo:</em> <input name="filename" type="text" value="{#FILE_NAME_SUGESTION}" class="inputbox"/> <strong>(Recomendamos não alterar)</strong><br />
+                                    <em>Salvar em:</em> <input name="dirname" type="text" value="C:\Backups\"  class="inputbox"/><br />
+                                    <input type="submit" value="Criar Backup" class="button" />
+                                  </form>
+                       		  </div>
+                                    <div style="margin-top: 10px;" id="logs_">
+                                    	{#RESULTTPL}
+                                    </div>
+                            	</div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			{#INCLUDE:menuLeft}
+			<br />
+			<div id="ja-tabs" class="clearfix"></div>
+			</div>
+		</div>
+ 	</div>
+{#INCLUDE:footer}

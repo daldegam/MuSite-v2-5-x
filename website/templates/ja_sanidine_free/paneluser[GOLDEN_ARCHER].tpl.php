@@ -1,59 +1,118 @@
-<?php //0055e
-// // MuSite v.2.5.2.1 - with ldManager Beta
-// // Programado por Leandro Daldegam
-// //
-// // Email / MSN: ldaldegam@hotmail.com - suport.daldegam@hotmail.com
-// // Telefone: (31) 86935000
-// // Site: www.daldegamserver.com - www.daldegam.net
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo('Site error: the file <b>'.__FILE__.'</b> requires the ionCube PHP Loader '.basename($__ln).' to be installed by the website operator. If you are the website operator please use the <a href="http://www.ioncube.com/lw/">ionCube Loader Wizard</a> to assist with installation.');exit(199);
-?>
-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
-eZa2wnoOq29BokngGg57skG1AHaalJqBQGW=
+{#INCLUDE:header}
+<script type="text/javascript">
+function show_permission(area,free,vips,vipg, vip3, vip4, vip5) {
+    if(free == 1) var permission_free = "<span style='color:#009400'>Sim</span>"; else var permission_free = "<span style='color:#BB0000'>Não</span>";
+    if(vips == 1) var permission_vips = "<span style='color:#009400'>Sim</span>"; else var permission_vips = "<span style='color:#BB0000'>Não</span>";
+    if(vipg == 1) var permission_vipg = "<span style='color:#009400'>Sim</span>"; else var permission_vipg = "<span style='color:#BB0000'>Não</span>";
+    if(vip3 == 1) var permission_vip3 = "<span style='color:#009400'>Sim</span>"; else var permission_vip3 = "<span style='color:#BB0000'>Não</span>";
+    if(vip4 == 1) var permission_vip4 = "<span style='color:#009400'>Sim</span>"; else var permission_vip4 = "<span style='color:#BB0000'>Não</span>";
+    if(vip5 == 1) var permission_vip5 = "<span style='color:#009400'>Sim</span>"; else var permission_vip5 = "<span style='color:#BB0000'>Não</span>";
+    document.getElementById('option_permission_'+area).innerHTML = "<div style='margin-left: 20px; margin-top: 10px; margin-bottom: 10px;'>Permissões da Opção:<br/> \
+     - Free: "+permission_free+"<br/> \
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_1"]): ?>- {#VIP_NAME_1}: "+permission_vips+"<br/><?php endif; ?> \
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_2"]): ?>- {#VIP_NAME_2}: "+permission_vipg+"<br/><?php endif; ?>\
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_3"]): ?>- {#VIP_NAME_3}: "+permission_vip3+"<br/><?php endif; ?>\
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_4"]): ?>- {#VIP_NAME_4}: "+permission_vip4+"<br/><?php endif; ?>\
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_5"]): ?>- {#VIP_NAME_5}: "+permission_vip5+"<?php endif; ?></div>";
+}
+function clear_permission(area) {
+	document.getElementById('option_permission_'+area).innerHTML = "";
+}
+function AbreMenu(nome_div) {
+	var div = "";
+	var menus = 5;
+	for (var i=1; i < menus; i++) {
+		div = "div"+i;
+		document.getElementById(div).style.display = "none"; 
+		if (div == nome_div) {
+			document.getElementById(nome_div).style.display = "block"; 
+		}
+	}
+}
+function AbreMenuV2(nome_div) {
+	var div = "";
+	var menus = 3;
+	for (var i=1; i < menus; i++) {
+		div = "divV2"+i;
+		document.getElementById(div).style.display = "none"; 
+		if (div == nome_div) {
+			document.getElementById(nome_div).style.display = "block"; 
+		}
+	}
+}
+</script>
+	<div id="ja-containerwrap-fr">
+		<div id="ja-container" class="clearfix">
+			<div id="ja-mainbody" class="clearfix">
+				<div id="ja-content">
+					<div id="ja-content-top">
+						<div id="ja-content-bot" class="clearfix">
+							
+							<div id="ja-current-content" class="clearfix">
+                           	  <div id="etc">
+                                {#INCLUDE:menuPanelUser}
+                            
+                            <h1 style="margin-top: 20px; margin-bottom: 26px;">Golden Archer</h1>
+                            
+                          	    <div id="etc">
+                                <table>
+                        <tr>
+                            <td style="margin: 0px; padding: 0px; background-color: transparent;">
+                            <form id="goldeArcherForm">
+                            <div class="goldenArcherBox">
+                                <div id="goldenArcherName">Golden Archer</div>
+                                <div id="serialText">
+                                     <p>Aqui você pode registrar os seriais que você possui em troca de vários itens!</p>
+                                     <p>&nbsp;</p>
+                                     <p>Os seriais podem ser obtidos em:</p>
+                                      <p>- Eventos no site</p>
+                                      <p>- Eventos no jogo</p>
+                                      <p>- Eventos no forum</p>
+                                     <p>E também pode ser concedidos como brindes por compras de golds e vips!</p>
+                                     <p>&nbsp;</p>
+                                     <p>Os itens aqui obtidos através dos seriais serão colocados no seu baú 0 do jogo.</p>
+                                     <p>&nbsp;</p>
+                                     <p>Os seriais são únicos! Ou seja, seu serial não pode ser registrado pelo login do seu amigo, ele pertence somente a você!</p>
+                                     <p>&nbsp;</p>
+                                     <p class="goldText bold">Digite o seu serial abaixo,<br />depois clique em Registrar serial.</p>
+                                     <p>&nbsp;</p> 
+                                     <p class="goldText">Por favor tenha certeza de diferenciar a letra O e número 0, a letra I e numero 1.</p> 
+                                </div>
+                                <div id="serialInput"><input type="text" name="serial" id="serial" value="0000-0000-0000" maxlength="14" onkeyup="this.value=this.value.toUpperCase()"></div>
+                                <div id="serialCheck"><input type="submit" value="Registrar serial"></div>
+                                <div id="serialResponse">
+                                     <!--p class="yellow">Serial registrado!</p>
+                                     <p class="yellow">Recebido: Bone Blade</p>
+                                     <p class="white">Serial inválido!</p-->
+                                </div>
+                            </div>
+                            </form>
+                            <script type="text/javascript">
+                            jQuery("#goldeArcherForm").submit(function(){
+                                
+                                Verify ('?page=paneluser&option=GOLDEN_ARCHER&action=check&serial='+jQuery("#serial").val(), 'serialResponse', 'get');
+                                
+                                return false;
+                            });
+                            </script>
+                            </td>                                                     
+                            <!--td style="margin: 0px; padding: 0px 0px 0px 10px; width: 100%; background-color: transparent; vertical-align: top;">
+                            Atenção, esse sistema não é interligado com o Golden Archer do jogo!
+                            </td-->
+                        </tr> 
+                        </table>
+                                    
+                                </div>
+                          
+                           	  </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			{#INCLUDE:menuLeft}
+			<br />
+			<div id="ja-tabs" class="clearfix"></div>
+			</div>
+		</div>
+ 	</div>
+{#INCLUDE:footer}

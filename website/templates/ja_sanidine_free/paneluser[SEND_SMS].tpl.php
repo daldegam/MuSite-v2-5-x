@@ -1,50 +1,91 @@
-<?php //0055e
-// // MuSite v.2.5.2.1 - with ldManager Beta
-// // Programado por Leandro Daldegam
-// //
-// // Email / MSN: ldaldegam@hotmail.com - suport.daldegam@hotmail.com
-// // Telefone: (31) 86935000
-// // Site: www.daldegamserver.com - www.daldegam.net
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo('Site error: the file <b>'.__FILE__.'</b> requires the ionCube PHP Loader '.basename($__ln).' to be installed by the website operator. If you are the website operator please use the <a href="http://www.ioncube.com/lw/">ionCube Loader Wizard</a> to assist with installation.');exit(199);
-?>
-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
+{#INCLUDE:header}
+<script type="text/javascript">
+function show_permission(area,free,vips,vipg, vip3, vip4, vip5) {
+    if(free == 1) var permission_free = "<span style='color:#009400'>Sim</span>"; else var permission_free = "<span style='color:#BB0000'>Não</span>";
+    if(vips == 1) var permission_vips = "<span style='color:#009400'>Sim</span>"; else var permission_vips = "<span style='color:#BB0000'>Não</span>";
+    if(vipg == 1) var permission_vipg = "<span style='color:#009400'>Sim</span>"; else var permission_vipg = "<span style='color:#BB0000'>Não</span>";
+    if(vip3 == 1) var permission_vip3 = "<span style='color:#009400'>Sim</span>"; else var permission_vip3 = "<span style='color:#BB0000'>Não</span>";
+    if(vip4 == 1) var permission_vip4 = "<span style='color:#009400'>Sim</span>"; else var permission_vip4 = "<span style='color:#BB0000'>Não</span>";
+    if(vip5 == 1) var permission_vip5 = "<span style='color:#009400'>Sim</span>"; else var permission_vip5 = "<span style='color:#BB0000'>Não</span>";
+    document.getElementById('option_permission_'+area).innerHTML = "<div style='margin-left: 20px; margin-top: 10px; margin-bottom: 10px;'>Permissões da Opção:<br/> \
+     - Free: "+permission_free+"<br/> \
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_1"]): ?>- {#VIP_NAME_1}: "+permission_vips+"<br/><?php endif; ?> \
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_2"]): ?>- {#VIP_NAME_2}: "+permission_vipg+"<br/><?php endif; ?>\
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_3"]): ?>- {#VIP_NAME_3}: "+permission_vip3+"<br/><?php endif; ?>\
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_4"]): ?>- {#VIP_NAME_4}: "+permission_vip4+"<br/><?php endif; ?>\
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_5"]): ?>- {#VIP_NAME_5}: "+permission_vip5+"<?php endif; ?></div>";
+}
+function clear_permission(area) {
+	document.getElementById('option_permission_'+area).innerHTML = "";
+}
+function AbreMenu(nome_div) {
+	var div = "";
+	var menus = 5;
+	for (var i=1; i < menus; i++) {
+		div = "div"+i;
+		document.getElementById(div).style.display = "none"; 
+		if (div == nome_div) {
+			document.getElementById(nome_div).style.display = "block"; 
+		}
+	}
+}
+function AbreMenuV2(nome_div) {
+	var div = "";
+	var menus = 3;
+	for (var i=1; i < menus; i++) {
+		div = "divV2"+i;
+		document.getElementById(div).style.display = "none"; 
+		if (div == nome_div) {
+			document.getElementById(nome_div).style.display = "block"; 
+		}
+	}
+}
+</script>
+	<div id="ja-containerwrap-fr">
+		<div id="ja-container" class="clearfix">
+			<div id="ja-mainbody" class="clearfix">
+				<div id="ja-content">
+					<div id="ja-content-top">
+						<div id="ja-content-bot" class="clearfix">
+							
+							<div id="ja-current-content" class="clearfix">
+                           	  <div id="etc">
+                                {#INCLUDE:menuPanelUser}  
+                            
+                            <h1 style="margin-top: 20px; margin-bottom: 26px;">Enviar SMS</h1>
+                            
+                          	<div id="etc">
+                            	<div style="margin-top: 16px; margin-bottom: 16px; padding-left: 5px;" id="classe_change">
+                   				 <form action='?page=paneluser&amp;option=SEND_SMS&amp;Write=true' method='post'>
+                                    <table align='center' border='0' cellpadding='1' cellspacing='1' width='100%'>
+                                      <tr><td colspan='4' align='center' style="background: none;"><strong>Preencha os dados abaixo para enviar o SMS:</strong></td></tr>
+                                      <tr><td height=15 style="background: none;">&nbsp;</td></tr>
+                                      <tr>
+                                        <td align='right' style="background: none;"><strong>Para: </strong></td>
+                                        <td style="background: none;">{#INPUT_RADIOS_NUMBERS}</td>
+                                      </tr>
+                                      <tr>
+                                        <td align='right' style="background: none;"><strong>Mensagem: </strong></td>
+                                        <td style="background: none;"><input class="inputbox" name="mensagem" type="text" maxlength="{#MAXLENGHT}" value="Maximo {#MAXLENGHT} Caracters" size="35" /></td>
+                                      </tr>
+                                      <tr>
+                                        <td align='center' colspan="2" style="background: none;"><input type=submit value='Enviar Mensagem' class='button' /></td>
+                                      </tr>
+                                    </table>
+                                  </form>     
+                   			  </div>
+                     		{#RespostWrite}                             
+                             </div>
+                          
+                           	  </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			{#INCLUDE:menuLeft}
+			<br />
+			<div id="ja-tabs" class="clearfix"></div>
+			</div>
+		</div>
+ 	</div>
+{#INCLUDE:footer}

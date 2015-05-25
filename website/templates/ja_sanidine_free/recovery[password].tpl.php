@@ -1,43 +1,74 @@
-<?php //0055e
-// // MuSite v.2.5.2.1 - with ldManager Beta
-// // Programado por Leandro Daldegam
-// //
-// // Email / MSN: ldaldegam@hotmail.com - suport.daldegam@hotmail.com
-// // Telefone: (31) 86935000
-// // Site: www.daldegamserver.com - www.daldegam.net
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo('Site error: the file <b>'.__FILE__.'</b> requires the ionCube PHP Loader '.basename($__ln).' to be installed by the website operator. If you are the website operator please use the <a href="http://www.ioncube.com/lw/">ionCube Loader Wizard</a> to assist with installation.');exit(199);
-?>
-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
+{#INCLUDE:header}
+<script type="text/javascript">
+function show_permission(area,free,vips,vipg, vip3, vip4, vip5) {
+    if(free == 1) var permission_free = "<span style='color:#009400'>Sim</span>"; else var permission_free = "<span style='color:#BB0000'>Não</span>";
+    if(vips == 1) var permission_vips = "<span style='color:#009400'>Sim</span>"; else var permission_vips = "<span style='color:#BB0000'>Não</span>";
+    if(vipg == 1) var permission_vipg = "<span style='color:#009400'>Sim</span>"; else var permission_vipg = "<span style='color:#BB0000'>Não</span>";
+    if(vip3 == 1) var permission_vip3 = "<span style='color:#009400'>Sim</span>"; else var permission_vip3 = "<span style='color:#BB0000'>Não</span>";
+    if(vip4 == 1) var permission_vip4 = "<span style='color:#009400'>Sim</span>"; else var permission_vip4 = "<span style='color:#BB0000'>Não</span>";
+    if(vip5 == 1) var permission_vip5 = "<span style='color:#009400'>Sim</span>"; else var permission_vip5 = "<span style='color:#BB0000'>Não</span>";
+    document.getElementById('option_permission_'+area).innerHTML = "<div style='margin-left: 20px; margin-top: 10px; margin-bottom: 10px;'>Permissões da Opção:<br/> \
+     - Free: "+permission_free+"<br/> \
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_1"]): ?>- {#VIP_NAME_1}: "+permission_vips+"<br/><?php endif; ?> \
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_2"]): ?>- {#VIP_NAME_2}: "+permission_vipg+"<br/><?php endif; ?>\
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_3"]): ?>- {#VIP_NAME_3}: "+permission_vip3+"<br/><?php endif; ?>\
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_4"]): ?>- {#VIP_NAME_4}: "+permission_vip4+"<br/><?php endif; ?>\
+     <?php if($PANELUSER_MODULE['BUY_VIPS']['ACTIVES']["VIP_5"]): ?>- {#VIP_NAME_5}: "+permission_vip5+"<?php endif; ?></div>";
+}
+function clear_permission(area) {
+	document.getElementById('option_permission_'+area).innerHTML = "";
+}
+function AbreMenu(nome_div) {
+	var div = "";
+	var menus = 5;
+	for (var i=1; i < menus; i++) {
+		div = "div"+i;
+		document.getElementById(div).style.display = "none"; 
+		if (div == nome_div) {
+			document.getElementById(nome_div).style.display = "block"; 
+		}
+	}
+}
+function AbreMenuV2(nome_div) {
+	var div = "";
+	var menus = 3;
+	for (var i=1; i < menus; i++) {
+		div = "divV2"+i;
+		document.getElementById(div).style.display = "none"; 
+		if (div == nome_div) {
+			document.getElementById(nome_div).style.display = "block"; 
+		}
+	}
+}
+</script> 
+	<div id="ja-containerwrap-fr">
+		<div id="ja-container" class="clearfix">
+			<div id="ja-mainbody" class="clearfix">
+				<div id="ja-content">
+					<div id="ja-content-top">
+						<div id="ja-content-bot" class="clearfix">
+							
+							<div id="ja-current-content" class="clearfix">
+                            <div id="etc">
+                            <h1 style="margin-bottom: 26px;">Recuperar Senha</h1>
+                            
+                            	<div style="margin-top: 16px; margin-bottom: 16px; padding-left: 5px;" id="classe_change">
+                   				<form action="?page=recovery&amp;type=password&amp;Write=true" method="post">
+                                    Digite o seu login: <input class="inputbox" name="account" type="text" />
+                                    <input type="submit" value="Recuperar" class="button" />
+                                  </form>
+                                </div>
+                     		{#ResultTpl}                          
+                             </div>
+                          
+                            </div>
+						</div>
+					</div>
+				</div>
+			{#INCLUDE:menuLeft}
+			<br />
+			<div id="ja-tabs" class="clearfix"></div>
+			</div>
+		</div>
+ 	</div>
+{#INCLUDE:footer}

@@ -1,62 +1,113 @@
-<?php //0055e
-// // MuSite v.2.5.2.1 - with ldManager Beta
-// // Programado por Leandro Daldegam
-// //
-// // Email / MSN: ldaldegam@hotmail.com - suport.daldegam@hotmail.com
-// // Telefone: (31) 86935000
-// // Site: www.daldegamserver.com - www.daldegam.net
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo('Site error: the file <b>'.__FILE__.'</b> requires the ionCube PHP Loader '.basename($__ln).' to be installed by the website operator. If you are the website operator please use the <a href="http://www.ioncube.com/lw/">ionCube Loader Wizard</a> to assist with installation.');exit(199);
-?>
-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
-7krCWhFqQD6hzL7gD0==
+<h1 style="margin-bottom: 16px;">Painel do usuário</h1>
+                                   <div id="menu_cp">
+                                       <ul>
+                                           <li><a href="javascript:;" onclick="javascript:AbreMenu('div1')">Gerenciar Minha Conta</a></li>
+                                           <li><a href="javascript:;" onclick="javascript:AbreMenu('div2')">Gerenciar Personagens</a></li>
+                                           <li><a href="javascript:;" onclick="javascript:AbreMenu('div3')">Shop</a></li>
+                                           <li><a href="javascript:;" onclick="javascript:AbreMenu('div4')">Suporte</a></li>
+                                       </ul>
+                                   </div>
+                                  
+                                   <div id='div1' style="display: none;">
+                                       <div id="menu_cp">
+                                           <ul>
+                                            <li><a href='?page=paneluser'>Minha Conta</a></li>
+                                            <li><a href='?page=paneluser&amp;option=MODIFY_DATA' onmouseover="show_permission('GMC','{#MODIFY_DATA_FREE}','{#MODIFY_DATA_VIP_S}','{#MODIFY_DATA_VIP_G}','{#MODIFY_DATA_VIP_3}','{#MODIFY_DATA_VIP_4}','{#MODIFY_DATA_VIP_5}');" onmouseout="clear_permission('GMC');">Alterar Dados</a></li>
+                                            <li><a href='?page=paneluser&amp;option=CLEAN_VAULT' onmouseover="show_permission('GMC','{#CLEAN_VAULT_FREE}','{#CLEAN_VAULT_VIP_S}','{#CLEAN_VAULT_VIP_G}','{#CLEAN_VAULT_VIP_3}','{#CLEAN_VAULT_VIP_4}','{#CLEAN_VAULT_VIP_5}');" onmouseout="clear_permission('GMC');">Limpar Bau</a></li>
+                                            <li><a href='?page=paneluser&amp;option=DOUBLE_VAULT' onmouseover="show_permission('GMC','{#DOUBLE_VAULT_FREE}','{#DOUBLE_VAULT_VIP_S}','{#DOUBLE_VAULT_VIP_G}','{#DOUBLE_VAULT_VIP_3}','{#DOUBLE_VAULT_VIP_4}','{#DOUBLE_VAULT_VIP_5}');" onmouseout="clear_permission('GMC');">Bau Duplo</a></li>
+                                            <li><a href='?page=paneluser&amp;option=VIRTUAL_VAULT' onmouseover="show_permission('GMC','{#VIRTUAL_VAULT_FREE}','{#VIRTUAL_VAULT_VIP_S}','{#VIRTUAL_VAULT_VIP_G}','{#VIRTUAL_VAULT_VIP_3}','{#VIRTUAL_VAULT_VIP_4}','{#VIRTUAL_VAULT_VIP_5}');" onmouseout="clear_permission('GMC');">Bau virtual</a></li>
+                                            <li><a href='?page=paneluser&amp;option=LOG_BUYS' onmouseover="show_permission('GMC','{#LOG_BUYS_FREE}','{#LOG_BUYS_VIP_S}','{#LOG_BUYS_VIP_G}','{#LOG_BUYS_VIP_3}','{#LOG_BUYS_VIP_4}','{#LOG_BUYS_VIP_5}');" onmouseout="clear_permission('GMC');">Log de Compras</a></li>
+                                            <li><a href='?page=paneluser&amp;option=MODIFY_PERSONALID' onmouseover="show_permission('GMC','{#MODIFY_PERSONALID_FREE}','{#MODIFY_PERSONALID_VIP_S}','{#MODIFY_PERSONALID_VIP_G}','{#MODIFY_PERSONALID_VIP_3}','{#MODIFY_PERSONALID_VIP_4}','{#MODIFY_PERSONALID_VIP_5}');" onmouseout="clear_permission('GMC');">Alterar Personal ID</a></li>
+                                            <li><a href='?page=paneluser&amp;option=GAME_DISCONNECT' onmouseover="show_permission('GMC','{#GAME_DISCONNECT_FREE}','{#GAME_DISCONNECT_VIP_S}','{#GAME_DISCONNECT_VIP_G}','{#GAME_DISCONNECT_VIP_3}','{#GAME_DISCONNECT_VIP_4}','{#GAME_DISCONNECT_VIP_5}');" onmouseout="clear_permission('GMC');">Desconectar conta</a></li>
+                                            <li><a href='?page=paneluser&amp;option=GOLDEN_ARCHER' onmouseover="show_permission('GMC','{#GOLDEN_ARCHER_FREE}','{#GOLDEN_ARCHER_VIP_S}','{#GOLDEN_ARCHER_VIP_G}','{#GOLDEN_ARCHER_VIP_3}','{#GOLDEN_ARCHER_VIP_4}','{#GOLDEN_ARCHER_VIP_5}');" onmouseout="clear_permission('GMC');">Golden Archer</a></li>
+                                            <li><a href='?page=paneluser&amp;option=COLLECTOR_POINTS' onmouseover="show_permission('GMC','{#COLLECTOR_POINTS_FREE}','{#COLLECTOR_POINTS_VIP_S}','{#COLLECTOR_POINTS_VIP_G}','{#COLLECTOR_POINTS_VIP_3}','{#COLLECTOR_POINTS_VIP_4}','{#COLLECTOR_POINTS_VIP_5}');" onmouseout="clear_permission('GMC');">Coletor de pontos</a></li>
+                                            <li><a href='?page=paneluser&amp;option=AUCTIONS' onmouseover="show_permission('GMC','{#AUCTIONS_FREE}','{#AUCTIONS_VIP_S}','{#AUCTIONS_VIP_G}','{#AUCTIONS_VIP_3}','{#AUCTIONS_VIP_4}','{#AUCTIONS_VIP_5}');" onmouseout="clear_permission('GMC');">Leilões</a></li>
+                                            <li><a href='?page=paneluser&amp;option=TRANSFER_CASH'>Transferir {#CASH_NAME}/{#CASH_NAME2}</a></li>
+                                            <li><a href='?page=loadModule&module=screenshots&action=panelManager'>Screenshots</a></li>
+                                        </ul>
+                                    <span id='option_permission_GMC'></span>
+                                    </div>
+                                  </div>
+                              
+                              <div id='div2' style='display:none'> 
+                                  <div id="menu_cp"> 
+                                    <ul>  
+                                         <li><a href='?page=paneluser&amp;option=RESET' onmouseover="show_permission('GP','{#RESET_FREE}','{#RESET_VIP_S}','{#RESET_VIP_G}','{#RESET_VIP_3}','{#RESET_VIP_4}','{#RESET_VIP_5}');" onmouseout="clear_permission('GP');">Resetar Personagem</a></li><li><a href='?page=paneluser&amp;option=MASTER_RESET' onmouseover="show_permission('GP','{#MASTER_RESET_FREE}','{#MASTER_RESET_VIP_S}','{#MASTER_RESET_VIP_G}');" onmouseout="clear_permission('GP');">Master Reset</a></li>
+                                         <li><a href='?page=paneluser&amp;option=RESET_TRANSFER' onmouseover="show_permission('GP','{#RESET_TRANSFER_FREE}','{#RESET_TRANSFER_VIP_S}','{#RESET_TRANSFER_VIP_G}','{#RESET_TRANSFER_VIP_3}','{#RESET_TRANSFER_VIP_4}','{#RESET_TRANSFER_VIP_5}');" onmouseout="clear_permission('GP');">Transferir Resets</a></li>
+                                         <li><a href='?page=paneluser&amp;option=CLEAN_PK' onmouseover="show_permission('GP','{#CLEAN_PK_FREE}','{#CLEAN_PK_VIP_S}','{#CLEAN_PK_VIP_G}','{#CLEAN_PK_VIP_3}','{#CLEAN_PK_VIP_4}','{#CLEAN_PK_VIP_5}');" onmouseout="clear_permission('GP');">Limpar PK</a></li>
+                                         <li><a href='?page=paneluser&amp;option=DISTRIBUTE_POINTS' onmouseover="show_permission('GP','{#DISTRIBUTE_POINTS_FREE}','{#DISTRIBUTE_POINTS_VIP_S}','{#DISTRIBUTE_POINTS_VIP_G}','{#DISTRIBUTE_POINTS_VIP_3}','{#DISTRIBUTE_POINTS_VIP_4}','{#DISTRIBUTE_POINTS_VIP_5}');" onmouseout="clear_permission('GP');">Distribuir Pontos</a></li>
+                                         <li><a href='?page=paneluser&amp;option=MOVE_CHARACTER' onmouseover="show_permission('GP','{#MOVE_CHARACTER_FREE}','{#MOVE_CHARACTER_VIP_S}','{#MOVE_CHARACTER_VIP_G}','{#MOVE_CHARACTER_VIP_3}','{#MOVE_CHARACTER_VIP_4}','{#MOVE_CHARACTER_VIP_5}');" onmouseout="clear_permission('GP');">Mover Personagem</a></li>
+                                         <li><a href='?page=paneluser&amp;option=CHANGE_NICK' onmouseover="show_permission('GP','{#CHANGE_NICK_FREE}','{#CHANGE_NICK_VIP_S}','{#CHANGE_NICK_VIP_G}','{#CHANGE_NICK_VIP_3}','{#CHANGE_NICK_VIP_4}','{#CHANGE_NICK_VIP_5}');" onmouseout="clear_permission('GP');">Mudar Nick</a></li>
+                                         <li><a href='?page=paneluser&amp;option=CHANGE_CLASS' onmouseover="show_permission('GP','{#CHANGE_CLASS_FREE}','{#CHANGE_CLASS_VIP_S}','{#CHANGE_CLASS_VIP_G}','{#CHANGE_CLASS_VIP_3}','{#CHANGE_CLASS_VIP_4}','{#CHANGE_CLASS_VIP_5}');" onmouseout="clear_permission('GP');">Mudar Classe</a></li>
+                                         <li><a href='?page=paneluser&amp;option=REDISTRIBUTE_POINTS' onmouseover="show_permission('GP','{#REDISTRIBUTE_POINTS_FREE}','{#REDISTRIBUTE_POINTS_VIP_S}','{#REDISTRIBUTE_POINTS_VIP_G}','{#REDISTRIBUTE_POINTS_VIP_3}','{#REDISTRIBUTE_POINTS_VIP_4}','{#REDISTRIBUTE_POINTS_VIP_5}');" onmouseout="clear_permission('GP');">Redistribuir Pontos</a></li>
+                                         <li><a href='?page=paneluser&amp;option=CLEAN_INVENTORY' onmouseover="show_permission('GP','{#CLEAN_INVENTORY_FREE}','{#CLEAN_INVENTORY_VIP_S}','{#CLEAN_INVENTORY_VIP_G}','{#CLEAN_INVENTORY_VIP_3}','{#CLEAN_INVENTORY_VIP_4}','{#CLEAN_INVENTORY_VIP_5}');" onmouseout="clear_permission('GP');">Limpar Inventário</a></li>
+                                         <li><a href='?page=paneluser&amp;option=MANAGER_PHOTO' onmouseover="show_permission('GP','{#MANAGER_PHOTO_FREE}','{#MANAGER_PHOTO_VIP_S}','{#MANAGER_PHOTO_VIP_G}','{#MANAGER_PHOTO_VIP_3}','{#MANAGER_PHOTO_VIP_4}','{#MANAGER_PHOTO_VIP_5}');" onmouseout="clear_permission('GP');">Gerenciar foto</a></li>
+                                     </ul>
+                                     <span id='option_permission_GP'></span>
+                                  </div>
+                                </div>
+                                
+                            <div id='div3' style='display:none'>
+                                <div id="menu_cp">
+                                     <ul>
+                                         <li><a href='?page=paneluser&amp;option=BUY_VIPS'>Comprar Vips</a></li>
+                                         <li><a href='?page=paneluser&amp;option=CONFIRM_PAYMENT'>Confirmar Pagamento</a></li>
+                                      </ul>
+                                </div>
+                           </div>
+                           
+                           <div id='div4' style='display:none'>
+                                   <div id="menu_cp">
+                                     <ul>
+                                         <li><a href='?page=paneluser&amp;option=OPEN_COMPLAINTS' onmouseover="show_permission('GSUP','{#OPEN_COMPLAINTS_FREE}','{#OPEN_COMPLAINTS_VIP_S}','{#OPEN_COMPLAINTS_VIP_G}','{#OPEN_COMPLAINTS_VIP_3}','{#OPEN_COMPLAINTS_VIP_4}','{#OPEN_COMPLAINTS_VIP_5}');" onmouseout="clear_permission('GSUP');">Abrir Denuncias</a></li>
+                                         <li><a href='?page=paneluser&amp;option=OPEN_TICKET' onmouseover="show_permission('GSUP','{#OPEN_TICKET_FREE}','{#OPEN_TICKET_VIP_S}','{#OPEN_TICKET_VIP_G}','{#OPEN_TICKET_VIP_3}','{#OPEN_TICKET_VIP_4}','{#OPEN_TICKET_VIP_5}');" onmouseout="clear_permission('GSUP');">Abrir Pedidos</a></li>
+                                         <li><a href='?page=paneluser&amp;option=READ_TICKET' onmouseover="show_permission('GSUP','{#READ_TICKET_FREE}','{#READ_TICKET_VIP_S}','{#READ_TICKET_VIP_G}','{#READ_TICKET_VIP_3}','{#READ_TICKET_VIP_4}','{#READ_TICKET_VIP_5}');" onmouseout="clear_permission('GSUP');">Ver Pedidos</a></li>
+                                         <li><a href='?page=paneluser&amp;option=SEND_SMS' onmouseover="show_permission('GSUP','{#SEND_SMS_FREE}','{#SEND_SMS_VIP_S}','{#SEND_SMS_VIP_G}','{#SEND_SMS_VIP_3}','{#SEND_SMS_VIP_4}','{#SEND_SMS_VIP_5}');" onmouseout="clear_permission('GSUP');">Enviar SMS para os ADMs</a></li>
+                                    </ul>
+                                <span id='option_permission_GSUP'></span>
+                                </div>
+                            </div>  
+                            
+                        <!-- Begin Questions Event -->
+                        <div id="questionsEvent" style="display: none;">
+                            <form name="questionEventForm">
+                            
+                            <div id="answerQuestion">
+                                <p class="congratulations">Parab&eacute;ns {#MEMB_NAME}!</p>
+                                <p>&nbsp;</p>
+                                <p>Voc&ecirc; foi sorteado para participar do evento Show do Milh&atilde;o.</p>
+                                <p>Responda corretamente a pergunta abaixo, e ganha um prêmio!</p>
+                                <p>Boa sorte e obrigado pela sua participação no {#TITLE_SITE}.</p>
+                            </div>
+                            
+                            <div id="optionsQuestion">
+                                {#questionResponse}
+                                <div id="reponseSubmit">
+                                    
+                                </div>
+                            </div>
+                            
+                            <div id="timerString">Tempo restante: <div id="timerCount">60 segundos.</div></div>
+                            
+                            </form>
+                        </div>
+                        <script type="text/javascript">
+                        var interval = null;
+                        var count = 60;
+                        function timerDecrement()
+                        {
+                            count--;
+                            if(count <= 0)
+                            {
+                                jQuery('#timerCount').css("color", "red");
+                                jQuery('#timerCount').html('Tempo esgotado.');
+                                clearInterval(interval);
+                            }
+                            else 
+                            {
+                                jQuery('#timerCount').css("color", "green");
+                                jQuery('#timerCount').html(count + " segundos.");
+                            } 
+                        }
+                        </script>
+                        <!-- End Questions Event -->

@@ -1,87 +1,329 @@
-<?php //0055e
-// // MuSite v.2.5.2.1 - with ldManager Beta
-// // Programado por Leandro Daldegam
-// //
-// // Email / MSN: ldaldegam@hotmail.com - suport.daldegam@hotmail.com
-// // Telefone: (31) 86935000
-// // Site: www.daldegamserver.com - www.daldegam.net
-if(!extension_loaded('ionCube Loader')){$__oc=strtolower(substr(php_uname(),0,3));$__ln='ioncube_loader_'.$__oc.'_'.substr(phpversion(),0,3).(($__oc=='win')?'.dll':'.so');if(function_exists('dl')){@dl($__ln);}if(function_exists('_il_exec')){return _il_exec();}$__ln='/ioncube/'.$__ln;$__oid=$__id=realpath(ini_get('extension_dir'));$__here=dirname(__FILE__);if(strlen($__id)>1&&$__id[1]==':'){$__id=str_replace('\\','/',substr($__id,2));$__here=str_replace('\\','/',substr($__here,2));}$__rd=str_repeat('/..',substr_count($__id,'/')).$__here.'/';$__i=strlen($__rd);while($__i--){if($__rd[$__i]=='/'){$__lp=substr($__rd,0,$__i).$__ln;if(file_exists($__oid.$__lp)){$__ln=$__lp;break;}}}if(function_exists('dl')){@dl($__ln);}}else{die('The file '.__FILE__." is corrupted.\n");}if(function_exists('_il_exec')){return _il_exec();}echo('Site error: the file <b>'.__FILE__.'</b> requires the ionCube PHP Loader '.basename($__ln).' to be installed by the website operator. If you are the website operator please use the <a href="http://www.ioncube.com/lw/">ionCube Loader Wizard</a> to assist with installation.');exit(199);
-?>
-HR+cPpkYWAecEdcDEsWLYS1+7jdEIHKnsbBN3F2PrFBLccM1h6wu/WTgCAI6QX3daJxblT+z9TMo
-++gHviocxFLiDbJTC36gpmaocEZclUJVRQcGJbBhtBl7ax5uzdowwzGTwpZVzBJudgA8vxbKDrnY
-PbvEWr+6JwiMTnug8VIsu2HHaO2AoBHgX1cLu2aDWb1lqs4gwCtRn8pXr+WEqBlmiVRai5d2VuCQ
-ZOTT92VQKRLb8AmKx24juAV4glitGuti/bOaEiqH0U/F3b8CPMTmaPlBZmF9n+uaTKJ5nNYZsmAU
-prffx+IOP7ZzFS9d4fO/Zi2wjdA79mIFwN+DwVPkAL3yB8473Y9KULcQlUDcPY6/5W2TebJNIplK
-Lye89+xOWMSS3tJk693NJ+Sc1YLNQQKBUlgWUwi4q2/3rNYk6TsWybpMoeIqURQFS0sombZ/NmRJ
-2hFAD6Na18IEnnUBWb64wow689IBKynNVg50doHUnBvyWHuWP8+44INlDmzBr0wQMYM4SVmNGRdK
-1EnBirxj0GAA/wm9Ts/ZV1SKcFVFRuEeSUgDnlAW108qGmXqzdrjd3gSSYaQGMo2hQT5G0g0YhP/
-tabWtxpgzgldyEbKu7ADd+lbOqgpn8PNpODYl5dQOrCm2kzXIpWLA1GezMstWQPMnoHoPVMjHjif
-mJBGXqJvsMQeRJYaRFh8VY2JvKRLAb6LtqIWel9z7OoyglxMmwL2a6pKewtR3yCQTANN6zBWxgs3
-2FMy5dxmfFsnGBatRtBr6uWpkgt3/EgIOsg4MKqMe3rVp/41uH5qSxS8HwoLYFr/6oytXoU9lOrE
-YXa37t9ml78GdIe3dxraHbtNXPNMAxE88SwYwcotlZMol61uZ0JVqpLUuRW4xYi+1fv8zboKIYCu
-MuV9VNNtw83vKSiJN7mzjuHjLpMTzh8+CYYfTDO/pNAbav2DDPc8Zgw64PcaJF1FC2H4q4AXYqlX
-xwofuKdw2QtD+98J6CcKRbcPEVG7TbBg3rTGywFQB7Hq5wCOLM3VCkrRMC/ecHDVaWuhfJb4Au3w
-29g1ZjB6bT/U8OBLlY5807kIWtqMbhdBzg+Vy/INls5keNPd2qUY+2qQn7Brk1ChQQ986M0UzVgs
-QQ0Or9zjPrc2LUQtJ6jamGRmAw2pKxPbz7tzJl1ozqYbruVlHVgDqwi0MMIMNdP5imhqaIFyNLIV
-cValPVqB9RWrOYPDLTE9WzwGVdI6YhEM72YXyOZeK6vNYdXV457iW8xAY8fTxhillOIvAxFnhWFQ
-tflWnGt88RUoJEZFhXxyQY0LkVR+dq0GgB+1ba30Lcoo5/0UebDX0xYt/+1cCGtKP//gLwFxl9DL
-AdKFGEOA7+zPU2ypRnNzJSzbWerL5qHHDoS6M+XtLjPxlWaFcG4u3gSK4bsfnGIKlhe02weq0bFH
-3znY3Vq4Pr243BhGMn13YUlJpeNP50CEVKQMGvIoPVudCd44UE7WWwKcOrmMJTmVmFA/fuF9VcwT
-jbyx7YTwQnolkOJDei09df374FE1WHhpyh/qvC2XsANI8BfOVCK7gtoTpraSJiRY3WaX3Mlu2mPS
-rF7OVYHHm3htOay7qgadc+FffeuK158dA6bgV6Vl++fyiz5AGytW8l5ZCcvLzksov9yeVfvwdu9z
-XTC80263QRNkbcwJr5ibb/vKIPH6PM97v/YUjANteslU2APYoXqdBSI33hSRON48pJAAZI94RVbY
-IXJknEyzfovnusbGnz1s2phT7bBDDiJ4SHC5eU153aFOrinp3R3rk6EgpXhLFYfniwhkhK3DyYCv
-0ETVcpwTHBaeXe8I1oDKKBBjrI+I2KeJGv9nogrSk+meSLTtGy7eu7Gq/ee9UdqfBehjyxCK+PoY
-qAjgdBrzz4/haCVcC1jvCA6U4OMzOGENaHIOFX/x/H8Pvfc2+yMvjc2bn4t71MbX34/9OOhDPWCd
-w1Uh1e0MAKaum2Z9gpW6SSUEvJdBzeszsCOiVaLPE+QpWe0dKgUXm1ZkeTJiu8oXElXRM1eDr/vL
-gt//KN6guO6/pEhgPq5Xapi/nRNDDxD78TobDd+orw7X/ZzIXxBcWLax2d8KPTjbUYV8nRucJLEj
-QOoEpKDTHyy6KfeYPUPNrlmJ95DiR+3Kk9LUYY9Dz/2cjbc0rf9F5lffJe4jAWv02+cqvS81Rw2r
-G53G2ZsSNgpBuJ/rhZw3t0nYkLMjeR9lpMi3nl74u3jkFME3t1CNPrStL6TeO3xYYM8bSXWFGzOb
-Yx5wLSB6csBODGlAIc3n/bnBMw1mg7QUDsKoI97SPXx3aSEpFZS+Emc/VjGoe8EEhd6h5iNUeVsF
-XK49O9Yrn+r2H+CDLRkm4GIuEy8g1EK/0uDL0RhrJVyzD+bFvozbS1EwwsDL0CHn1Sggkd0J5pb5
-PLcnEi8mq4suV4C+b1N+DY1M0sZwFsYAMm5O35YPiYZ+e7OhTcWBiNNlxvEmupOZv4Abo/6E6dO5
-kiYKbKKGzfDdvD2rMNRjp4wVrT8YuD4SIrcR9zsAZR3/Z99PAt7pH9UeW9jOtnSpAcX+Az/equ69
-zRd+6c0K3/7ClCpC9kwxbq4lEiWY6ZjV8Foi6XCbBdmfmVqFfE4/BwokLWObCwiva5lC0YN4R9MS
-nEXvimDz16kQDhlZFWmuZofVnM8RCdcwj3af+34J3O6EnaUKjWwX7RRLb3z9kdPZG9AyLub3Rp5J
-MAmwcWq2ZeWF75EDxsYAFalFypAbI6MFg+ysj5zIKXGkL4IpSnTP8yqpZcWlvWp4HbFQHQ5jSu5U
-5YL5vOfGDmYShtZEM/quz60Afv9IvLYPIlXER3gEmD8SxkzbgEa1Ez1g2euKAw7r0JQfI3AhVAx1
-76T5iVN25ek9JLV7E+01EEpu2maBgPHdA91PPNR74whbnGvFTyOdm5d3mGcQfKiZ/hsnOHjVKQZg
-+pcOTVXQIMP7FlSsSoJs9AgcC8LorSHEs5UBcdn0Hj3lwJDMiXbKWzCi8eB8Uf52sr5BFqgA1nSb
-D40nGNbC+sE7BU41msCD6BQIWVWsulZL1eHQ2cpTnzW7lxufp4KXfGyHurOw/7mvS60PHs7mxX5/
-aG9e7z6nVkpz3z96A57cXH4hFZ+4DKx1mrl3yM7eE+wG42nlZ1E19C9K539UAQJKpggUb9o5tFiM
-6ZPdOJUkRsnc0mKYBtnXWZ2qcXVanIIMYzqndhYt3ybVDvXze0dyZHV0raOEAmH07WL26EN2NbkC
-d697gGhf7LI30xLXzZWmcicFWuQbj56PKoXYAfkikP8O6LshGDrd+tjJzpiqUsZq9nlaeF4og5i1
-RjGoeUIbbe//8lDoNuKbrvHSB0aBnLwWKzxpbMstgtbYnKnjYpqXAtPFd//SAeBk5ggvnS9fn+Ji
-47ADMGm6RKmVDWwAq1+PQl/urUcdh5zHRSFMYl5O+QoS/WzcmtvIAPmYv7vUx71+igoTI8YnjmUy
-o1UWcJ/tKj6KQnWWx9wvGpy8w7YssvN8lyov2u6dzeYRKeYXGZ6Hu0eFYBlwMP3JLRGpRhmCJUPc
-b7aG74unRNymeOUXBsuG28Be4c7YRHcHw4cVWndiXhGWEopPyrCU8K8sJpBo+TFRuFg4rpSkesDI
-H+gCNn455tBdyQ2K+tXTjEeBDcah+33L1w+f3UPAyKo/oqcshH2HSM1/tjZfI3SVTh0bt2CRJrIQ
-/uz9WN8tRwggwtUZuA824vvBphfg6dAJ3ivKORYYHt0Vv+m4NuMqY3RmejTI/rqqeTpE6SRqnpS9
-f5h7VVr+Fxb9tf9ILB/abaxG4frgGUOqgZf3kVyqkX1nOToSlVTpcVLqfYVRgcvyeuRLyPYXz2XN
-zUqxWCn+nfplt/4zlh7HrwN9pIIauq7936tP7IiuuZ6Y0MFjMpC07HbeqTYwrMu1SmdpFqrRTrZN
-C7qGBYr8MuJW6e1yP0q2XZGdMTSoxM/eYrgQ2qeWoZq+9vAMRiNUoY0kP4bwwTN10EeXZqwr0Dg0
-mVSQPKtVRhnWk7D61rz8x9Of/hRcPtaz4g1O08gggtmQs3QYbcYkKuOUP8mpLYjHtvZstdr5IGrd
-PoD+yhVYROW7ME0pnryUB7RQvq4Baic0lCp7JazLhSDAnq/C/DYKyJ8Mf83Xy2xyM5DqWEVr/Vr/
-OmVPZYICFfJX1lWN2zGYXmGgYuLVBGH8SraNVasLca/gvs3rGpiIV7j/d3laUAzLAcnuKZimKNIi
-Zua0YtQGgFm9EfnQP+ui04WYhMjd+/g8hjylmKVn5J8/OVKOoKa1vr26cSrd1a47xjdOOuiSlNPo
-spWdw3YzUe4mARf1kj7nwRsx3+cjlzBMtq2PZypWMremFcXMqXajgasxrXbK4Rk2Abbokj5488Xz
-frKUCSWco3cM9ISaUosaHz6AqXpwuxZS1Q+wmlIe8VXBGlqbeAVi60ta6UW4ZJdb6lyIRdMTzhf7
-qg1Hnv6yUCyY6WRVUl5dtpzt+HjDZdKL1b7hiEX2kzfjHzRYb/GnzyKndgne8XIij5+mrSua4pyv
-MoZjXAqcUcdYT16MfDIvIWCq5ypTf8H5JxcDpSYLEnKV0KUOnOTYvMdhbp5zYQPnzxl5oJXpZhnW
-qCdizb+HJHAj+Gi4Sy3nqUQwVt9cvEKOOzJ4dq/+i0SqAKc0rf/6sbH1dpPNoSpXkWJA89i0C93z
-Ay1mAM/aAJaRd718HqY3EdYB+n5Oq+kuRbVJOmvB0qoTxwJtE49i3/9Id/5GR1m+zkmTOEBx2c2e
-WmCicw10nFf/VYHuAbojbh3A5wXb//5aw3qIi7dcK/CqbLtzLNcmaBjiOd6Z6n5Pw2Al3ucxa54z
-5iGoaGZLV++ePt2RXKek8yE3eGDnM+nlzaK4QrRghEIzL5xbPqmiPVX4zSZmQ7KK2unj7RI8Xo9v
-u6Toi5Rt7bR9guy5irkRc4z5B+HfRCXu7DTZyyX80n8KnY+XBKWDVz4XUfufJ4SmaMWg0b8tM5yZ
-FYepiMxyDl9iXa7VrfhTZ90SMtKcRq3cAbx+GVTfZrgN9Js2w8YJfX30uxoSJ+gxb0vcqBowrkIp
-G2NE4COOd318XIuSXWxP5b9CglQfYjjmIc1Hy0Be5AV10yjrcno3TK3cBsKbzbQ59q3CrwpUXYsZ
-Lb8m9pIezN/KoosZuqpeEpkcbOsPWkZAt0JvUn8x4jW268NTI9q/2b8/Uu/sBuxxfISVOINgLP3A
-r2u89K1RZbCceWo+KNUeiZSDetQYtfJrGGVRLuBYpabXkzHCYu5DGskl2FPOig1lPtBtmESIBaCu
-k61PFxRH7dUKEIhTHFvEj4TcrdLvtfmsUDZPD0Sqsdc7y4anr1cF8sc7AOS9FY4TmKiBFe31EUF1
-/nYMlIyBFMaa0Qrja5v/GkJZSkfN0WX9W/xDW2yk5c83j3TqpDteGoOi7EWF/rlzMoWNzlEE+rGR
-VUcQgvVI5obeTP1AArt3e2CeIfJotsmKoj0p4ly+ds6d08BfwA0J25TkphUUSlkZtHHIBiEalYD0
-PVSe4QmJxPmEOIsxxLW5IaJXNvEQBvA+PQ+45HuCbHYWuAZ6toDQvoqpUelsWyTMioukK/c5JGnZ
-8FCTAWh3jRf+WMEMzOYxKFfHBdp5lImXju/jaMq3xQmA0AwEQ674vUEr0etKLEZdXD4JM7Uh42/3
-+D9eHIMQ2tUGVN70MHDdbsG4ajgqxCUjCdN73/Epe8x9wGP++vzW2wjpZsc31rp+RVAt6TBF5fht
-ZYQ438oMDmxlRPsv5Pc7PfEAPEmOOEy0eLSWwtZEkwq2tEem6REP3U/OvJPADvsEgEkrHZ61Ln4p
-C8Bc1K1o20ozY2ckEzUtS7WgaNuEVQ8dwUQWWLcXekMBVC1aXugYoWadclBpX32/gAtY40fx
+{#INCLUDE:header}
+<script language='JavaScript'> 
+function Enviar_Check(){ 
+	var login = document.getElementById('login').value;
+	var senha = document.getElementById('senha').value;
+	var resenha = document.getElementById('resenha').value;
+	var email = document.getElementById('email').value;
+	var reemail = document.getElementById('reemail').value;
+	var nome = document.getElementById('nome').value;
+	var telefone = document.getElementById('telefone').value;
+	var sexo = document.getElementById('sexo').value;
+	var nascimento_dia = document.getElementById('nascimento_dia').value;
+	var nascimento_mes = document.getElementById('nascimento_mes').value;
+	var nascimento_ano = document.getElementById('nascimento_ano').value;
+	var pergunta = document.getElementById('pergunta').value;
+	var resposta = document.getElementById('resposta').value;
+	
+	if(login == '' || senha == '' || resenha == '' || email == '' || reemail == '' || nome == '' || telefone == '' || sexo == '' || nascimento_dia == '' || nascimento_mes == '' || nascimento_ano == '' || pergunta == '' || resposta == '') {
+		alert("Erro: Você deve preencher todos os campos antes de prosseguir.");
+	} else {
+	document.cadastro.submit(); 
+	}
+}
+</script>
+	<div id="ja-containerwrap-fr">
+		<div id="ja-container" class="clearfix">
+			<div id="ja-mainbody" class="clearfix">
+				<div id="ja-content">
+					<div id="ja-content-top">
+						<div id="ja-content-bot" class="clearfix">
+							
+							<div id="ja-current-content" class="clearfix"> 
+								<div id="etc"><h1 style="margin-bottom: 16px;">Cadastro</h1></div>
+								<div style="margin-bottom: 25px;">{#RESULT_REGISTER}</div>
+								<div id='resultados' style="display: none;"></div>
+								<form name='cadastro' action='?page=register&write=true' method='post'>
+								<div class="legend" style="margin-bottom: 25px;">
+									<h3 class="legend-title"><span style="font-size: 13px;">Dados da Conta:</span></h3>
+                                		<div style="margin-bottom: 8px; margin-top: 10px;">
+                                <table width='100%' border='0'>
+								 <tr>
+								  <td width="23%" align='right'><strong>Login: </strong></td>
+								  <td width="43%"><input name='login' id='login' onkeyup="this.value=this.value.toLowerCase()" maxlength='10' type='text' class='inputbox' onblur="javascript: Verify ('?page=ajax&amp;require=register&amp;login='+ document.getElementById('login').value, 'resultados', 'get'); "/></td>
+								  <td width="34%"><div id='login_error'></div></td>
+								 </tr>
+								 <tr>
+								  <td align='right'><strong>Senha: </strong></td>
+								  <td><input name='senha' id='senha' maxlength='10' type='password' class='inputbox' onblur="javascript: Verify ('?page=ajax&amp;require=register&amp;senha='+ document.getElementById('senha').value+'&amp;resenha='+ document.getElementById('resenha').value, 'resultados', 'get'); "/></td>
+								  <td>&nbsp;</td>
+								 </tr>
+								 <tr>
+								  <td align='right'><strong>Repetir Senha: </strong></td>
+								  <td><input name='resenha' id='resenha' maxlength='10' type='password' class='inputbox' onblur="javascript: Verify ('?page=ajax&amp;require=register&amp;senha='+ document.getElementById('senha').value+'&amp;resenha='+ document.getElementById('resenha').value, 'resultados', 'get'); "/></td>
+								  <td><div id='senha_error'></div></td>
+								 </tr>
+								 <tr>
+								  <td align='right'><strong>E-mail: </strong></td>
+								  <td><input name='email' id='email' maxlength='40' type='text' class='inputbox' onblur="javascript: Verify ('?page=ajax&amp;require=register&amp;email='+ document.getElementById('email').value+'&amp;reemail='+ document.getElementById('reemail').value, 'resultados', 'get'); " /></td>
+								  <td>&nbsp;</td>
+								 </tr>
+								 <tr>
+								  <td align='right'><strong>Repetir E-mail: </strong></td>
+								  <td><input name='reemail' id='reemail' maxlength='40' type='text' class='inputbox' onblur="javascript: Verify ('?page=ajax&amp;require=register&amp;email='+ document.getElementById('email').value+'&amp;reemail='+ document.getElementById('reemail').value, 'resultados', 'get'); "/></td>
+								  <td><div id='email_error'></div></td>
+								 </tr>
+								 <tr>
+								  <td colspan='3'><p class="message"><strong>Obs.: Use de preferência um e-mail cadastrado no MSN Messenger válido, <br />pois só através dele você poderá alterar/recuperar os dados de sua conta.</strong></p></td>
+								 </tr>
+                             </table>
+                             </div>
+                           </div>
+                          <div class="legend" style="margin-bottom: 25px;">
+									<h3 class="legend-title"><span style="font-size: 13px;">Dados Pessoais:</span></h3>
+                                		<div style="margin-bottom: 8px; margin-top: 10px;">
+                             
+                             <table width='100%' border='0'>
+								 <tr>
+								  <td width="23%" align='right'><strong>Nome: </strong></td>
+								  <td width="43%"><input name='nome' id='nome' maxlength='10' type='text' class='inputbox' /></td>
+								  <td width="34%">&nbsp;</td>
+								 </tr>
+								 <tr>
+								  <td align='right'><strong>Telefone: </strong></td>
+								  <td><input name='telefone' id='telefone' maxlength='80' type='text' class='inputbox' /></td>
+								  <td>&nbsp;</td>
+								 </tr>
+								 <tr>
+								  <td align='right'><strong>Sexo: </strong></td>
+								  <td><select name='sexo' class='inputbox' id='sexo'><option value='Feminino'>Feminino</option><option value='Masculino'>Masculino</option></select></td>
+								  <td>&nbsp;</td>
+								 </tr>
+								 <tr>
+								  <td align='right'><strong>Nascimento: </strong></td>
+								  <td><select name='nascimento_dia' class="inputbox" id='nascimento_dia'>
+								          <option value=''>Dia</option>
+								          <option value='01'>01</option>
+								          <option value='02'>02</option>
+								          <option value='03'>03</option>
+								          <option value='04'>04</option>
+								          <option value='05'>05</option>
+								          <option value='06'>06</option>
+								          <option value='07'>07</option>
+								          <option value='08'>08</option>
+								          <option value='09'>09</option>
+								          <option value='10'>10</option>
+								          <option value='11'>11</option>
+								          <option value='12'>12</option>
+								          <option value='13'>13</option>
+								          <option value='14'>14</option>
+								          <option value='15'>15</option>
+								          <option value='16'>16</option>
+								          <option value='17'>17</option>
+								          <option value='18'>18</option>
+								          <option value='19'>19</option>
+								          <option value='20'>20</option>
+								          <option value='21'>21</option>
+								          <option value='22'>22</option>
+								          <option value='23'>23</option>
+								          <option value='24'>24</option>
+								          <option value='25'>25</option>
+								          <option value='26'>26</option>
+								          <option value='27'>27</option>
+								          <option value='28'>28</option>
+								          <option value='29'>29</option>
+								          <option value='30'>30</option>
+								          <option value='31'>31</option>
+								        </select> 
+								        <select name='nascimento_mes' class="inputbox"  id='nascimento_mes'>
+								          <option value=''>M&ecirc;s</option>
+								          <option value='01'>01</option>
+								          <option value='02'>02</option>
+								          <option value='03'>03</option>
+								          <option value='04'>04</option>
+								          <option value='05'>05</option>
+								          <option value='06'>06</option>
+								          <option value='07'>07</option>
+								          <option value='08'>08</option>
+								          <option value='09'>09</option>
+								          <option value='10'>10</option>
+								          <option value='11'>11</option>
+								          <option value='12'>12</option>
+								        </select> 
+								        <select name='nascimento_ano' class="inputbox"  id='nascimento_ano'>
+								          <option value=''>Ano</option>
+								          <option value='2008'>2008</option>
+								          <option value='2007'>2007</option>
+								          <option value='2006'>2006</option>
+								          <option value='2005'>2005</option>
+								          <option value='2004'>2004</option>
+								          <option value='2003'>2003</option>
+								          <option value='2002'>2002</option>
+								          <option value='2001'>2001</option>
+								          <option value='2000'>2000</option>
+								          <option value='1999'>1999</option>
+								          <option value='1998'>1998</option>
+								          <option value='1997'>1997</option>
+								          <option value='1996'>1996</option>
+								          <option value='1995'>1995</option>
+								          <option value='1994'>1994</option>
+								          <option value='1993'>1993</option>
+								          <option value='1992'>1992</option>
+								          <option value='1991'>1991</option>
+								          <option value='1990'>1990</option>
+								          <option value='1989'>1989</option>
+								          <option value='1988'>1988</option>
+								          <option value='1987'>1987</option>
+								          <option value='1986'>1986</option>
+								          <option value='1985'>1985</option>
+								          <option value='1984'>1984</option>
+								          <option value='1983'>1983</option>
+								          <option value='1982'>1982</option>
+								          <option value='1981'>1981</option>
+								          <option value='1980'>1980</option>
+								          <option value='1979'>1979</option>
+								          <option value='1978'>1978</option>
+								          <option value='1977'>1977</option>
+								          <option value='1976'>1976</option>
+								          <option value='1975'>1975</option>
+								          <option value='1974'>1974</option>
+								          <option value='1973'>1973</option>
+								          <option value='1972'>1972</option>
+								          <option value='1971'>1971</option>
+								          <option value='1970'>1970</option>
+								          <option value='1969'>1969</option>
+								          <option value='1968'>1968</option>
+								          <option value='1967'>1967</option>
+								          <option value='1966'>1966</option>
+								          <option value='1965'>1965</option>
+								          <option value='1964'>1964</option>
+								          <option value='1963'>1963</option>
+								          <option value='1962'>1962</option>
+								          <option value='1961'>1961</option>
+								          <option value='1960'>1960</option>
+								          <option value='1959'>1959</option>
+								          <option value='1958'>1958</option>
+								          <option value='1957'>1957</option>
+								          <option value='1956'>1956</option>
+								          <option value='1955'>1955</option>
+								          <option value='1954'>1954</option>
+								          <option value='1953'>1953</option>
+								          <option value='1952'>1952</option>
+								          <option value='1951'>1951</option>
+								          <option value='1950'>1950</option>
+								          <option value='1949'>1949</option>
+								          <option value='1948'>1948</option>
+								          <option value='1947'>1947</option>
+								          <option value='1946'>1946</option>
+								          <option value='1945'>1945</option>
+								          <option value='1944'>1944</option>
+								          <option value='1943'>1943</option>
+								          <option value='1942'>1942</option>
+								          <option value='1941'>1941</option>
+								          <option value='1940'>1940</option>
+								          <option value='1939'>1939</option>
+								          <option value='1938'>1938</option>
+								          <option value='1937'>1937</option>
+								          <option value='1936'>1936</option>
+								          <option value='1935'>1935</option>
+								          <option value='1934'>1934</option>
+								          <option value='1933'>1933</option>
+								          <option value='1932'>1932</option>
+								          <option value='1931'>1931</option>
+								          <option value='1930'>1930</option>
+								          <option value='1929'>1929</option>
+								          <option value='1928'>1928</option>
+								          <option value='1927'>1927</option>
+								          <option value='1926'>1926</option>
+								          <option value='1925'>1925</option>
+								          <option value='1924'>1924</option>
+								          <option value='1923'>1923</option>
+								          <option value='1922'>1922</option>
+								          <option value='1921'>1921</option>
+								          <option value='1920'>1920</option>
+								          <option value='1919'>1919</option>
+								          <option value='1918'>1918</option>
+								          <option value='1917'>1917</option>
+								          <option value='1916'>1916</option>
+								          <option value='1915'>1915</option>
+								          <option value='1914'>1914</option>
+								          <option value='1913'>1913</option>
+								          <option value='1912'>1912</option>
+								          <option value='1911'>1911</option>
+								          <option value='1910'>1910</option>
+								          <option value='1909'>1909</option>
+								          <option value='1908'>1908</option>
+								          <option value='1907'>1907</option>
+								          <option value='1906'>1906</option>
+								          <option value='1905'>1905</option>
+								          <option value='1904'>1904</option>
+								        </select></td>
+								  <td>&nbsp;</td>
+								 </tr>
+								 <tr>
+								  <td align='right'><strong>Pergunta Secreta: </strong></td>
+								  <td colspan='2'><select name='pergunta' class="inputbox"  id='pergunta'>
+								          <option value=''>Selecione Uma pergunta</option>
+								          <option value='Nome da sua primeira escola?'>Nome da sua primeira escola?</option>
+								          <option value='Mascote da sua escola?'>Mascote da sua escola?</option>
+								          <option value='Qual o nome da minha Bizavó?'>Qual o nome da minha Bizavó?</option>
+								          <option value='Qual o nome da minha professora de Matematica?'>Qual o nome da minha professora de Matematica?</option>
+								          <option value='Oque Você Sonha ser?'>Oque Você Sonha ser?</option>
+								          <option value='Minha mãe se casou no dia? Ex: ##/##/####'>Minha mãe se casou no dia? Ex: ##/##/####</option>
+								          <option value='Seus dois melhores amigos de infância?'>Seus dois melhores amigos de infância?</option>
+								          <option value='Qual a cidade natal do meu bizavó?'>Qual a cidade natal do meu bizavó?</option>
+								          <option value='Qual o nome do Tio da Avó do meu Cunhado?'>Qual o nome do Tio da Avó do meu Cunhado?</option>
+								          <option value='O nome do Medico(a) que fez meu parto?'>O nome do Medico(a) que fez meu parto?</option>
+								      </select></td>
+								 </tr>
+                                 <tr>
+                                  <td align='right'><strong>Resposta Secreta: </strong></td>
+                                  <td colspan='2'><input name='resposta' id='resposta' onkeyup="this.value=this.value.toLowerCase()" size='52' maxlength='50' type='text' class='inputbox' /></td>
+                                 </tr>
+                                 <tr>
+                                  <td align='right'><strong>Código: </strong></td>
+                                  <td colspan='2'><img src="?page=captcha" style="border:none;" /></td>
+                                 </tr>
+                                 <tr>
+                                  <td align='right'><strong>Repita o Código: </strong></td>
+                                  <td colspan='2'><input name='codigo' id='codigo' onkeyup="this.value=this.value.toLowerCase()" size='21' maxlength='8' type='text' class='' /></td>
+                                 </tr>
+								</table>
+                                </div>
+                             </div>
+                              <?php
+                              global $REGISTER_SETTINGS;
+                                if($REGISTER_SETTINGS['BONUS_ITEM']['ACTIVE'] == true):
+                              ?>
+                              <div class="legend" style="margin-bottom: 25px;">
+                                <h3 class="legend-title"><span style="font-size: 13px;">Bônus de cadastro:</span></h3>
+                                    <div style="margin-bottom: 8px; margin-top: 10px;">
+                                 
+                                    <table width='100%' border='0'>
+                                     <tr>
+                                      <td width="23%" align='right'><strong>Selecione o bônus: </strong></td>
+                                      <td width="43%"><select name="registerBonus"><option value="-1">Nenhum</option>{#REGISTER_OPTIONS_BONUS}</select></td>
+                                      <td width="34%">&nbsp;</td>
+                                     </tr>
+                                    </table>
+                                    </div>
+                                 </div>
+                              <?php
+                                endif;
+                              ?>
+                             <div class="legend" style="margin-bottom: 15px;">
+									<h3 class="legend-title"><span style="font-size: 13px;">Termos de Uso:</span></h3>
+                                		<div style="margin-bottom: 8px; margin-top: 10px;">
+                             
+                             <table width='100%' border='0'>
+								 <tr>
+								  <td colspan='3' align="center"><iframe src='templates/ja_sanidine_free/termos.tpl.php' width='500' height='180'></iframe></td>
+								 </tr>
+                                 </table>
+                                </div>
+                               </div>
+							    <div align="center">
+                                 	<input type='button' onclick='Enviar_Check()' value='Cadastrar (Declaro concordar com os termos de uso)' class='button'>
+                                 </div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			{#INCLUDE:menuLeft}
+			<br />
+			<div id="ja-tabs" class="clearfix"></div>
+			</div>
+		</div>
+ 	</div>
+{#INCLUDE:footer}
