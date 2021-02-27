@@ -397,7 +397,7 @@ if ( class_exists( "ldPanelUser" ) == false ) {
 			{
 				while($findLastCharacters = mssql_fetch_row($findLastCharactersQ))
 				{
-					$tmpChars .= "<tr><td>". $findLastCharacters[0] ."</td><td>". $this->classNameDefine($findLastCharacters[1]) ."</td><td>". $findLastCharacters[2] ."</td><td>". ($findLastCharacters[3] > 0 ? "Sim":"Não") ."</td></tr>";
+					$tmpChars .= "<tr><td>". $findLastCharacters[0] ."</td><td>". $this->classNameDefine($findLastCharacters[1]) ."</td><td>". $findLastCharacters[2] ."</td><td>". ($findLastCharacters[3] > 0 ? "Sim":"NÃ£o") ."</td></tr>";
 					if($findLastCharacters[4] == 1) $tmpBanChars .= sprintf("<div class='qdestaques'>".LDPU_OPTIONS_DEFAULT_BANNED_CHARACTER."</div>", $findLastCharacters[0], date("d/m/Y g:i a",$this->checkBanCharacter($findLastCharacters[0])));
 				}
 				$ldTpl->set("CHARACTER_DETAILS", $tmpChars);
@@ -968,7 +968,7 @@ if ( class_exists( "ldPanelUser" ) == false ) {
                                                     WHERE ".$TABLES_CONFIGS['WEBCASH']['columnUsername']."='".$_SESSION['LOGIN']."' AND ".$TABLES_CONFIGS['WEBCASH']['columnPoints']." > ".(int)$_GET['points']."; 
                                                     SELECT @@ROWCOUNT [count];");
                     if(mssql_fetch_object($remove)->count == 0)
-                        throw new Exception("Você não possui essa quantidade de ".constant("POINTS_NAME").".", 1);
+                        throw new Exception("VocÃª nÃ£o possui essa quantidade de ".constant("POINTS_NAME").".", 1);
                     */
                     
                     $searchIfHaveBid = $this->query("SELECT 1 FROM [dbo].[webAuctionsBids] WHERE [auction] = ". (int) $getAuctions->id ." AND [username] = '".$_SESSION['LOGIN']."'");
@@ -2612,7 +2612,7 @@ if ( class_exists( "ldPanelUser" ) == false ) {
                                 break;
                         }
 						$this->query("UPDATE ".DATABASE_CHARACTERS.".dbo.Character 
-                                        SET Class=".$_POST['newclass']."
+                                        SET Class=".(int)$_POST['newclass']."
                                         ".($PANELUSER_MODULE['CHANGE_CLASS']['RESET_QUESTS'] == TRUE ? ", Quest = cast(REPLICATE(char(0xff),".$quests.") as varbinary(".$quests."))" : NULL)." 
                                         ".($PANELUSER_MODULE['CHANGE_CLASS']['RESET_SKILLS'] == TRUE ? ", MagicList = cast(REPLICATE(char(0xff),".$magics.") as varbinary(".$magics."))" : NULL)." 
                                         WHERE Name='". $_GET['character'] ."'");
