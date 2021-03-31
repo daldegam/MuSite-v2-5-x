@@ -32,27 +32,32 @@ if ( class_exists( "ldSecurity" ) == false ) {
 			@fclose($fp);
 			die("<script>window.alert('".SPECIAL_CHARACTERS_FOUND."'); history.go(-1);</script>");
 		}	
-		public function Check($string) {
-            if ( substr_count( $string, "'" ) > 0 )
-            {
-			  $this->inject($string);
-            }
-            if ( substr_count( $string, ";" ) > 0 )
-            {
-			  $this->inject($string);
-            }
-            if ( substr_count( $string, "\"" ) > 0 )
-            {
-			  $this->inject($string);
-            }
-            if ( substr_count( $string, "--" ) > 0 )
-            {
-              $this->inject($string);
-            }
-            if ( substr_count( $string, "<?" ) > 0 )
-            {
-			  $this->inject($string);
-            }
+		public function Check($string) 
+		{
+		    if ( substr_count( $string, "'" ) > 0 )
+		    {
+			$this->inject($string);
+		    }
+		    if ( substr_count( $string, ";" ) > 0 )
+		    {
+			$this->inject($string);
+		    }
+		    if ( substr_count( $string, "\"" ) > 0 )
+		    {
+			$this->inject($string);
+		    }
+		    if ( substr_count( $string, "--" ) > 0 )
+		    {
+		     	$this->inject($string);
+		    }
+		    if ( substr_count( $string, "<?" ) > 0 )
+		    {
+			$this->inject($string);
+		    }
+		    if ( substr_count( $string, "<%" ) > 0 )
+		    {
+			$this->inject($string);
+		    }
 		  return $string;
 		}
 	}
